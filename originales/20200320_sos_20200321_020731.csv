@@ -1,0 +1,613 @@
+# Caso,Estado,Sexo,Fecha de Inicio de sintomas,Edad,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
+,,,,,,, Casos sospechosos a enfermedad por COVID-19. 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, Identificación de,,,,,,,,,Fecha del 
+,,,,,,, N°,,,,, Estado,,,,, Sexo,,Edad,,Fecha de Inicio,COVID-19 por RT-,,Procedencia,, llegada a 
+,,,,,,,Caso,,,,,,,,,,,,,,,,,,,,,,de síntomas,,,PCR en tiempo,,,,,,,,,,, México 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, real 
+,,,,,, 1,,, SAN LUIS POTOSÍ,,,,F,,,,,,22,,,,11/03/2020,Sospechoso,,,,España,,,, 06/03/2020 
+,,,,,, 2,,, MÉXICO,,,,,,,, M,,,,,,23,,, 03/03/2020,Sospechoso,,,, España,,,, 02/03/2020 
+,,,,,, 3,,, MÉXICO,,,,,,,, M,,,,, 34,,,, 16/02/2020,Sospechoso,,,,Italia,,,, 29/02/2020 
+,,,,,, 4,,, MÉXICO,,,,,,,, M,,,,,,26,,, 04/03/2020,Sospechoso,,,, España,,,, 10/03/2020 
+,,,,,, 5,,, VERACRUZ,,,,,,, F,,,,, 64,,,, 15/03/2020,Sospechoso,,,,España,,,, 13/03/2020 
+,,,,,, 6,,, MÉXICO,,,,,,,, M,,,,, 40,,,, 13/03/2020,Sospechoso,,,,Estados Unidos 06/03/2020 
+,,,,,, 7,,, VERACRUZ,,,,,,, M,,,,, 24,,,,09/03/2020,Sospechoso,,,, Estados Unidos 15/03/2020 
+,,,,,, 8,,, CIUDAD DE MÉXICO,,, F,,,,,,31,,,,10/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 9,,, MÉXICO,,,,,,,, F,,,,,,39,,,,13/03/2020,Sospechoso,,,,Estados Unidos 06/03/2020 
+,,,,,, 10,,,CIUDAD DE MÉXICO,,, M,,,,,,32,,, 08/03/2020,Sospechoso,,,, España,,,, 03/03/2020 
+,,,,,, 11,,,MÉXICO,,,,,,,, M,,,,, 44,,,, 19/02/2020,Sospechoso,,,,Italia,,,, 22/02/2020 
+,,,,,, 12,,,VERACRUZ,,,,,,, M,,,,,,61,,,,16/03/2020,Sospechoso,,,,Contacto,,, 15/03/2020 
+,,,,,, 13,,,MÉXICO,,,,,,,, M,,,,,, 9,,, 24/02/2020,Sospechoso,,,, Contacto,,, NA 
+,,,,,, 14,,,TAMAULIPAS,,,,,, M,,,,, 48,,,, 15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 15,,,CIUDAD DE MÉXICO,,, M,,,,,,38,,,,10/03/2020,Sospechoso,,,,Estados Unidos 07/03/2020 
+,,,,,, 16,,,CIUDAD DE MÉXICO,,, M,,,,, 43,,,, 14/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 17,,,CIUDAD DE MÉXICO,,, F,,,,,,35,,, 09/03/2020,Sospechoso,,,, Contacto,,, NA 
+,,,,,, 18,,,SONORA,,,,,,,, F,,,,,,25,,,,11/03/2020,Sospechoso,,,,Francia,,,,29/02/2020 
+,,,,,, 19,,,PUEBLA,,,,,,,, M,,,,, 49,,,, 15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 20,,,MÉXICO,,,,,,,, F,,,,, 34,,,,09/03/2020,Sospechoso,,,, Contacto,,, NA 
+,,,,,, 21,,,SAN LUIS POTOSÍ,,,,M,,,,,,25,,,,13/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 22,,,CIUDAD DE MÉXICO,,, M,,,,,,79,,,,12/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 23,,,CIUDAD DE MÉXICO,,, M,,,,,,37,,,,14/03/2020,Sospechoso,,,,España,,,, 14/03/2020 
+,,,,,, 24,,,MÉXICO,,,,,,,, F,,,,,,37,,, 04/03/2020,Sospechoso,,,, Estados Unidos 07/03/2020 
+,,,,,, 25,,,CIUDAD DE MÉXICO,,, F,,,,,,76,,,,15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 26,,,GUERRERO,,,,,,, M,,,,,,29,,,,15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 27,,,HIDALGO,,,,,,,,F,,,,,,72,,,,14/03/2020,Sospechoso,,,,Estados Unidos 14/03/2020 
+,,,,,, 28,,,MÉXICO,,,,,,,, F,,,,,, 4,,, 04/03/2020,Sospechoso,,,, Estados Unidos 07/03/2020 
+,,,,,, 29,,,CIUDAD DE MÉXICO,,, M,,,,,,61,,,,16/03/2020,Sospechoso,,,,España,,,, 11/03/2020 
+,,,,,, 30,,,VERACRUZ,,,,,,, F,,,,,,23,,,,12/03/2020,Sospechoso,,,,España,,,, 29/02/2020 
+,,,,,, 31,,,MÉXICO,,,,,,,, F,,,,,, 3,,, 04/03/2020,Sospechoso,,,, Estados Unidos 07/03/2020 
+,,,,,, 32,,,CIUDAD DE MÉXICO,,, M,,,,,,33,,, 09/03/2020,Sospechoso,,,, Contacto,,, NA 
+,,,,,, 33,,,CIUDAD DE MÉXICO,,, F,,,,,,37,,,,14/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 34,,,MÉXICO,,,,,,,, M,,,,,,56,,,,17/03/2020,Sospechoso,,,,España,,,, 12/03/2020 
+,,,,,, 35,,,VERACRUZ,,,,,,, M,,,,,,29,,,,15/03/2020,Sospechoso,,,,España,,,, 14/03/2020 
+,,,,,, 36,,,SONORA,,,,,,,, F,,,,, 49,,,,03/03/2020,Sospechoso,,,, Estados Unidos 24/02/2020 
+,,,,,, 37,,,VERACRUZ,,,,,,, F,,,,, 34,,,, 12/03/2020,Sospechoso,,,,Italia,,,, 14/03/2020 
+,,,,,, 38,,,CIUDAD DE MÉXICO,,, F,,,,,,22,,,,11/03/2020,Sospechoso,,,,España,,,, 08/03/2020 
+,,,,,, 39,,,HIDALGO,,,,,,,,F,,,,,,23,,,,14/03/2020,Sospechoso,,,,Alemania,,, 15/03/2020 
+,,,,,, 40,,,CIUDAD DE MÉXICO,,, M,,,,,,67,,, 06/03/2020,Sospechoso,,,, España,,,, 29/02/2020 
+,,,,,, 41,,,JALISCO,,,,,,,,M,,,,,,26,,,,15/03/2020,Sospechoso,,,,Estados Unidos 08/03/2020 
+,,,,,, 42,,,VERACRUZ,,,,,,, F,,,,,,63,,,,12/03/2020,Sospechoso,,,,Estados Unidos 14/03/2020 
+,,,,,, 43,,,MÉXICO,,,,,,,, M,,,,,,32,,,,10/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 44,,,JALISCO,,,,,,,,M,,,,, 30,,,, 12/03/2020,Sospechoso,,,,Alemania,,, 13/03/2020 
+,,,,,, 45,,,MÉXICO,,,,,,,, F,,,,,,32,,,,15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 46,,,JALISCO,,,,,,,,F,,,,, 42,,,, 12/03/2020,Sospechoso,,,,Estados Unidos 11/03/2020 
+,,,,,, 47,,,MÉXICO,,,,,,,, M,,,,,,32,,,,10/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 48,,,MÉXICO,,,,,,,, M,,,,,,35,,,,10/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 49,,,MÉXICO,,,,,,,, M,,,,,,27,,,,15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 50,,,VERACRUZ,,,,,,, M,,,,, 20,,,, 15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 51,,,VERACRUZ,,,,,,, M,,,,,,19,,,,15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 52,,,MICHOACÁN,,,,,,,,M,,,,,,22,,,,15/03/2020,Sospechoso,,,, Estados Unidos,17/03/2020 
+,,,,,, 53,,,GUERRERO,,,,,,,, M,,,,,,41,,,,16/03/2020,Sospechoso,,,, Estados Unidos,02/03/2020 
+,,,,,, 54,,,VERACRUZ,,,,,,,, F,,,,,,57,,,,12/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 55,,,BAJA CALIFORNIA,,,,,F,,,,,,34,,,,14/03/2020,Sospechoso,,,, Estados Unidos,08/03/2020 
+,,,,,, 56,,,BAJA CALIFORNIA,,,,,F,,,,,,23,,,,16/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 57,,,MORELOS,,,,,,,,,M,,,,,,42,,,,15/03/2020,Sospechoso,,,, Japón,,,,, 15/03/2020 
+,,,,,, 58,,,BAJA CALIFORNIA,,,,,M,,,,,,35,,,,13/03/2020,Sospechoso,,,, Estados Unidos,08/03/2020 
+,,,,,, 59,,,CIUDAD DE MÉXICO,,,, M,,,,,,28,,,,12/03/2020,Sospechoso,,,, España,,,,,12/03/2020 
+,,,,,, 60,,,MÉXICO,,,,,,,,, F,,,,,,29,,,,15/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 61,,,BAJA CALIFORNIA,,,,,F,,,,,,29,,,,13/03/2020,Sospechoso,,,, Estados Unidos,13/03/2020 
+,,,,,, 62,,,CIUDAD DE MÉXICO,,,, M,,,,,,43,,,,13/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 63,,,CIUDAD DE MÉXICO,,,, F,,,,,,29,,,,12/03/2020,Sospechoso,,,, España,,,,,12/03/2020 
+,,,,,, 64,,,GUERRERO,,,,,,,, F,,,,,, 3,,,,12/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 65,,,CIUDAD DE MÉXICO,,,, M,,,,,,24,,,,10/03/2020,Sospechoso,,,, Estados Unidos,01/03/2020 
+,,,,,, 66,,,BAJA CALIFORNIA,,,,,F,,,,,,47,,,,13/03/2020,Sospechoso,,,, Estados Unidos,09/03/2020 
+,,,,,, 67,,,BAJA CALIFORNIA,,,,,F,,,,,,27,,,,13/03/2020,Sospechoso,,,, Estados Unidos,03/03/2020 
+,,,,,, 68,,,CIUDAD DE MÉXICO,,,, M,,,,,,34,,, 04/03/2020,Sospechoso,,,,,Italia,,,,,29/02/2020 
+,,,,,, 69,,,BAJA CALIFORNIA,,,,,M,,,,,,35,,,,16/03/2020,Sospechoso,,,, Contacto,,,,17/03/2020 
+,,,,,, 70,,,CIUDAD DE MÉXICO,,,, F,,,,,,21,,,,11/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 71,,,BAJA CALIFORNIA,,,,,M,,,,,,26,,,,15/03/2020,Sospechoso,,,, Francia,,,, 13/03/2020 
+,,,,,, 72,,,CIUDAD DE MÉXICO,,,, M,,,,,,71,,, 04/03/2020,Sospechoso,,,,,España,,,,,14/03/2020 
+,,,,,, 73,,,COLIMA,,,,,,,,, F,,,,,,23,,,,17/03/2020,Sospechoso,,,, Estados Unidos,10/03/2020 
+,,,,,, 74,,,CIUDAD DE MÉXICO,,,, F,,,,,,31,,,,15/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 75,,,CIUDAD DE MÉXICO,,,, F,,,,,,25,,, 09/03/2020,Sospechoso,,,,,España,,,,,13/03/2020 
+,,,,,, 76,,,CIUDAD DE MÉXICO,,,, M,,,,,,43,,, 08/03/2020,Sospechoso,,,,,España,,,,,04/03/2020 
+,,,,,, 77,,,BAJA CALIFORNIA,,,,,M,,,,,,31,,,,15/03/2020,Sospechoso,,,, Estados Unidos,11/03/2020 
+,,,,,, 78,,,COAHUILA,,,,,,,, M,,,,,, 9,,,,16/03/2020,Sospechoso,,,, Estados Unidos,12/03/2020 
+,,,,,, 79,,,VERACRUZ,,,,,,,, F,,,,,,38,,,,16/03/2020,Sospechoso,,,, España,,,,,13/03/2020 
+,,,,,, 80,,,CIUDAD DE MÉXICO,,,, F,,,,,,31,,,,03/03/2020,Sospechoso,,,, Alemania,,,,09/03/2020 
+,,,,,, 81,,,CIUDAD DE MÉXICO,,,, M,,,,,,29,,,,13/03/2020,Sospechoso,,,, Estados Unidos,12/03/2020 
+,,,,,, 82,,,JALISCO,,,,,,,,,M,,,,,,25,,,,15/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 83,,,CIUDAD DE MÉXICO,,,, F,,,,,,69,,,,25/02/2020,Sospechoso,,,, Italia,,,,,03/03/2020 
+,,,,,, 84,,,MICHOACÁN,,,,,,,,F,,,,,,37,,,,13/03/2020,Sospechoso,,,, Estados Unidos,02/03/2020 
+,,,,,, 85,,,BAJA CALIFORNIA,,,,,F,,,,,,53,,,,10/03/2020,Sospechoso,,,, Estados Unidos,11/03/2020 
+,,,,,, 86,,,GUANAJUATO,,,,,,, M,,,,,,18,,,,12/03/2020,Sospechoso,,,, Estados Unidos,15/03/2020 
+,,,,,, 87,,,SONORA,,,,,,,,, F,,,,,,36,,,,16/03/2020,Sospechoso,,,, Estados Unidos,12/03/2020 
+,,,,,, 88,,,CIUDAD DE MÉXICO,,,, F,,,,,,27,,,,03/03/2020,Sospechoso,,,, España,,,,,03/03/2020 
+,,,,,, 89,,,CIUDAD DE MÉXICO,,,, M,,,,,,25,,,,10/03/2020,Sospechoso,,,, Estados Unidos,26/02/2020 
+,,,,,, 90,,,BAJA CALIFORNIA,,,,,F,,,,,,21,,,,12/03/2020,Sospechoso,,,, España,,,,,16/03/2020 
+,,,,,, 91,,,CIUDAD DE MÉXICO,,,, M,,,,,,67,,, 08/03/2020,Sospechoso,,,,,Estados Unidos,08/03/2020 
+,,,,,, 92,,,MICHOACÁN,,,,,,,,F,,,,,, 1,,, 06/03/2020,Sospechoso,,,,,Estados Unidos,02/03/2020 
+,,,,,, 93,,,JALISCO,,,,,,,,,M,,,,,,19,,,,18/03/2020,Sospechoso,,,, España,,,,,17/03/2020 
+,,,,,, 94,,,MÉXICO,,,,,,,,, F,,,,,, 0,,, 04/03/2020,Sospechoso,,,,,Estados Unidos,07/03/2020 
+,,,,,, 95,,,OAXACA,,,,,,,,, M,,,,,,35,,,,13/03/2020,Sospechoso,,,, Alemania,,,,11/03/2020 
+,,,,,, 96,,,VERACRUZ,,,,,,,, F,,,,,,25,,,,16/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 97,,,SONORA,,,,,,,,, M,,,,,,31,,,,16/03/2020,Sospechoso,,,, España,,,,,14/03/2020 
+,,,,,, 98,,,QUINTANA ROO,,,,,, M,,,,, 40,,,, 16/03/2020,Sospechoso,,,, España,,,,,15/03/2020 
+,,,,,, 99,,,AGUASCALIENTES,,,,, M,,,,,,36,,,,12/03/2020,Sospechoso,,,, Estados Unidos,13/03/2020 
+,,,,,, 100,, CIUDAD DE MÉXICO,,,, F,,,,,,62,,,,07/03/2020,Sospechoso,,,, Estados Unidos,27/02/2020 
+,,,,,, 101,, GUERRERO,,,,,,,, F,,,,,,74,,, 08/03/2020,Sospechoso,,,,,España,,,,,04/03/2020 
+,,,,,, 102,, BAJA CALIFORNIA,,,,,F,,,,, 44,,,, 13/03/2020,Sospechoso,,,, España,,,,,17/03/2020 
+,,,,,, 103,, VERACRUZ,,,,,,,, F,,,,,,57,,,,14/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 104,, VERACRUZ,,,,,,,, F,,,,,,23,,,,16/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 105,, AGUASCALIENTES,,,,, M,,,,,,34,,, 09/03/2020,Sospechoso,,,,,España,,,,,10/03/2020 
+,,,,,, 106,, AGUASCALIENTES,,,,, F,,,,,,28,,,,05/03/2020,Sospechoso,,,, España,,,,,10/03/2020 
+,,,,,, 107,, AGUASCALIENTES,,,,, M,,,,,,38,,,,12/03/2020,Sospechoso,,,, Estados Unidos,14/03/2020 
+,,,,,,, 108,,,AGUASCALIENTES,,,,,, F,,,,,,,29,,,, 17/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 109,,,COAHUILA,,,,,,,,, M,,,,,,,28,,,, 07/03/2020,Sospechoso,,,,,, Estados Unidos,,NA 
+,,,,,,, 110,,,COAHUILA,,,,,,,,, F,,,,,,,27,,,, 07/03/2020,Sospechoso,,,,,, Estados Unidos,,NA 
+,,,,,,, 111,,,VERACRUZ,,,,,,,,, F,,,,,,,57,,,, 16/03/2020,Sospechoso,,,,,, España,,,,,,13/03/2020 
+,,,,,,, 112,,,VERACRUZ,,,,,,,,, M,,,,,,,31,,,, 16/03/2020,Sospechoso,,,,,, España,,,,,,13/03/2020 
+,,,,,,, 113,,,AGUASCALIENTES,,,,,, M,,,,,, 34,,,,,18/03/2020,Sospechoso,,,,,, Contacto,,,,,12/03/2020 
+,,,,,,, 114,,,QUINTANA ROO,,,,,,, F,,,,,, 47,,,,,16/03/2020,Sospechoso,,,,,, Estados Unidos,,07/03/2020 
+,,,,,,, 115,,,VERACRUZ,,,,,,,,, F,,,,,, 64,,,,,16/03/2020,Sospechoso,,,,,, España,,,,,,13/03/2020 
+,,,,,,, 116,,,QUINTANA ROO,,,,,,, F,,,,,,,31,,,, 16/03/2020,Sospechoso,,,,,, España,,,,,,15/03/2020 
+,,,,,,, 117,,,JALISCO,,,,,,,,,,M,,,,,,,61,,,, 15/03/2020,Sospechoso,,,,,, Estados Unidos,,05/03/2020 
+,,,,,,, 118,,,HIDALGO,,,,,,,,,,F,,,,,,,57,,,, 14/03/2020,Sospechoso,,,,,, España,,,,,,16/03/2020 
+,,,,,,, 119,,,GUANAJUATO,,,,,,,, M,,,,,,,33,,,, 17/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 120,,,HIDALGO,,,,,,,,,,F,,,,,,,37,,,, 15/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 121,,,GUANAJUATO,,,,,,,, F,,,,,,, 1,,,, 18/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 122,,,BAJA CALIFORNIA SUR,,,,M,,,,,,,13,,,, 14/03/2020,Sospechoso,,,,,, Estados Unidos,,12/03/2020 
+,,,,,,, 123,,,HIDALGO,,,,,,,,,,F,,,,,,,23,,,, 16/03/2020,Sospechoso,,,,,, Alemania,,,,,15/03/2020 
+,,,,,,, 124,,,GUANAJUATO,,,,,,,, M,,,,,,,55,,,, 17/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 125,,,QUINTANA ROO,,,,,,, F,,,,,, 34,,,,,17/03/2020,Sospechoso,,,,,, Estados Unidos,,17/03/2020 
+,,,,,,, 126,,,HIDALGO,,,,,,,,,,M,,,,,, 44,,,,,12/03/2020,Sospechoso,,,,,, Estados Unidos,,13/03/2020 
+,,,,,,, 127,,,HIDALGO,,,,,,,,,,M,,,,,,,13,,,, 16/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 128,,,SONORA,,,,,,,,,, F,,,,,,,29,,,, 13/03/2020,Sospechoso,,,,,, España,,,,,,18/03/2020 
+,,,,,,, 129,,,QUERETARO,,,,,,,,,M,,,,,,,29,,,, 16/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 130,,,JALISCO,,,,,,,,,,M,,,,,,,59,,,, 16/03/2020,Sospechoso,,,,,, Alemania,,,,,15/03/2020 
+,,,,,,, 131,,,SONORA,,,,,,,,,, F,,,,,, 45,,,,,15/03/2020,Sospechoso,,,,,, España,,,,,,16/03/2020 
+,,,,,,, 132,,,JALISCO,,,,,,,,,,M,,,,,, 54,,,,,14/03/2020,Sospechoso,,,,,, Contacto,,,,,16/03/2020 
+,,,,,,, 133,,,OAXACA,,,,,,,,,, F,,,,,,,35,,,, 14/03/2020,Sospechoso,,,,,, Italia,,,,,,15/03/2020 
+,,,,,,, 134,,,SONORA,,,,,,,,,, F,,,,,,,25,,,, 13/03/2020,Sospechoso,,,,,, Estados Unidos,,10/03/2020 
+,,,,,,, 135,,,BAJA CALIFORNIA,,,,,,F,,,,,, 34,,,,, 11/03/2020,Sospechoso,,,,,,Estados Unidos,,08/03/2020 
+,,,,,,, 136,,,QUINTANA ROO,,,,,,, M,,,,,,,41,,,, 16/03/2020,Sospechoso,,,,,, Italia,,,,,,15/03/2020 
+,,,,,,, 137,,,BAJA CALIFORNIA,,,,,,F,,,,,,,57,,,,,11/03/2020,Sospechoso,,,,,,Contacto,,,,,11/03/2020 
+,,,,,,, 138,,,QUINTANA ROO,,,,,,, M,,,,,,, 1,,,, 16/03/2020,Sospechoso,,,,,, Italia,,,,,,15/03/2020 
+,,,,,,, 139,,,DURANGO,,,,,,,,,,M,,,,,, 80,,,,,14/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 140,,,BAJA CALIFORNIA,,,,,,M,,,,,,,29,,,, 07/03/2020,Sospechoso,,,,,, Estados Unidos,,03/03/2020 
+,,,,,,, 141,,,DURANGO,,,,,,,,,,F,,,,,, 68,,,,,18/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 142,,,DURANGO,,,,,,,,,,F,,,,,,,52,,,, 15/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 143,,,BAJA CALIFORNIA,,,,,,F,,,,,,,26,,,, 13/03/2020,Sospechoso,,,,,, Estados Unidos,,16/03/2020 
+,,,,,,, 144,,,BAJA CALIFORNIA,,,,,,F,,,,,,,65,,,, 13/03/2020,Sospechoso,,,,,, Estados Unidos,,08/03/2020 
+,,,,,,, 145,,,GUERRERO,,,,,,,,, F,,,,,, 47,,,,,14/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 146,,,MÉXICO,,,,,,,,,, M,,,,,,,37,,,, 17/03/2020,Sospechoso,,,,,, Francia,,,,, 16/03/2020 
+,,,,,,, 147,,,COAHUILA,,,,,,,,, F,,,,,,,23,,,, 18/03/2020,Sospechoso,,,,,, Estados Unidos,,NA 
+,,,,,,, 148,,,CAMPECHE,,,,,,,,, M,,,,,,,58,,,, 15/03/2020,Sospechoso,,,,,, España,,,,,,15/03/2020 
+,,,,,,, 149,,,MÉXICO,,,,,,,,,, M,,,,,,,39,,,, 14/03/2020,Sospechoso,,,,,, España,,,,,,15/03/2020 
+,,,,,,, 150,,,COLIMA,,,,,,,,,, M,,,,,,,29,,,, 12/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 151,,,GUERRERO,,,,,,,,, F,,,,,,,39,,,, 01/03/2020,Sospechoso,,,,,, Estados Unidos,,05/03/2020 
+,,,,,,, 152,,,MÉXICO,,,,,,,,,, F,,,,,,,37,,,, 07/03/2020,Sospechoso,,,,,, Francia,,,,, 01/03/2020 
+,,,,,,, 153,,,MÉXICO,,,,,,,,,, M,,,,,,,32,,,, 14/03/2020,Sospechoso,,,,,, Estados Unidos,,14/03/2020 
+,,,,,,, 154,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 24,,,,,01/03/2020,Sospechoso,,,,,, España,,,,,,26/02/2020 
+,,,,,,, 155,,,CAMPECHE,,,,,,,,, F,,,,,,,59,,,, 06/03/2020,Sospechoso,,,,,, España,,,,,,15/03/2020 
+,,,,,,, 156,,,CIUDAD DE MÉXICO,,,,, M,,,,,,,38,,,, 15/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 157,,,MÉXICO,,,,,,,,,, F,,,,,,,35,,,, 12/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 158,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 43,,,,,13/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 159,,,COAHUILA,,,,,,,,, M,,,,,,,26,,,, 14/03/2020,Sospechoso,,,,,, Estados Unidos,,NA 
+,,,,,,, 160,,,SONORA,,,,,,,,,, M,,,,,,,35,,,,,11/03/2020,Sospechoso,,,,,,Estados Unidos,,01/03/2020 
+,,,,,,, 161,,,MÉXICO,,,,,,,,,, M,,,,,,,27,,,, 10/03/2020,Sospechoso,,,,,, Contacto,,,,,NA 
+,,,,,,, 162,,,QUINTANA ROO,,,,,,, F,,,,,,,33,,,,,11/03/2020,Sospechoso,,,,,,Italia,,,,,,02/03/2020 
+,,,,,,, 163,,,MÉXICO,,,,,,,,,, F,,,,,,,37,,,, 06/03/2020,Sospechoso,,,,,, Italia,,,,,,01/03/2020 
+,,,,,,, 164,,,COAHUILA,,,,,,,,,,F,,,,,, 22,,,,,16/03/2020,Sospechoso,,,,,,,España,,,,, 15/03/2020 
+,,,,,,, 165,,,CIUDAD DE MÉXICO,,,,,,M,,,,,,,35,,,,,11/03/2020,Sospechoso,,,,,, Estados Unidos, 28/02/2020 
+,,,,,,, 166,,,MÉXICO,,,,,,,,,,,M,,,,,, 39,,,,,14/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 167,,,COAHUILA,,,,,,,,,,M,,,,,, 29,,,,,14/03/2020,Sospechoso,,,,,,,Estados Unidos, 11/03/2020 
+,,,,,,, 168,,,NAYARIT,,,,,,,,,, M,,,,,, 29,,,,,16/03/2020,Sospechoso,,,,,,,Alemania,,,, 06/03/2020 
+,,,,,,, 169,,,MÉXICO,,,,,,,,,,,M,,,,,, 45,,,,,13/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 170,,,COAHUILA,,,,,,,,,,F,,,,,, 26,,,,,17/03/2020,Sospechoso,,,,,,,Estados Unidos, 12/03/2020 
+,,,,,,, 171,,,MÉXICO,,,,,,,,,,,F,,,,,, 22,,,,,16/03/2020,Sospechoso,,,,,,,España,,,,, 15/03/2020 
+,,,,,,, 172,,,QUINTANA ROO,,,,,,,,M,,,,,, 36,,,,,17/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 173,,,MÉXICO,,,,,,,,,,,M,,,,,, 46,,,,,01/03/2020,Sospechoso,,,,,,,Estados Unidos, 08/03/2020 
+,,,,,,, 174,,,QUINTANA ROO,,,,,,,,M,,,,,, 30,,,,, 11/03/2020,Sospechoso,,,,,, Francia,,,,,09/03/2020 
+,,,,,,, 175,,,CIUDAD DE MÉXICO,,,,,,M,,,,,,, 0,,,, 16/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 176,,,MÉXICO,,,,,,,,,,,F,,,,,, 75,,,,,03/03/2020,Sospechoso,,,,,,,Italia,,,,, 21/02/2020 
+,,,,,,, 177,,,BAJA CALIFORNIA,,,,,, F,,,,,,,18,,,, 17/03/2020,Sospechoso,,,,,,,Estados Unidos, 14/03/2020 
+,,,,,,, 178,,,MÉXICO,,,,,,,,,,,F,,,,,, 24,,,,,09/03/2020,Sospechoso,,,,,,,Contacto,,,, 08/03/2020 
+,,,,,,, 179,,,NAYARIT,,,,,,,,,, F,,,,,, 48,,,,,17/03/2020,Sospechoso,,,,,,,España,,,,, 17/03/2020 
+,,,,,,, 180,,,TAMAULIPAS,,,,,,,,,F,,,,,, 38,,,,,16/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 181,,,YUCATÁN,,,,,,,,,, M,,,,,, 46,,,,,16/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 182,,,MÉXICO,,,,,,,,,,,M,,,,,, 75,,,,,06/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 183,,,QUINTANA ROO,,,,,,,,F,,,,,, 54,,,,,15/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 184,,,QUINTANA ROO,,,,,,,,F,,,,,, 22,,,,,17/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 185,,,GUANAJUATO,,,,,,,,,F,,,,,, 48,,,,, 11/03/2020,Sospechoso,,,,,, Estados Unidos, 15/03/2020 
+,,,,,,, 186,,,SAN LUIS POTOSÍ,,,,,, F,,,,,, 64,,,,, 11/03/2020,Sospechoso,,,,,, Contacto,,,, NA 
+,,,,,,, 187,,,MÉXICO,,,,,,,,,,,M,,,,,,,19,,,, 26/02/2020,Sospechoso,,,,,,,Contacto,,,, 11/03/2020 
+,,,,,,, 188,,,MICHOACÁN,,,,,,,,, M,,,,,, 38,,,,,13/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 189,,,BAJA CALIFORNIA,,,,,, M,,,,,,,35,,,, 09/03/2020,Sospechoso,,,,,,,Estados Unidos, 12/03/2020 
+,,,,,,, 190,,,CHIHUAHUA,,,,,,,,, M,,,,,, 24,,,,,17/03/2020,Sospechoso,,,,,,,Estados Unidos, 12/03/2020 
+,,,,,,, 191,,,CIUDAD DE MÉXICO,,,,,,M,,,,,, 34,,,,,12/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 192,,,MICHOACÁN,,,,,,,,, M,,,,,,,23,,,, 08/03/2020,Sospechoso,,,,,,,Estados Unidos, 02/03/2020 
+,,,,,,, 193,,,QUINTANA ROO,,,,,,,,M,,,,,,,23,,,, 17/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 194,,,SAN LUIS POTOSÍ,,,,,, F,,,,,, 20,,,,,09/03/2020,Sospechoso,,,,,,,España,,,,, 17/03/2020 
+,,,,,,, 195,,,QUINTANA ROO,,,,,,,,M,,,,,, 43,,,,,15/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 196,,,MÉXICO,,,,,,,,,,,F,,,,,, 22,,,,,16/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 197,,,MICHOACÁN,,,,,,,,, M,,,,,, 48,,,,,09/03/2020,Sospechoso,,,,,,,España,,,,, 06/03/2020 
+,,,,,,, 198,,,CIUDAD DE MÉXICO,,,,,,F,,,,,, 58,,,,,14/03/2020,Sospechoso,,,,,,,Estados Unidos, 13/03/2020 
+,,,,,,, 199,,,MÉXICO,,,,,,,,,,,M,,,,,, 47,,,,,07/03/2020,Sospechoso,,,,,,,España,,,,, 07/03/2020 
+,,,,,,, 200,,,MICHOACÁN,,,,,,,,, F,,,,,, 38,,,,,07/03/2020,Sospechoso,,,,,,,España,,,,, 14/03/2020 
+,,,,,,, 201,,,BAJA CALIFORNIA,,,,,, M,,,,,, 29,,,,,13/03/2020,Sospechoso,,,,,,,Francia,,,,,13/03/2020 
+,,,,,,, 202,,,BAJA CALIFORNIA,,,,,, F,,,,,, 27,,,,,13/03/2020,Sospechoso,,,,,,,Francia,,,,,13/03/2020 
+,,,,,,, 203,,,MICHOACÁN,,,,,,,,, F,,,,,,, 3,,,, 13/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 204,,,VERACRUZ,,,,,,,,,,M,,,,,, 78,,,,,17/03/2020,Sospechoso,,,,,,,Estados Unidos, 17/03/2020 
+,,,,,,, 205,,,BAJA CALIFORNIA,,,,,, M,,,,,, 64,,,,,17/03/2020,Sospechoso,,,,,,,Estados Unidos, 08/03/2020 
+,,,,,,, 206,,,MORELOS,,,,,,,,,, M,,,,,, 20,,,,,18/03/2020,Sospechoso,,,,,,,Estados Unidos, 18/03/2020 
+,,,,,,, 207,,,JALISCO,,,,,,,,,, F,,,,,, 80,,,,,15/03/2020,Sospechoso,,,,,,,Estados Unidos, 13/03/2020 
+,,,,,,, 208,,,CHIHUAHUA,,,,,,,,, F,,,,,,,23,,,, 16/03/2020,Sospechoso,,,,,,,Estados Unidos, 08/03/2020 
+,,,,,,, 209,,,MÉXICO,,,,,,,,,,,F,,,,,, 52,,,,,18/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 210,,,CIUDAD DE MÉXICO,,,,,,F,,,,,, 54,,,,,15/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 211,,,VERACRUZ,,,,,,,,,,F,,,,,, 29,,,,,15/03/2020,Sospechoso,,,,,,,Estados Unidos, 16/03/2020 
+,,,,,,, 212,,,QUERETARO,,,,,,,,, F,,,,,, 26,,,,,16/03/2020,Sospechoso,,,,,,,España,,,,, 10/03/2020 
+,,,,,,, 213,,,QUINTANA ROO,,,,,,,,F,,,,,, 46,,,,,15/03/2020,Sospechoso,,,,,,,Estados Unidos, 01/03/2020 
+,,,,,,, 214,,,QUERETARO,,,,,,,,, F,,,,,, 24,,,,,13/03/2020,Sospechoso,,,,,,,España,,,,, 10/03/2020 
+,,,,,,, 215,,,COAHUILA,,,,,,,,,,F,,,,,, 38,,,,,10/03/2020,Sospechoso,,,,,,,España,,,,, 04/03/2020 
+,,,,,,, 216,,,SONORA,,,,,,,,,,,M,,,,,, 57,,,,,19/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 217,,,QUERETARO,,,,,,,,, M,,,,,, 45,,,,,13/03/2020,Sospechoso,,,,,,,Estados Unidos, 12/03/2020 
+,,,,,,, 218,,,TLAXCALA,,,,,,,,,,F,,,,,, 25,,,,,12/03/2020,Sospechoso,,,,,,,Contacto,,,, NA 
+,,,,,,, 219,,,CIUDAD DE MÉXICO,,,,,,F,,,,,, 60,,,,,10/03/2020,Sospechoso,,,,,,,Alemania,,,, 04/03/2020 
+,,,,,,,220,, MORELOS,,,,,,,,, F,,,,,,30,,,, 17/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,221,, JALISCO,,,,,,,,, M,,,,,, 56,,,,17/03/2020,Sospechoso,,,,, Estados Unidos, 04/03/2020 
+,,,,,,,222,, MÉXICO,,,,,,,,,,M,,,,,, 26,,,,14/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,223,, MORELOS,,,,,,,,, M,,,,,,28,,,, 16/03/2020,Sospechoso,,,,, Contacto,,,, 07/03/2020 
+,,,,,,,224,, CIUDAD DE MÉXICO,,,,,F,,,,,, 62,,,, 11/03/2020,Sospechoso,,,,,Contacto,,,, NA 
+,,,,,,,225,, CIUDAD DE MÉXICO,,,,,M,,,,,,64,,,, 13/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,226,, CIUDAD DE MÉXICO,,,,,F,,,,,,49,,,, 05/03/2020,Sospechoso,,,,, España,,,,, 28/02/2020 
+,,,,,,,227,, JALISCO,,,,,,,,, M,,,,,, 59,,,,12/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,228,, MORELOS,,,,,,,,, M,,,,,,44,,,, 17/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,229,, QUINTANA ROO,,,,,,,M,,,,,, 65,,,,18/03/2020,Sospechoso,,,,, España,,,,, 15/03/2020 
+,,,,,,,230,, GUERRERO,,,,,,,,,M,,,,,,64,,,, 16/03/2020,Sospechoso,,,,, Estados Unidos, 16/03/2020 
+,,,,,,,231,, CIUDAD DE MÉXICO,,,,,F,,,,,, 41,,,,14/03/2020,Sospechoso,,,,, Francia,,,,,14/03/2020 
+,,,,,,,232,, CIUDAD DE MÉXICO,,,,,M,,,,,, 27,,,,13/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,233,, JALISCO,,,,,,,,, M,,,,,,69,,,, 14/03/2020,Sospechoso,,,,, Francia,,,,,03/03/2020 
+,,,,,,,234,, QUERETARO,,,,,,,, M,,,,,, 33,,,,19/03/2020,Sospechoso,,,,, Estados Unidos, 10/03/2020 
+,,,,,,,235,, CIUDAD DE MÉXICO,,,,,F,,,,,,67,,,, 10/03/2020,Sospechoso,,,,, Alemania,,,, 29/02/2020 
+,,,,,,,236,, DURANGO,,,,,,,,, F,,,,,, 65,,,,14/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,237,, TABASCO,,,,,,,,, F,,,,,, 55,,,,18/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,238,, BAJA CALIFORNIA,,,,, M,,,,,, 35,,,,18/03/2020,Sospechoso,,,,, Estados Unidos, 17/03/2020 
+,,,,,,,239,, ZACATECAS,,,,,,,, F,,,,,,28,,,,,11/03/2020,Sospechoso,,,,,España,,,,, 14/03/2020 
+,,,,,,,240,, CIUDAD DE MÉXICO,,,,,M,,,,,, 31,,,, 11/03/2020,Sospechoso,,,,,España,,,,, 14/03/2020 
+,,,,,,,241,, MÉXICO,,,,,,,,,,M,,,,,, 33,,,,10/03/2020,Sospechoso,,,,, Alemania,,,, 07/03/2020 
+,,,,,,,242,, BAJA CALIFORNIA,,,,, M,,,,,, 35,,,,18/03/2020,Sospechoso,,,,, Estados Unidos, 16/03/2020 
+,,,,,,,243,, VERACRUZ,,,,,,,,,M,,,,,,24,,,, 16/03/2020,Sospechoso,,,,, Estados Unidos, 16/03/2020 
+,,,,,,,244,, TAMAULIPAS,,,,,,,,M,,,,,,30,,,, 18/03/2020,Sospechoso,,,,, España,,,,, 17/03/2020 
+,,,,,,,245,, BAJA CALIFORNIA,,,,, F,,,,,,28,,,, 17/03/2020,Sospechoso,,,,, Estados Unidos, 12/03/2020 
+,,,,,,,246,, OAXACA,,,,,,,,,,M,,,,,, 29,,,,15/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,247,, BAJA CALIFORNIA,,,,, F,,,,,,30,,,, 15/03/2020,Sospechoso,,,,, Estados Unidos, 15/03/2020 
+,,,,,,,248,, SONORA,,,,,,,,,,F,,,,,,48,,,, 17/03/2020,Sospechoso,,,,, España,,,,, 15/03/2020 
+,,,,,,,249,, TLAXCALA,,,,,,,,,M,,,,,,48,,,, 16/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,250,, BAJA CALIFORNIA,,,,, M,,,,,,,8,,,, 11/03/2020,Sospechoso,,,,,Estados Unidos, 16/03/2020 
+,,,,,,,251,, BAJA CALIFORNIA,,,,, M,,,,,, 39,,,,17/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,252,, CIUDAD DE MÉXICO,,,,,M,,,,,, 26,,,,10/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,253,, BAJA CALIFORNIA,,,,, M,,,,,, 37,,,,09/03/2020,Sospechoso,,,,, Estados Unidos, 16/03/2020 
+,,,,,,,254,, JALISCO,,,,,,,,, M,,,,,, 35,,,,16/03/2020,Sospechoso,,,,, Estados Unidos, 16/03/2020 
+,,,,,,,255,, VERACRUZ,,,,,,,,,F,,,,,, 35,,,,14/03/2020,Sospechoso,,,,, Estados Unidos, 13/03/2020 
+,,,,,,,256,, AGUASCALIENTES,,,,,,M,,,,,, 41,,,,19/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,257,, JALISCO,,,,,,,,, M,,,,,, 29,,,,06/03/2020,Sospechoso,,,,, Estados Unidos, 06/03/2020 
+,,,,,,,258,, JALISCO,,,,,,,,, M,,,,,,78,,,, 17/03/2020,Sospechoso,,,,, Estados Unidos, 17/03/2020 
+,,,,,,,259,, OAXACA,,,,,,,,,,F,,,,,, 26,,,,18/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,260,, CIUDAD DE MÉXICO,,,,,M,,,,,,30,,,, 12/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,261,, BAJA CALIFORNIA,,,,, F,,,,,, 33,,,, 11/03/2020,Sospechoso,,,,,Estados Unidos, 16/03/2020 
+,,,,,,,262,, MÉXICO,,,,,,,,,,F,,,,,, 52,,,,10/03/2020,Sospechoso,,,,, España,,,,, 12/03/2020 
+,,,,,,,263,, DURANGO,,,,,,,,, F,,,,,,30,,,, 16/03/2020,Sospechoso,,,,, España,,,,, 16/03/2020 
+,,,,,,,264,, GUANAJUATO,,,,,,,,F,,,,,,43,,,,,11/03/2020,Sospechoso,,,,,España,,,,, 18/03/2020 
+,,,,,,,265,, AGUASCALIENTES,,,,,,M,,,,,,,0,,,,19/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,266,, YUCATÁN,,,,,,,,, M,,,,,,64,,,, 17/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,267,, CIUDAD DE MÉXICO,,,,,M,,,,,,30,,,, 13/03/2020,Sospechoso,,,,, España,,,,, 14/03/2020 
+,,,,,,,268,, JALISCO,,,,,,,,, F,,,,,,50,,,, 12/03/2020,Sospechoso,,,,, España,,,,, 09/03/2020 
+,,,,,,,269,, JALISCO,,,,,,,,, M,,,,,, 53,,,,17/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,270,, VERACRUZ,,,,,,,,,M,,,,,, 27,,,,17/03/2020,Sospechoso,,,,, Contacto,,,, 16/03/2020 
+,,,,,,,271,, YUCATÁN,,,,,,,,, F,,,,,, 36,,,,16/03/2020,Sospechoso,,,,, Contacto,,,, NA 
+,,,,,,,272,, GUANAJUATO,,,,,,,,M,,,,,, 21,,,,16/03/2020,Sospechoso,,,,, España,,,,, 18/03/2020 
+,,,,,,,273,, GUANAJUATO,,,,,,,,F,,,,,,24,,,, 13/03/2020,Sospechoso,,,,, Estados Unidos, 11/03/2020 
+,,,,,,,274,, YUCATÁN,,,,,,,,, M,,,,,,45,,,, 15/03/2020,Sospechoso,,,,, Italia,,,,, 06/03/2020 
+,,,,,,,275,, JALISCO,,,,,,,,, F,,,,,, 22,,,,12/03/2020,Sospechoso,,,,, España,,,,, 17/03/2020 
+,,,,,,,276,,,MÉXICO,,,,,,,,,,M,,,,,,56,,,, 10/03/2020,Sospechoso,,,,,,España,,,,,12/03/2020 
+,,,,,,,277,,,GUANAJUATO,,,,,,,,F,,,,,,26,,,, 13/03/2020,Sospechoso,,,,,,España,,,,,09/03/2020 
+,,,,,,,278,,,YUCATÁN,,,,,,,,, F,,,,,,28,,,, 17/03/2020,Sospechoso,,,,,,España,,,,,14/03/2020 
+,,,,,,,279,,,QUINTANA ROO,,,,,,,M,,,,,, 51,,,, 11/03/2020,Sospechoso,,,,, España,,,,,16/03/2020 
+,,,,,,,280,,,SONORA,,,,,,,,,,M,,,,,,23,,,, 13/03/2020,Sospechoso,,,,,,España,,,,,29/02/2020 
+,,,,,,,281,,,GUANAJUATO,,,,,,,,F,,,,,,,1,,,,17/03/2020,Sospechoso,,,,,,España,,,,,15/03/2020 
+,,,,,,,282,,,JALISCO,,,,,,,,, F,,,,,,25,,,, 14/03/2020,Sospechoso,,,,,,Estados Unidos,16/03/2020 
+,,,,,,,283,,,MORELOS,,,,,,,,, M,,,,,,24,,,, 17/03/2020,Sospechoso,,,,,,Contacto,,,,18/03/2020 
+,,,,,,,284,,,VERACRUZ,,,,,,,,,M,,,,,,36,,,, 16/03/2020,Sospechoso,,,,,,Estados Unidos,17/03/2020 
+,,,,,,,285,,,SINALOA,,,,,,,,, M,,,,,,36,,,, 14/03/2020,Sospechoso,,,,,,Estados Unidos,16/03/2020 
+,,,,,,,286,,,VERACRUZ,,,,,,,,,M,,,,,,57,,,, 06/03/2020,Sospechoso,,,,,,España,,,,,09/03/2020 
+,,,,,,,287,,,GUANAJUATO,,,,,,,,M,,,,,,23,,,, 10/03/2020,Sospechoso,,,,,,España,,,,,18/02/2020 
+,,,,,,,288,,,MORELOS,,,,,,,,, M,,,,,,28,,,, 17/03/2020,Sospechoso,,,,,,Contacto,,,,18/03/2020 
+,,,,,,,289,,,JALISCO,,,,,,,,, F,,,,,,26,,,, 06/03/2020,Sospechoso,,,,,,Estados Unidos,06/03/2020 
+,,,,,,,290,,,GUANAJUATO,,,,,,,,F,,,,,,48,,,, 15/03/2020,Sospechoso,,,,,,Estados Unidos,10/03/2020 
+,,,,,,,291,,,GUANAJUATO,,,,,,,,F,,,,,,48,,,, 10/03/2020,Sospechoso,,,,,,Estados Unidos,16/03/2020 
+,,,,,,,292,,,MORELOS,,,,,,,,, F,,,,,,29,,,, 17/03/2020,Sospechoso,,,,,,Estados Unidos,17/03/2020 
+,,,,,,,293,,,MORELOS,,,,,,,,, F,,,,,,36,,,, 16/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,294,,,QUERETARO,,,,,,,, F,,,,,,29,,,, 10/03/2020,Sospechoso,,,,,,Estados Unidos,01/03/2020 
+,,,,,,,295,,,JALISCO,,,,,,,,, F,,,,,,35,,,, 13/03/2020,Sospechoso,,,,,,Alemania,,,,13/03/2020 
+,,,,,,,296,,,VERACRUZ,,,,,,,,,F,,,,,,60,,,, 06/03/2020,Sospechoso,,,,,,España,,,,,13/03/2020 
+,,,,,,,297,,,VERACRUZ,,,,,,,,,F,,,,,,25,,,, 16/03/2020,Sospechoso,,,,,,Estados Unidos,16/03/2020 
+,,,,,,,298,,,TAMAULIPAS,,,,,,,,F,,,,,,33,,,, 16/03/2020,Sospechoso,,,,,,Francia,,,, 07/03/2020 
+,,,,,,,299,,,CIUDAD DE MÉXICO,,,,,F,,,,,,26,,,, 18/03/2020,Sospechoso,,,,,,Contacto,,,,16/03/2020 
+,,,,,,,300,,,CIUDAD DE MÉXICO,,,,,F,,,,,,60,,,, 05/03/2020,Sospechoso,,,,,,Contacto,,,,15/03/2020 
+,,,,,,,301,,,JALISCO,,,,,,,,, M,,,,,,29,,,, 17/03/2020,Sospechoso,,,,,,Contacto,,,,16/03/2020 
+,,,,,,,302,,,GUANAJUATO,,,,,,,,M,,,,,, 7,,,, 14/03/2020,Sospechoso,,,,,,Estados Unidos,08/03/2020 
+,,,,,,,303,,,JALISCO,,,,,,,,, F,,,,,, 21,,,,14/03/2020,Sospechoso,,,,,,Francia,,,, 13/03/2020 
+,,,,,,,304,,,SAN LUIS POTOSÍ,,,,, F,,,,,,45,,,, 17/03/2020,Sospechoso,,,,,,Estados Unidos,18/03/2020 
+,,,,,,,305,,,GUERRERO,,,,,,,,,M,,,,,,,5,,,,16/03/2020,Sospechoso,,,,,,Estados Unidos,16/03/2020 
+,,,,,,,306,,,GUANAJUATO,,,,,,,,F,,,,,,23,,,, 12/03/2020,Sospechoso,,,,,,Alemania,,,,17/03/2020 
+,,,,,,,307,,,JALISCO,,,,,,,,, F,,,,,,44,,,, 15/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,308,,,TAMAULIPAS,,,,,,,,F,,,,,, 15,,,,02/03/2020,Sospechoso,,,,,,Estados Unidos,17/03/2020 
+,,,,,,,309,,,GUANAJUATO,,,,,,,,M,,,,,,22,,,, 15/03/2020,Sospechoso,,,,,,Contacto,,,,15/03/2020 
+,,,,,,,310,,,JALISCO,,,,,,,,, F,,,,,, 8,,,, 15/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,311,,,SAN LUIS POTOSÍ,,,,, F,,,,,,64,,,, 16/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,312,,,BAJA CALIFORNIA,,,,, F,,,,,,,3,,,, 11/03/2020,Sospechoso,,,,, Estados Unidos,16/03/2020 
+,,,,,,,313,,,SAN LUIS POTOSÍ,,,,, M,,,,,,46,,,, 12/03/2020,Sospechoso,,,,,,Estados Unidos,12/03/2020 
+,,,,,,,314,,,SINALOA,,,,,,,,, M,,,,,,59,,,, 15/03/2020,Sospechoso,,,,,,Estados Unidos,11/03/2020 
+,,,,,,,315,,,CIUDAD DE MÉXICO,,,,,F,,,,,, 9,,,, 15/03/2020,Sospechoso,,,,,,Estados Unidos,08/03/2020 
+,,,,,,,316,,,QUINTANA ROO,,,,,,,M,,,,,,36,,,, 18/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,317,,,GUANAJUATO,,,,,,,,M,,,,,,58,,,, 12/03/2020,Sospechoso,,,,,,Contacto,,,,04/03/2020 
+,,,,,,,318,,,SAN LUIS POTOSÍ,,,,, F,,,,,,22,,,, 16/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,319,,,OAXACA,,,,,,,,,,M,,,,,, 21,,,,15/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,320,,,GUANAJUATO,,,,,,,,F,,,,,,30,,,, 14/03/2020,Sospechoso,,,,,,España,,,,,17/03/2020 
+,,,,,,,321,,,CIUDAD DE MÉXICO,,,,,F,,,,,,37,,,, 15/03/2020,Sospechoso,,,,,,España,,,,,02/03/2020 
+,,,,,,,322,,,GUANAJUATO,,,,,,,,F,,,,,, 51,,,,15/03/2020,Sospechoso,,,,,,Italia,,,,,11/03/2020 
+,,,,,,,323,,,SAN LUIS POTOSÍ,,,,, M,,,,,,20,,,, 18/03/2020,Sospechoso,,,,,,España,,,,,19/03/2020 
+,,,,,,,324,,,MÉXICO,,,,,,,,,,M,,,,,,35,,,, 15/03/2020,Sospechoso,,,,,,España,,,,,09/03/2020 
+,,,,,,,325,,,CIUDAD DE MÉXICO,,,,,F,,,,,,36,,,, 16/03/2020,Sospechoso,,,,,,Francia,,,, 13/03/2020 
+,,,,,,,326,,,CIUDAD DE MÉXICO,,,,,F,,,,,,28,,,, 14/03/2020,Sospechoso,,,,,,Estados Unidos,10/03/2020 
+,,,,,,,327,,,SINALOA,,,,,,,,, F,,,,,,40,,,, 12/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,328,,,GUANAJUATO,,,,,,,,F,,,,,, 21,,,,12/03/2020,Sospechoso,,,,,,Alemania,,,,16/03/2020 
+,,,,,,,329,,,SAN LUIS POTOSÍ,,,,, F,,,,,,54,,,, 17/03/2020,Sospechoso,,,,,,Contacto,,,,NA 
+,,,,,,,330,,,CIUDAD DE MÉXICO,,,,,M,,,,,,33,,,, 15/03/2020,Sospechoso,,,,,,Estados Unidos,15/03/2020 
+,,,,,,,331,,,JALISCO,,,,,,,,, M,,,,,,42,,,, 04/03/2020,Sospechoso,,,,,,Estados Unidos,17/03/2020 
+,,,,,,,332,,,CIUDAD DE MÉXICO,,,,, M,,,,,,,0,,,,,16/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,333,,,COLIMA,,,,,,,,,, F,,,,,, 38,,,,,17/03/2020,Sospechoso,,,,,,Estados Unidos, 17/03/2020 
+,,,,,,,334,,,JALISCO,,,,,,,,,,F,,,,,, 35,,,,,14/03/2020,Sospechoso,,,,,,España,,,,, 14/03/2020 
+,,,,,,,335,,,HIDALGO,,,,,,,,,,M,,,,,, 60,,,,,16/03/2020,Sospechoso,,,,,,Estados Unidos, 05/03/2020 
+,,,,,,,336,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 42,,,, 06/03/2020,Sospechoso,,,,,, Contacto,,,, NA 
+,,,,,,,337,,,JALISCO,,,,,,,,,,F,,,,,, 25,,,,,10/03/2020,Sospechoso,,,,,,Estados Unidos, 14/03/2020 
+,,,,,,,338,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 34,,,, 06/03/2020,Sospechoso,,,,,, Estados Unidos, 09/03/2020 
+,,,,,,,339,,,JALISCO,,,,,,,,,,F,,,,,, 56,,,,,13/03/2020,Sospechoso,,,,,,Estados Unidos, 04/03/2020 
+,,,,,,,340,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 35,,,,,16/03/2020,Sospechoso,,,,,,Estados Unidos, 09/03/2020 
+,,,,,,,341,,,QUINTANA ROO,,,,,,, M,,,,,, 29,,,,,16/03/2020,Sospechoso,,,,,,España,,,,, 15/03/2020 
+,,,,,,,342,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 65,,,,,10/03/2020,Sospechoso,,,,,,España,,,,, 02/03/2020 
+,,,,,,,343,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 34,,,,,14/03/2020,Sospechoso,,,,,,España,,,,, 14/03/2020 
+,,,,,,,344,,,CIUDAD DE MÉXICO,,,,, F,,,,,,,19,,,, 14/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,345,,,AGUASCALIENTES,,,,,, F,,,,,, 28,,,, 09/03/2020,Sospechoso,,,,,, Contacto,,,, NA 
+,,,,,,,346,,,JALISCO,,,,,,,,,,M,,,,,, 29,,,,,17/03/2020,Sospechoso,,,,,,Singapur,,,, 09/03/2020 
+,,,,,,,347,,,CIUDAD DE MÉXICO,,,,, F,,,,,,, 3,,,, 14/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,348,,,CHIAPAS,,,,,,,,,,M,,,,,, 29,,,,,17/03/2020,Sospechoso,,,,,,Alemania,,,, 19/03/2020 
+,,,,,,,349,,,QUINTANA ROO,,,,,,, M,,,,,, 30,,,,,17/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,350,,,TABASCO,,,,,,,,,,F,,,,,, 46,,,,,17/03/2020,Sospechoso,,,,,,Estados Unidos, 09/03/2020 
+,,,,,,,351,,,JALISCO,,,,,,,,,,F,,,,,, 29,,,,,14/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,352,,,JALISCO,,,,,,,,,,M,,,,,, 26,,,,,14/03/2020,Sospechoso,,,,,,España,,,,, 07/02/2020 
+,,,,,,,353,,,TABASCO,,,,,,,,,,F,,,,,, 37,,,,,10/03/2020,Sospechoso,,,,,,Estados Unidos, 11/03/2020 
+,,,,,,,354,,,JALISCO,,,,,,,,,,M,,,,,, 26,,,,,13/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,355,,,VERACRUZ,,,,,,,,, F,,,,,, 48,,,, 06/03/2020,Sospechoso,,,,,, Contacto,,,, NA 
+,,,,,,,356,,,JALISCO,,,,,,,,,,F,,,,,, 66,,,, 07/03/2020,Sospechoso,,,,,, Estados Unidos, 13/03/2020 
+,,,,,,,357,,,TABASCO,,,,,,,,,,M,,,,,, 38,,,,,17/03/2020,Sospechoso,,,,,,Estados Unidos, 11/03/2020 
+,,,,,,,358,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 45,,,,,15/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,359,,,NAYARIT,,,,,,,,,,F,,,,,, 32,,,,,10/03/2020,Sospechoso,,,,,,Francia,,,,,18/03/2020 
+,,,,,,,360,,,TABASCO,,,,,,,,,,M,,,,,,,31,,,,08/02/2020,Sospechoso,,,,,, España,,,,, 15/03/2020 
+,,,,,,,361,,,JALISCO,,,,,,,,,,M,,,,,, 27,,,,,17/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,362,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 47,,,,,14/03/2020,Sospechoso,,,,,,España,,,,, 16/03/2020 
+,,,,,,,363,,,PUEBLA,,,,,,,,,, F,,,,,, 77,,,,,18/03/2020,Sospechoso,,,,,,Estados Unidos, 03/03/2020 
+,,,,,,,364,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 47,,,, 09/03/2020,Sospechoso,,,,,, Contacto,,,, NA 
+,,,,,,,365,,,SAN LUIS POTOSÍ,,,,,,M,,,,,, 39,,,,,15/03/2020,Sospechoso,,,,,,Alemania,,,, 03/03/2020 
+,,,,,,,366,,,JALISCO,,,,,,,,,,M,,,,,, 28,,,,,18/03/2020,Sospechoso,,,,,,Estados Unidos, 13/03/2020 
+,,,,,,,367,,,QUINTANA ROO,,,,,,, F,,,,,, 24,,,,,16/03/2020,Sospechoso,,,,,,Estados Unidos, 10/03/2020 
+,,,,,,,368,,,MICHOACÁN,,,,,,,,,F,,,,,,,21,,,, 16/03/2020,Sospechoso,,,,,,Alemania,,,, 12/03/2020 
+,,,,,,,369,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 44,,,,,14/03/2020,Sospechoso,,,,,,Francia,,,,,12/03/2020 
+,,,,,,,370,,,BAJA CALIFORNIA SUR,,,,M,,,,,, 30,,,,,15/03/2020,Sospechoso,,,,,,Estados Unidos, 13/03/2020 
+,,,,,,,371,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 34,,,,,14/03/2020,Sospechoso,,,,,,Francia,,,,,12/03/2020 
+,,,,,,,372,,,SAN LUIS POTOSÍ,,,,,,F,,,,,,,17,,,, 14/03/2020,Sospechoso,,,,,,Alemania,,,, 16/03/2020 
+,,,,,,,373,,,CIUDAD DE MÉXICO,,,,, F,,,,,, 37,,,,,13/03/2020,Sospechoso,,,,,,España,,,,, 11/03/2020 
+,,,,,,,374,,,PUEBLA,,,,,,,,,, F,,,,,, 26,,,, 09/03/2020,Sospechoso,,,,,, Contacto,,,, NA 
+,,,,,,,375,,,OAXACA,,,,,,,,,, F,,,,,, 39,,,,,15/03/2020,Sospechoso,,,,,,Estados Unidos, 28/02/2020 
+,,,,,,,376,,,CIUDAD DE MÉXICO,,,,, M,,,,,, 50,,,, 07/03/2020,Sospechoso,,,,,, España,,,,, 02/03/2020 
+,,,,,,,377,,,JALISCO,,,,,,,,,,F,,,,,, 63,,,,,13/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,378,,,JALISCO,,,,,,,,,,M,,,,,,,0,,,, 09/03/2020,Sospechoso,,,,,, España,,,,, 12/03/2020 
+,,,,,,,379,,,JALISCO,,,,,,,,,,M,,,,,, 49,,,,,18/03/2020,Sospechoso,,,,,,Estados Unidos, 08/03/2020 
+,,,,,,,380,,,TABASCO,,,,,,,,,,M,,,,,, 33,,,,,14/03/2020,Sospechoso,,,,,,España,,,,, 18/03/2020 
+,,,,,,,381,,,JALISCO,,,,,,,,,,F,,,,,, 34,,,,,11/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,382,,,JALISCO,,,,,,,,,,F,,,,,,,31,,,, 12/03/2020,Sospechoso,,,,,,Japón,,,,,,04/03/2020 
+,,,,,,,383,,,AGUASCALIENTES,,,,,, M,,,,,, 35,,,,,17/03/2020,Sospechoso,,,,,,España,,,,, 23/02/2020 
+,,,,,,,384,,,JALISCO,,,,,,,,,,M,,,,,, 26,,,,,17/03/2020,Sospechoso,,,,,,España,,,,, 07/03/2020 
+,,,,,,,385,,,QUINTANA ROO,,,,,,, M,,,,,, 34,,,,,13/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
+,,,,,,,386,,,MICHOACÁN,,,,,,,,,F,,,,,, 32,,,,,16/03/2020,Sospechoso,,,,,,Contacto,,,, 15/03/2020 
+,,,,,,,387,,,JALISCO,,,,,,,,,,F,,,,,, 43,,,,,14/03/2020,Sospechoso,,,,,,Estados Unidos, 08/03/2020 
+,,,,,, 388,,,PUEBLA,,,,,,,,, M,,,,,,25,,,, 17/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 389,,,AGUASCALIENTES,,,,, F,,,,,,25,,,,09/03/2020,Sospechoso,,,,,España,,,,,19/03/2020 
+,,,,,, 390,,,MICHOACÁN,,,,,,,,F,,,,,,25,,,,04/03/2020,Sospechoso,,,,,Estados Unidos,10/03/2020 
+,,,,,, 391,,,QUINTANA ROO,,,,,, F,,,,,,26,,,, 15/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 392,,,AGUASCALIENTES,,,,, M,,,,,,44,,,, 17/03/2020,Sospechoso,,,, España,,,,,17/03/2020 
+,,,,,, 393,,,QUINTANA ROO,,,,,, M,,,,,,42,,,, 12/03/2020,Sospechoso,,,, Francia,,,, 04/03/2020 
+,,,,,, 394,,,JALISCO,,,,,,,,,M,,,,,,44,,,, 11/03/2020,Sospechoso,,,, Contacto,,,,03/03/2020 
+,,,,,, 395,,,BAJA CALIFORNIA,,,,,F,,,,,,49,,,, 15/03/2020,Sospechoso,,,, Estados Unidos,18/03/2020 
+,,,,,, 396,,,PUEBLA,,,,,,,,, F,,,,,,25,,,, 12/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 397,,,DURANGO,,,,,,,,,M,,,,,,25,,,,16/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 398,,,TLAXCALA,,,,,,,, F,,,,,,51,,,,16/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 399,,,PUEBLA,,,,,,,,, F,,,,,,56,,,, 11/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 400,,,MICHOACÁN,,,,,,,,F,,,,,,25,,,,19/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 401,,,BAJA CALIFORNIA,,,,,F,,,,,,34,,,,18/03/2020,Sospechoso,,,,,Estados Unidos,09/03/2020 
+,,,,,, 402,,,TABASCO,,,,,,,,,M,,,,,,37,,,,18/03/2020,Sospechoso,,,,,España,,,,,17/03/2020 
+,,,,,, 403,,,PUEBLA,,,,,,,,, M,,,,,,29,,,,14/03/2020,Sospechoso,,,,,España,,,,,13/03/2020 
+,,,,,, 404,,,TABASCO,,,,,,,,,F,,,,,, 6,,,,18/03/2020,Sospechoso,,,,,Estados Unidos,17/03/2020 
+,,,,,, 405,,,PUEBLA,,,,,,,,, F,,,,,,28,,,, 17/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 406,,,BAJA CALIFORNIA,,,,,F,,,,,,24,,,, 15/03/2020,Sospechoso,,,, Estados Unidos,07/03/2020 
+,,,,,, 407,,,TLAXCALA,,,,,,,, F,,,,,,25,,,,16/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 408,,,BAJA CALIFORNIA,,,,,F,,,,,,36,,,, 13/03/2020,Sospechoso,,,, Contacto,,,,19/02/2020 
+,,,,,, 409,,,PUEBLA,,,,,,,,, M,,,,,,38,,,, 17/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 410,,,JALISCO,,,,,,,,,F,,,,,,61,,,,18/03/2020,Sospechoso,,,,,Estados Unidos,13/03/2020 
+,,,,,, 411,,,TABASCO,,,,,,,,,F,,,,,,42,,,,18/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 412,,,CIUDAD DE MÉXICO,,,, F,,,,,,40,,,,18/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 413,,,CIUDAD DE MÉXICO,,,, M,,,,,,46,,,, 15/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 414,,,CIUDAD DE MÉXICO,,,, F,,,,,,52,,,,10/03/2020,Sospechoso,,,,,Francia,,,, 15/03/2020 
+,,,,,, 415,,,TABASCO,,,,,,,,,F,,,,,,33,,,, 17/03/2020,Sospechoso,,,, Contacto,,,,17/03/2020 
+,,,,,, 416,,,TABASCO,,,,,,,,,M,,,,,,24,,,,16/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 417,,,JALISCO,,,,,,,,,M,,,,,,58,,,, 17/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 418,,,QUERETARO,,,,,,,,F,,,,,,35,,,,18/03/2020,Sospechoso,,,,,Estados Unidos,12/03/2020 
+,,,,,, 419,,,COAHUILA,,,,,,,, M,,,,,,18,,,,18/03/2020,Sospechoso,,,,,Contacto,,,,16/03/2020 
+,,,,,, 420,,,QUERETARO,,,,,,,,F,,,,,,44,,,,16/03/2020,Sospechoso,,,,,Estados Unidos,17/03/2020 
+,,,,,, 421,,,MÉXICO,,,,,,,,, M,,,,,, 1,,,, 12/03/2020,Sospechoso,,,, España,,,,,29/02/2020 
+,,,,,, 422,,,QUERETARO,,,,,,,,M,,,,,,46,,,,16/03/2020,Sospechoso,,,,,Estados Unidos,12/03/2020 
+,,,,,, 423,,,GUANAJUATO,,,,,,, M,,,,,,31,,,,18/03/2020,Sospechoso,,,,,España,,,,,13/03/2020 
+,,,,,, 424,,,QUERETARO,,,,,,,,F,,,,,,48,,,,19/03/2020,Sospechoso,,,,,Estados Unidos,18/02/2020 
+,,,,,, 425,,,QUERETARO,,,,,,,,F,,,,,,40,,,, 17/03/2020,Sospechoso,,,, Contacto,,,,15/03/2020 
+,,,,,, 426,,,QUERETARO,,,,,,,,F,,,,,,24,,,,18/03/2020,Sospechoso,,,,,Contacto,,,,15/03/2020 
+,,,,,, 427,,,GUANAJUATO,,,,,,, F,,,,,,27,,,,09/03/2020,Sospechoso,,,,,Francia,,,, 15/03/2020 
+,,,,,, 428,,,OAXACA,,,,,,,,, M,,,,,,36,,,,10/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 429,,,BAJA CALIFORNIA SUR,,,M,,,,,,48,,,,16/03/2020,Sospechoso,,,,,Estados Unidos,14/03/2020 
+,,,,,, 430,,,ZACATECAS,,,,,,,,M,,,,,,38,,,,08/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 431,,,GUANAJUATO,,,,,,, M,,,,,,30,,,,14/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 432,,,JALISCO,,,,,,,,,F,,,,,,44,,,,16/02/2020,Sospechoso,,,,,Estados Unidos,05/03/2020 
+,,,,,, 433,,,CIUDAD DE MÉXICO,,,, M,,,,,,32,,,,14/03/2020,Sospechoso,,,,,Estados Unidos,04/03/2020 
+,,,,,, 434,,,GUANAJUATO,,,,,,, F,,,,,,31,,,,16/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 435,,,AGUASCALIENTES,,,,, M,,,,,,51,,,,14/03/2020,Sospechoso,,,,,Estados Unidos,NA 
+,,,,,, 436,,,JALISCO,,,,,,,,,M,,,,,,40,,,, 15/03/2020,Sospechoso,,,, Estados Unidos,15/03/2020 
+,,,,,, 437,,,AGUASCALIENTES,,,,, M,,,,,,30,,,, 13/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 438,,,CIUDAD DE MÉXICO,,,, F,,,,,,49,,,, 13/03/2020,Sospechoso,,,, Francia,,,, 05/03/2020 
+,,,,,, 439,,,JALISCO,,,,,,,,,F,,,,,,34,,,, 13/03/2020,Sospechoso,,,, Estados Unidos,09/03/2020 
+,,,,,, 440,,,AGUASCALIENTES,,,,, M,,,,,,39,,,,14/03/2020,Sospechoso,,,,,Estados Unidos,NA 
+,,,,,, 441,,,DURANGO,,,,,,,,,M,,,,,,34,,,,18/03/2020,Sospechoso,,,,,Estados Unidos,19/03/2020 
+,,,,,, 442,,,AGUASCALIENTES,,,,, M,,,,,,40,,,,19/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 443,,,PUEBLA,,,,,,,,, M,,,,,,30,,,, 13/03/2020,Sospechoso,,,, Francia,,,, 29/02/2020 
+,,,,,, 444,, PUEBLA,,,,,,,, M,,,,,,51,,,,13/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 445,, DURANGO,,,,,,,,M,,,,,,39,,,,17/03/2020,Sospechoso,,,,Estados Unidos 09/03/2020 
+,,,,,, 446,, JALISCO,,,,,,,,F,,,,,,28,,,,12/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 447,, GUANAJUATO,,,,,, F,,,,,,29,,,,16/03/2020,Sospechoso,,,,España,,,, 16/03/2020 
+,,,,,, 448,, CIUDAD DE MÉXICO,,, M,,,,,,23,,,,14/03/2020,Sospechoso,,,,España,,,, 16/03/2020 
+,,,,,, 449,, SAN LUIS POTOSÍ,,,,F,,,,,,23,,,,16/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 450,, MÉXICO,,,,,,,, M,,,,,, 4,,,,01/03/2020,Sospechoso,,,,Alemania,,, 29/02/2020 
+,,,,,, 451,, VERACRUZ,,,,,,, F,,,,,,26,,,,15/03/2020,Sospechoso,,,,España,,,, 16/03/2020 
+,,,,,, 452,, CIUDAD DE MÉXICO,,, M,,,,, 64,,,, 12/03/2020,Sospechoso,,,,Alemania,,, 11/03/2020 
+,,,,,, 453,, GUANAJUATO,,,,,, M,,,,,,25,,,,10/03/2020,Sospechoso,,,,España,,,, 18/03/2020 
+,,,,,, 454,, CIUDAD DE MÉXICO,,, F,,,,,,53,,, 03/03/2020,Sospechoso,,,, Estados Unidos 27/02/2020 
+,,,,,, 455,, COLIMA,,,,,,,, M,,,,, 20,,,, 17/03/2020,Sospechoso,,,,Francia,,,,17/03/2020 
+,,,,,, 456,, GUANAJUATO,,,,,, F,,,,,,32,,,,16/03/2020,Sospechoso,,,,España,,,, 14/03/2020 
+,,,,,, 457,, CIUDAD DE MÉXICO,,, M,,,,,,56,,,,16/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 458,, GUANAJUATO,,,,,, M,,,,,,25,,,,10/03/2020,Sospechoso,,,,España,,,, 18/03/2020 
+,,,,,, 459,, BAJA CALIFORNIA,,,,F,,,,, 40,,,, 16/03/2020,Sospechoso,,,,Estados Unidos 05/03/2020 
+,,,,,, 460,, PUEBLA,,,,,,,, M,,,,,,29,,,,13/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 461,, COLIMA,,,,,,,, M,,,,, 70,,,, 18/03/2020,Sospechoso,,,,Contacto,,, 08/03/2020 
+,,,,,, 462,, CIUDAD DE MÉXICO,,, F,,,,,,58,,,,11/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 463,, PUEBLA,,,,,,,, M,,,,,,33,,,,13/03/2020,Sospechoso,,,,Estados Unidos 12/03/2020 
+,,,,,, 464,, YUCATÁN,,,,,,,,F,,,,, 47,,,, 18/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 465,, JALISCO,,,,,,,,M,,,,, 60,,,, 17/03/2020,Sospechoso,,,,Estados Unidos 13/03/2020 
+,,,,,, 466,, BAJA CALIFORNIA,,,,M,,,,,,35,,,,15/03/2020,Sospechoso,,,,Estados Unidos 13/03/2020 
+,,,,,, 467,, GUANAJUATO,,,,,, M,,,,,,26,,,,17/03/2020,Sospechoso,,,,España,,,, 13/03/2020 
+,,,,,, 468,, GUANAJUATO,,,,,, M,,,,,,21,,,,13/03/2020,Sospechoso,,,,Italia,,,, 15/03/2020 
+,,,,,, 469,, CIUDAD DE MÉXICO,,, F,,,,,,21,,,,12/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 470,, BAJA CALIFORNIA,,,,F,,,,,, 4,,,,18/03/2020,Sospechoso,,,,Estados Unidos 19/03/2020 
+,,,,,, 471,, CHIHUAHUA,,,,,,,F,,,,, 45,,,, 13/03/2020,Sospechoso,,,,Estados Unidos 09/03/2020 
+,,,,,, 472,, CIUDAD DE MÉXICO,,, M,,,,,,23,,,,12/03/2020,Sospechoso,,,,España,,,, 14/03/2020 
+,,,,,, 473,, BAJA CALIFORNIA,,,,F,,,,,,51,,,,17/03/2020,Sospechoso,,,,Estados Unidos 17/03/2020 
+,,,,,, 474,, MICHOACÁN,,,,,,,M,,,,, 45,,,,09/03/2020,Sospechoso,,,, España,,,, 04/03/2020 
+,,,,,, 475,, CIUDAD DE MÉXICO,,, M,,,,,,36,,,,13/03/2020,Sospechoso,,,,Estados Unidos 10/03/2020 
+,,,,,, 476,, TAMAULIPAS,,,,,, M,,,,,,32,,,,15/03/2020,Sospechoso,,,,España,,,, 04/03/2020 
+,,,,,, 477,, MICHOACÁN,,,,,,,M,,,,,,31,,,,18/03/2020,Sospechoso,,,,Francia,,,,03/09/2019 
+,,,,,, 478,, COAHUILA,,,,,,, F,,,,,,41,,,,18/03/2020,Sospechoso,,,,España,,,, 14/03/2020 
+,,,,,, 479,, CIUDAD DE MÉXICO,,, F,,,,,,27,,,,10/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 480,, CHIHUAHUA,,,,,,,M,,,,,,32,,,,19/03/2020,Sospechoso,,,,España,,,, 08/03/2020 
+,,,,,, 481,, MÉXICO,,,,,,,, M,,,,,,36,,, 26/02/2020,Sospechoso,,,, China,,,,,18/02/2020 
+,,,,,, 482,, GUANAJUATO,,,,,, F,,,,,,23,,,,16/03/2020,Sospechoso,,,,Estados Unidos 11/03/2020 
+,,,,,, 483,, BAJA CALIFORNIA,,,,F,,,,, 30,,,,09/03/2020,Sospechoso,,,, Estados Unidos 15/03/2020 
+,,,,,, 484,, QUERETARO,,,,,,,M,,,,, 54,,,, 15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 485,, TLAXCALA,,,,,,, F,,,,,,28,,,,16/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 486,, MICHOACÁN,,,,,,,F,,,,, 43,,,, 16/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 487,, MORELOS,,,,,,,,F,,,,,,28,,,,13/03/2020,Sospechoso,,,,Contacto,,, 08/03/2020 
+,,,,,, 488,, COAHUILA,,,,,,, M,,,,,,62,,,,18/03/2020,Sospechoso,,,,Estados Unidos 05/03/2020 
+,,,,,, 489,, TAMAULIPAS,,,,,, F,,,,,,22,,,,17/03/2020,Sospechoso,,,,España,,,, 14/03/2020 
+,,,,,, 490,, CIUDAD DE MÉXICO,,, M,,,,,,27,,, 05/03/2020,Sospechoso,,,, España,,,, 14/03/2020 
+,,,,,, 491,, TAMAULIPAS,,,,,, F,,,,, 48,,,, 15/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 492,, CIUDAD DE MÉXICO,,, M,,,,,,39,,,,13/03/2020,Sospechoso,,,,Francia,,,,16/03/2020 
+,,,,,, 493,, PUEBLA,,,,,,,, F,,,,, 44,,,, 15/03/2020,Sospechoso,,,,España,,,, 08/03/2020 
+,,,,,, 494,, MÉXICO,,,,,,,, F,,,,, 34,,,, 11/03/2020,Sospechoso,,,,Estados Unidos 04/03/2020 
+,,,,,, 495,, CHIHUAHUA,,,,,,,M,,,,, 47,,,, 18/03/2020,Sospechoso,,,,Estados Unidos 13/03/2020 
+,,,,,, 496,, JALISCO,,,,,,,,F,,,,,,33,,,,10/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 497,, CIUDAD DE MÉXICO,,, F,,,,,,57,,,,19/03/2020,Sospechoso,,,,Francia,,,,15/03/2020 
+,,,,,, 498,, MÉXICO,,,,,,,, M,,,,,,56,,,,17/03/2020,Sospechoso,,,,Contacto,,, NA 
+,,,,,, 499,, VERACRUZ,,,,,,, M,,,,, 34,,,, 18/03/2020,Sospechoso,,,,Estados Unidos 15/03/2020 
+,,,,,, 500,, CIUDAD DE MÉXICO,,,, F,,,,,,23,,,,15/03/2020,Sospechoso,,,, Estados Unidos,11/03/2020 
+,,,,,, 501,, SINALOA,,,,,,,,,M,,,,,,43,,,,14/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 502,, CIUDAD DE MÉXICO,,,, M,,,,,,25,,, 09/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 503,, MÉXICO,,,,,,,,, M,,,,,,58,,, 08/03/2020,Sospechoso,,,,,Contacto,,,,16/03/2020 
+,,,,,, 504,, MÉXICO,,,,,,,,, M,,,,,,34,,,,18/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 505,, BAJA CALIFORNIA,,,,,F,,,,,, 4,,,,15/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 506,, CIUDAD DE MÉXICO,,,, F,,,,,,35,,,,15/03/2020,Sospechoso,,,, Francia,,,, 16/03/2020 
+,,,,,, 507,, MÉXICO,,,,,,,,, F,,,,,,54,,,,18/03/2020,Sospechoso,,,, Estados Unidos,18/03/2020 
+,,,,,, 508,, MÉXICO,,,,,,,,, F,,,,,,30,,,,16/03/2020,Sospechoso,,,, Estados Unidos,05/03/2020 
+,,,,,, 509,, SINALOA,,,,,,,,,M,,,,,,27,,,,17/03/2020,Sospechoso,,,, Estados Unidos,13/03/2020 
+,,,,,, 510,, JALISCO,,,,,,,,,F,,,,,,51,,,,16/03/2020,Sospechoso,,,, Contacto,,,,16/03/2020 
+,,,,,, 511,, MÉXICO,,,,,,,,, M,,,,,,34,,,,05/03/2020,Sospechoso,,,, Estados Unidos,05/03/2020 
+,,,,,, 512,, COAHUILA,,,,,,,, M,,,,,,24,,,,16/03/2020,Sospechoso,,,, Estados Unidos,16/03/2020 
+,,,,,, 513,, YUCATÁN,,,,,,,,,M,,,,,,45,,,,14/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 514,, PUEBLA,,,,,,,,, F,,,,,,24,,,,15/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 515,, PUEBLA,,,,,,,,, F,,,,,,66,,,,15/03/2020,Sospechoso,,,, España,,,,,09/03/2020 
+,,,,,, 516,, MÉXICO,,,,,,,,, M,,,,,,22,,,,13/03/2020,Sospechoso,,,, Estados Unidos,14/03/2020 
+,,,,,, 517,, MÉXICO,,,,,,,,, M,,,,,,63,,,,12/03/2020,Sospechoso,,,, España,,,,,04/03/2020 
+,,,,,, 518,, SONORA,,,,,,,,, F,,,,,,28,,,,10/03/2020,Sospechoso,,,, Estados Unidos,08/03/2020 
+,,,,,, 519,, QUERETARO,,,,,,,,F,,,,,,26,,,,12/03/2020,Sospechoso,,,, Alemania,,,,19/03/2020 
+,,,,,, 520,, CIUDAD DE MÉXICO,,,, F,,,,, 48,,,, 13/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 521,, MÉXICO,,,,,,,,, M,,,,,,42,,,,16/03/2020,Sospechoso,,,, Estados Unidos,17/03/2020 
+,,,,,, 522,, CIUDAD DE MÉXICO,,,, M,,,,,,35,,, 08/03/2020,Sospechoso,,,,,España,,,,,08/03/2020 
+,,,,,, 523,, MÉXICO,,,,,,,,, M,,,,,,59,,,,03/03/2020,Sospechoso,,,, Alemania,,,,21/02/2020 
+,,,,,, 524,, QUERETARO,,,,,,,,M,,,,,,29,,,,18/03/2020,Sospechoso,,,, España,,,,,16/03/2020 
+,,,,,, 525,, COAHUILA,,,,,,,, M,,,,,,17,,,,18/03/2020,Sospechoso,,,, España,,,,,18/03/2020 
+,,,,,, 526,, SAN LUIS POTOSÍ,,,,,M,,,,, 40,,,, 18/03/2020,Sospechoso,,,, España,,,,,10/03/2020 
+,,,,,, 527,, COAHUILA,,,,,,,, M,,,,,,29,,,,17/03/2020,Sospechoso,,,, Estados Unidos,15/03/2020 
+,,,,,, 528,, MÉXICO,,,,,,,,, F,,,,,,35,,,,13/03/2020,Sospechoso,,,, Francia,,,, 07/03/2020 
+,,,,,, 529,, CIUDAD DE MÉXICO,,,, M,,,,,,12,,,,07/03/2020,Sospechoso,,,, Estados Unidos,08/03/2020 
+,,,,,, 530,, CIUDAD DE MÉXICO,,,, M,,,,,,47,,,,14/03/2020,Sospechoso,,,, Estados Unidos,11/03/2020 
+,,,,,, 531,, MÉXICO,,,,,,,,, F,,,,,,25,,,,05/03/2020,Sospechoso,,,, Francia,,,, 07/03/2020 
+,,,,,, 532,, MÉXICO,,,,,,,,, F,,,,,,31,,,,15/03/2020,Sospechoso,,,, Estados Unidos,15/03/2020 
+,,,,,, 533,, QUERETARO,,,,,,,,F,,,,,,27,,,,12/03/2020,Sospechoso,,,, Contacto,,,,16/03/2020 
+,,,,,, 534,, MICHOACÁN,,,,,,,,M,,,,,,34,,,,19/03/2020,Sospechoso,,,, Estados Unidos,06/03/2020 
+,,,,,, 535,, SONORA,,,,,,,,, F,,,,,,25,,,,16/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 536,, CIUDAD DE MÉXICO,,,, F,,,,,,27,,,,18/03/2020,Sospechoso,,,, Francia,,,, 15/03/2020 
+,,,,,, 537,, CIUDAD DE MÉXICO,,,, F,,,,,,58,,,,12/03/2020,Sospechoso,,,, España,,,,,13/03/2020 
+,,,,,, 538,, MÉXICO,,,,,,,,, F,,,,,,52,,,,13/03/2020,Sospechoso,,,, Estados Unidos,15/03/2020 
+,,,,,, 539,, CIUDAD DE MÉXICO,,,, M,,,,,,33,,,,11/03/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 540,, MÉXICO,,,,,,,,, F,,,,,,51,,,,16/03/2020,Sospechoso,,,, España,,,,,15/03/2020 
+,,,,,, 541,, MÉXICO,,,,,,,,, M,,,,,,29,,, 04/03/2020,Sospechoso,,,,,Alemania,,,,07/03/2020 
+,,,,,, 542,, YUCATÁN,,,,,,,,,F,,,,,,43,,,,12/03/2020,Sospechoso,,,, España,,,,,08/03/2020 
+,,,,,, 543,, COAHUILA,,,,,,,, M,,,,,,68,,,,10/03/2020,Sospechoso,,,, Contacto,,,,14/03/2020 
+,,,,,, 544,, PUEBLA,,,,,,,,, F,,,,,,30,,,,15/03/2020,Sospechoso,,,, Estados Unidos,11/03/2020 
+,,,,,, 545,, YUCATÁN,,,,,,,,,F,,,,,,11,,, 09/03/2020,Sospechoso,,,,,Estados Unidos,26/02/2020 
+,,,,,, 546,, CHIHUAHUA,,,,,,,,M,,,,,,27,,,,18/03/2020,Sospechoso,,,, Estados Unidos,17/03/2020 
+,,,,,, 547,, CIUDAD DE MÉXICO,,,, F,,,,,, 2,,,,29/02/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 548,, CIUDAD DE MÉXICO,,,, M,,,,,,32,,,,16/02/2020,Sospechoso,,,, Contacto,,,,NA 
+,,,,,, 549,, MÉXICO,,,,,,,,, F,,,,,,20,,,,26/02/2020,Sospechoso,,,, Italia,,,,,24/02/2020 
+,,,,,, 550,, MÉXICO,,,,,,,,, F,,,,,,32,,,,26/02/2020,Sospechoso,,,, Alemania,,,,28/02/2020 
+,,,,,, 551,, CIUDAD DE MÉXICO,,,, F,,,,, 40,,,,06/03/2020,Sospechoso,,,,,España,,,,,08/03/2020 
+,,,,,, 552,, CIUDAD DE MÉXICO,,,, F,,,,,,50,,,,01/03/2020,Sospechoso,,,, Estados Unidos,08/03/2020 
+,,,,,, 553,, MÉXICO,,,,,,,,, F,,,,,,47,,, 06/03/2020,Sospechoso,,,,,Contacto,,,,NA 
+,,,,,, 554,, CIUDAD DE MÉXICO,,,, F,,,,,,29,,,,27/02/2020,Sospechoso,,,, España,,,,,14/02/2020 
+,,,,,, 555,, CIUDAD DE MÉXICO,,,, F,,,,,,25,,, 04/03/2020,Sospechoso,,,,,Italia,,,,,01/03/2020 
+,,,,,, 556,,,CIUDAD DE MÉXICO,,,, M,,,,, 26,,,, 29/02/2020,Sospechoso,,,,,Japón,,,,,17/02/2020 
+,,,,,, 557,,,CIUDAD DE MÉXICO,,,, F,,,,,,22,,,,01/03/2020,Sospechoso,,,,,Contacto,,, NA 
+,,,,,, 558,,,CIUDAD DE MÉXICO,,,, F,,,,,,21,,, 04/03/2020,Sospechoso,,,,, Alemania,,, 03/03/2020 
+,,,,,, 559,,,CIUDAD DE MÉXICO,,,, F,,,,,,23,,, 06/03/2020,Sospechoso,,,,, Italia,,,, 06/03/2020 
+,,,,,, 560,,,CIUDAD DE MÉXICO,,,, M,,,,, 27,,,,04/03/2020,Sospechoso,,,,, Italia,,,, 29/02/2020 
+,,,,,, 561,,,JALISCO,,,,,,,,,F,,,,,,33,,, 09/03/2020,Sospechoso,,,,, Francia,,,,08/03/2020 
+,,,,,, 562,,,MÉXICO,,,,,,,,, M,,,,, 43,,,, 02/03/2020,Sospechoso,,,,,Estados Unidos 26/02/2020 
+,,,,,, 563,,,MÉXICO,,,,,,,,, F,,,,,,33,,,,10/03/2020,Sospechoso,,,,,Italia,,,, 29/02/2020 
+,,,,,, 564,,,MÉXICO,,,,,,,,, M,,,,, 44,,,, 01/03/2020,Sospechoso,,,,,España,,,, 03/03/2020 
+,,,,,, 565,,,MÉXICO,,,,,,,,, M,,,,, 34,,,, 05/03/2020,Sospechoso,,,,,Estados Unidos 01/03/2020 
+,,,,,, 566,,,MÉXICO,,,,,,,,, M,,,,, 43,,,, 10/03/2020,Sospechoso,,,,,Contacto,,, NA 
+,,,,,, 567,,,QUERETARO,,,,,,,,M,,,,, 36,,,,07/03/2020,Sospechoso,,,,, Estados Unidos 08/03/2020 
+,,,,,, 568,,,NUEVO LEÓN,,,,,,, F,,,,, 27,,,,09/03/2020,Sospechoso,,,,, Italia,,,, 07/03/2020 
+,,,,,, 569,,,MÉXICO,,,,,,,,, M,,,,, 29,,,,07/03/2020,Sospechoso,,,,, España,,,, 29/02/2020 
+,,,,,, 570,,,CIUDAD DE MÉXICO,,,, F,,,,,,23,,, 09/03/2020,Sospechoso,,,,, España,,,, 07/03/2020 
+,,,,,, 571,,,YUCATÁN,,,,,,,,,M,,,,, 38,,,,08/03/2020,Sospechoso,,,,, España,,,, 04/03/2020 
+,,,,,, 572,,,CIUDAD DE MÉXICO,,,, M,,,,, 59,,,, 19/02/2020,Sospechoso,,,,,Italia,,,, 28/02/2020 
+,,,,,, 573,,,BAJA CALIFORNIA,,,,,M,,,,, 30,,,, 13/02/2020,Sospechoso,,,,,Estados Unidos 05/03/2020 
+,,,,,, 574,,,PUEBLA,,,,,,,,, M,,,,, 26,,,, 12/03/2020,Sospechoso,,,,,Contacto,,, NA 
+,,,,,, 575,,,COAHUILA,,,,,,,, M,,,,,,61,,,,11/03/2020,Sospechoso,,,,,Estados Unidos 07/03/2020 
+,,,,,, 576,,,CIUDAD DE MÉXICO,,,, M,,,,,,35,,,,10/02/2020,Sospechoso,,,,,Contacto,,, NA 
+,,,,,, 577,,,COLIMA,,,,,,,,, F,,,,, 34,,,, 12/03/2020,Sospechoso,,,,,Estados Unidos 11/03/2020 
+,,,,,, 578,,,CIUDAD DE MÉXICO,,,, F,,,,,,55,,,,11/03/2020,Sospechoso,,,,,España,,,, 29/02/2020 
+,,,,,, 579,,,BAJA CALIFORNIA,,,,,M,,,,, 50,,,, 12/03/2020,Sospechoso,,,,,Estados Unidos 10/03/2020 
+,,,,,, 580,,,MÉXICO,,,,,,,,, M,,,,,,33,,,,05/03/2020,Sospechoso,,,,,Estados Unidos 01/03/2020 
+,,,,,, 581,,,AGUASCALIENTES,,,,, M,,,,, 56,,,,09/03/2020,Sospechoso,,,,, Estados Unidos 14/03/2020 
+,,,,,, 582,,,CIUDAD DE MÉXICO,,,, F,,,,,,25,,,,12/03/2020,Sospechoso,,,,,Alemania,,, 09/03/2020 
+,,,,,, 583,,,JALISCO,,,,,,,,,F,,,,, 20,,,, 02/03/2020,Sospechoso,,,,,Francia,,,,08/03/2020 
+,,,,,, 584,,,MÉXICO,,,,,,,,, M,,,,,,61,,, 08/03/2020,Sospechoso,,,,, España,,,, 08/03/2020 
+,,,,,, 585,,,MÉXICO,,,,,,,,, M,,,,,,21,,, 07/03/2020,Sospechoso,,,,, España,,,, 13/03/2020 
+,,,,,, 586,,,MÉXICO,,,,,,,,, F,,,,,,23,,, 07/03/2020,Sospechoso,,,,, España,,,, 13/03/2020 
+,,,,,, 587,,,CIUDAD DE MÉXICO,,,, M,,,,,,13,,,,13/03/2020,Sospechoso,,,,,España,,,, 13/03/2020 
+,,,,,, 588,,,MÉXICO,,,,,,,,, M,,,,,,55,,, 09/03/2020,Sospechoso,,,,, Estados Unidos 09/03/2020 
+,,,,,, 589,,,CIUDAD DE MÉXICO,,,, M,,,,, 37,,,, 10/03/2020,Sospechoso,,,,,Contacto,,, NA 
+,,,,,, 590,,,MÉXICO,,,,,,,,, M,,,,,,31,,,,13/03/2020,Sospechoso,,,,,España,,,, 13/03/2020 
+,,,,,, 591,,,MÉXICO,,,,,,,,, M,,,,, 54,,,, 13/03/2020,Sospechoso,,,,,España,,,, 13/03/2020 
+,,,,,, 592,,,GUERRERO,,,,,,,, F,,,,, 62,,,, 14/03/2020,Sospechoso,,,,,Francia,,,,02/03/2020 
+,,,,,, 593,,,BAJA CALIFORNIA,,,,,M,,,,, 54,,,, 13/03/2020,Sospechoso,,,,,Estados Unidos 12/03/2020 
+,,,,,, 594,,,BAJA CALIFORNIA,,,,,M,,,,,,33,,,,10/03/2020,Sospechoso,,,,,Estados Unidos 08/03/2020 
+,,,,,, 595,,,CIUDAD DE MÉXICO,,,, M,,,,,,35,,, 08/03/2020,Sospechoso,,,,, Contacto,,, 01/03/2020 
+,,,,,, 596,,,CIUDAD DE MÉXICO,,,, F,,,,,,33,,,,14/03/2020,Sospechoso,,,,,Contacto,,, 14/03/2020 
+,,,,,, 597,,,CIUDAD DE MÉXICO,,,, M,,,,, 37,,,, 14/03/2020,Sospechoso,,,,,Contacto,,, NA 
+,,,,,, 598,,,VERACRUZ,,,,,,,, M,,,,, 27,,,,07/03/2020,Sospechoso,,,,, España,,,, 13/03/2020 
+,,,,,, 599,,,MÉXICO,,,,,,,,, F,,,,, 30,,,,07/02/2020,Sospechoso,,,,, Singapur,,, 06/03/2020 
+,,,,,, 600,,,GUERRERO,,,,,,,, M,,,,,,32,,,,16/03/2020,Sospechoso,,,,,Estados Unidos 01/03/2020 
+,,,,,, 601,,,MÉXICO,,,,,,,,, M,,,,, 30,,,,06/03/2020,Sospechoso,,,,, Singapur,,, 06/03/2020 
+,,,,,, 602,,,CIUDAD DE MÉXICO,,,, F,,,,, 57,,,, 15/03/2020,Sospechoso,,,,,Estados Unidos 11/03/2020 
+,,,,,, 603,,,MÉXICO,,,,,,,,, M,,,,,,33,,,,10/03/2020,Sospechoso,,,,,Estados Unidos 10/03/2020 
+,,,,,, 604,,,CIUDAD DE MÉXICO,,,, M,,,,, 40,,,,09/03/2020,Sospechoso,,,,, Italia,,,, 08/03/2020 
+,,,,,, 605,,,MÉXICO,,,,,,,,, M,,,,,,15,,, 08/03/2020,Sospechoso,,,,, Estados Unidos 08/03/2020 
+,,,,,, 606,,,MÉXICO,,,,,,,,, M,,,,,,17,,,,10/03/2020,Sospechoso,,,,,Estados Unidos 08/03/2020 
+,,,,,,, 
