@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+clear
 
 set -o errexit
 set -o pipefail
@@ -18,7 +19,8 @@ __root="$(cd "$(dirname "${__dir}")" && pwd)"
 URL_BASE="https://www.gob.mx"
 URL_SDOC="https://www.gob.mx/salud/archivo/documentos"
 STR_CTD="comunicado-tecnico-diario"
-RES_FILE="recursos/url_ctd.txt"
+RES_PATH="recursos/"
+RES_FILE="url_ctd.txt"
 DOC_PATH="originales/"
 HTML_NME="covid.html"
 
@@ -26,9 +28,20 @@ URLS_CTD=()
 DOCS=()
 DOCS_FILE=()
 
-#DAT_QURY=$(date +"%Y%m%d_%H%M%S")
+function validateUrlCTD(){
+    local RES_WEB="$(curl -s -I ${URL_SDOC} | sed -n '1 p' | sed $"s@[^[:print:]\t]@@g" | grep -e "200" 1>/dev/null;echo $?)"
 
-function getUrlsCTD () {
+    if [[ "${RES_WEB}" = "0" ]];then
+        getUrlsCTD
+        getLastUrlsInFile
+    else
+#Si la primera vez que se ejecuta el script la URL https://www.gob.mx/salud/archivo/documentos no está disponible dará un error
+        local URL_DOCS="$(tail -n 1 "${RES_PATH}${RES_FILE}" | sed -e "s@.*http@http@g")"
+    fi
+    echo -e "Se buscan archivos en la URL:\n${URL_DOCS}"
+
+}
+function getUrlsCTD() {
     URLS_CTD=($(
         echo -e "${URL_BASE}$(
             curl -s "${URL_SDOC}" |\
@@ -38,46 +51,64 @@ function getUrlsCTD () {
             sed -e "s@.*<a class=\"small-link\" href=\"\(.*\)\" target=\".*@\1@g"
             )"\
         ))
-
-    checkUrlFile "${RES_FILE}"
-    echo -e "${DAT_QURY} ${URLS_CTD[*]}" >> "${RES_FILE}"
+    checkUrlFile "${RES_PATH}" "${RES_FILE}"
     
     for URL_CTD in ${URLS_CTD[*]};do
-        cleanUrlFile "${URL_CTD}" "${RES_FILE}"
+        updateUrlInFile "${URL_CTD}"
     done
 }
 
 function checkUrlFile(){
-    FILE="$1"
-    if [[ ! -f "${FILE}" ]];then
-        touch "${FILE}"
+    local DIR="$1"
+    local FILE="$2"
+
+    if [[ ! -f "${DIR}${FILE}" ]];then
+        checkDirExist "${DIR}"
+        echo "" > "${DIR}${FILE}"
     fi
 }
 
 function checkDirExist(){
-    DIR="$1"
+    local DIR="$1"
+
     if [[ ! -d "${DIR}" ]];then
-        mkdir "${DIR}"
+        mkdir -p "${DIR}"
     fi
 }
 
-function cleanUrlFile(){
-    URL_STRN="$(echo -e "$1" | sed -e "s@\/@\\\/@g")"
-    sed -i "/$(echo "${URL_STRN}")/d" $2
-    echo -e "${DAT_QURY} $1" >> "$2"
+function updateUrlInFile(){
+    local URL="$1"
+    local URL_EXIST="$(cat "${RES_PATH}${RES_FILE}" | grep -e "${URL}" 1>/dev/null; echo $?)"
+
+    if [[ "${URL_EXIST}" != "0" ]];then
+        echo -e "${DAT_QURY} ${URL}" >> "${RES_PATH}${RES_FILE}"
+    fi
 }
 
-function downloadFilesFromCTD(){
-        DOCS=($(\
-            curl -s $1 |\
+#Puede causar error si la pagina principal del CTD tiene mas de un enlace a los archivos PDF
+function getLastUrlsInFile(){
+    local COUNT_LINES="$(wc -l "${RES_PATH}${RES_FILE}" | sed -e "s@\(.*\) .*@\1@g")"
+    URL_DOCS="$(tail -n 1 "${RES_PATH}${RES_FILE}" | sed -e "s@.*http@http@g")"
+
+    if [[ "${COUNT_LINES}" != "1" ]];then
+        echo -e "\nExiste mas de una URL en el archivo de URLS"
+        cat "${RES_PATH}${RES_FILE}" | sed -e "s@.*http@http@g"
+        echo -e "\nSe usa la ultima de la lista:\n${URL_DOCS}"
+    fi
+}
+
+
+function dwnloadFilesFromCTD(){
+        checkDirExist "${DOC_PATH}"
+	local DOC_NME2=""
+        local DOCS=($(\
+            curl -s ${URL_DOCS} |\
             grep -e "<a href=\"/cms" |\
             sed -e "s@.*<a href=\"/cms\(.*\)\"@${URL_BASE}/cms\1@g"\
         ))
-
-        checkDirExist "${DOC_PATH}"
         
         for DOC in ${DOCS[*]};do
-            DOC_BNME=$(basename $(echo -e "${DOC}"))
+            local DOC_BNME=$(basename $(echo -e "${DOC}"))
             if [[ ${DOC} = *ecnico*pdf ]];then
                 DOC_NME2=$(
                     echo "${DOC_BNME}" |\
@@ -111,49 +142,37 @@ function downloadFilesFromCTD(){
             
             if [[ ${DOCS_FILE_LEN} -gt 1 ]];then
                 for DOC_FILE in ${DOCS_FILE[*]};do
-                    if [[ -f "${DOC_PATH}${DOC_FILE}" ]] && [[ "${DOC_PATH}${DOC_FILE}" != "${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf" ]];then
+                    if [[ "${DOC_PATH}${DOC_FILE}" != "${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf" ]];then
                         DOC_MD5O=$(md5sum "${DOC_PATH}${DOC_FILE}" | sed -e "s@\(.*\)  .*@\1@g")
                         DOC_MD5N=$(md5sum "${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf" | sed -e "s@\(.*\)  .*@\1@g")
                         if [[ "${DOC_MD5O}" = "${DOC_MD5N}" ]];then
                             FLAG_FILE_EXIST="1"
-#                        else
-#                            echo -e "1Se descargo archivo "$DOC_PATH$DOC_NME2""_""${DAT_QURY}.pdf""
                         fi
                     fi
                 done
 
                 if [[ "${FLAG_FILE_EXIST}" = "1" ]];then
-                    rm -rf "$DOC_PATH$DOC_NME2""_""${DAT_QURY}.pdf"
+                    rm -rf "${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf"
+                    echo -e "No se descarga ${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf el archivo ya existe"
                 else
-                    echo -e "2Se descargo archivo "$DOC_PATH$DOC_NME2""_""${DAT_QURY}.pdf""
+                    echo -e "2Se descargo archivo "${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf""
                 fi
             else
-                echo -e "3Se descargo archivo "$DOC_PATH$DOC_NME2""_""${DAT_QURY}.pdf""
+                echo -e "3Se descargo archivo "${DOC_PATH}${DOC_NME2}""_""${DAT_QURY}.pdf""
             fi
         done
 }
 
-function checkUrlsInFile(){
-    if [[ "$(wc -l "${RES_FILE}" | sed -e "s@\(.*\) .*@\1@g")" == "1" ]];then
-        URL_DOCS="$(tail -n 1 ${RES_FILE} | sed -e "s@.*_.* https:@https:@g")"
-    else
-        printf "Existe mas de una url en el archivo de URLS\n\n"
-        cat "${RES_FILE}"
-        printf "\nEscribe la url que contiene a los archivos:\n"
-        read -r URL_DOCS
-    fi
-}
-
 function convPdftoCsv(){
-    PDFS_POS_SOS=($(ls ${DOC_PATH} | grep -e "sos\|pos"))
+    local PDFS_POS_SOS=($(ls ${DOC_PATH} | grep -e "sos\|pos"))
     for PDF_POS_SOS in ${PDFS_POS_SOS[*]};do
-        EXT_NAME="${PDF_POS_SOS##*.}"
-        FILE_NAME="${PDF_POS_SOS%.*}"
-        EXT_CSV=".csv"
+        local FILE_NAME="${PDF_POS_SOS%.*}"
+        local EXT_NAME="${PDF_POS_SOS##*.}"
+        local EXT_CSV=".csv"
 
         if [[ ! -f "${DOC_PATH}${FILE_NAME}${EXT_CSV}" ]];then
             pdftops "${DOC_PATH}${FILE_NAME}.${EXT_NAME}"
-            touch "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+            echo "" > "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             echo -e "# Caso,Estado,Sexo,Fecha de Inicio de sintomas,Edad,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
 
             if [[ $(echo -e "${FILE_NAME}" | grep -e "pos") ]];then
@@ -182,23 +201,25 @@ function convPdftoCsv(){
     done
 }
 
+function invCountNewQury(){
+    echo -e "Esperando para hacer una nueva consulta en:"
+    for sec in {900..1}; do
+        printf "\r%03d segundos" ${sec}
+        sleep 1
+    done
+    echo -e "\n"
+}
+
+
 function main (){
-#Revisa cuantas urls contienen la cadena STR_CTD="comunicado-tecnico-diario" 
 while true;do
+#date +"%Y/%m/%d %H:%M:%S.%4N"
     DAT_QURY="$(date +"%Y%m%d_%H%M%S")"
-    echo -e "${DAT_QURY} Se muestra el contenido del archivo que contiene las urls del Comunicado Tecnico Diario"
-    if [[ "$(curl -s -I ${URL_SDOC} | sed -n '1 p' | sed $"s@[^[:print:]\t]@@g")" = "HTTP/1.1 200 OK" ]];then
-        echo -e "Revisando si la URL del CTD cambio"
-        getUrlsCTD
-    else
-        echo -e "El servidor esta en mantenimiento, se ocupa la ultima URL del archivo"
-    fi
-    cat "${RES_FILE}"
-    checkUrlsInFile
-    downloadFilesFromCTD "${URL_DOCS}"        
+    echo -e "Inicio de consulta: ${DAT_QURY}"
+    validateUrlCTD
+    dwnloadFilesFromCTD
     convPdftoCsv
-    echo -e "Esperando para hacer una nueva consulta\n\n"
-    sleep 600
+    invCountNewQury
 done
 }
 
