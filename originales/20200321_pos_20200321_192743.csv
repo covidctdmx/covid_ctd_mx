@@ -62,7 +62,7 @@
 61,MÉXICO,M,27,13/03/2020,confirmado,Contacto,NA
 62,MÉXICO,F,47,05/03/2020,confirmado,Estados Unidos,29/02/2020
 63,MÉXICO,F,59,07/03/2020,confirmado,Francia,08/03/2020
-64,CIUDAD DE MÉXICO,M,41,09/03/2020,confirmado,En investigación,NA
+64,CIUDAD DE MÉXICO,M,41,09/03/2020,confirmado,Contacto,NA
 65,GUANAJUATO,M,39,12/03/2020,confirmado,Alemania,10/03/2020
 66,NUEVO LEÓN,M,72,11/03/2020,confirmado,Estados Unidos,10/03/2020
 67,CHIHUAHUA,M,29,12/03/2020,confirmado,Alemania,12/03/2020
@@ -197,8 +197,56 @@
 196,JALISCO,F,75,08/03/2020,confirmado,Estados Unidos,14/03/2020
 197,JALISCO,M,80,14/03/2020,confirmado,Estados Unidos,14/03/2020
 198,NUEVO LEÓN,F,31,10/03/2020,confirmado,Contacto,10/03/2020
-199,PUEBLA,M,21,17/03/2020,confirmado,España,15/03/2020
-200,PUEBLA,M,56,14/03/2020,confirmado,Estados Unidos,07/03/2020
-201,CHIHUAHUA,F,18,15/03/2020,confirmado,Estados Unidos,14/03/2020
-202,JALISCO,M,77,13/03/2020,confirmado,Contacto,NA
-203,JALISCO,M,20,17/03/2020,confirmado,Contacto,NA
+199,CIUDAD DE MÉXICO,M,38,10/03/2020,confirmado,Estados Unidos,07/03/2020
+200,CIUDAD DE MÉXICO,F,35,09/03/2020,confirmado,Contacto,NA
+201,CIUDAD DE MÉXICO,M,61,16/03/2020,confirmado,España,11/03/2020
+202,CIUDAD DE MÉXICO,F,37,14/03/2020,confirmado,Contacto,NA
+203,CIUDAD DE MÉXICO,M,43,13/03/2020,confirmado,Contacto,NA
+204,BAJA CALIFORNIA,M,26,15/03/2020,confirmado,Francia,13/03/2020
+205,HIDALGO,F,57,14/03/2020,confirmado,España,16/03/2020
+206,PUEBLA,M,21,17/03/2020,confirmado,España,15/03/2020
+207,BAJA CALIFORNIA,F,34,11/03/2020,confirmado,Estados Unidos,08/03/2020
+208,CIUDAD DE MÉXICO,M,0,16/03/2020,confirmado,Contacto,NA
+209,PUEBLA,M,56,14/03/2020,confirmado,Estados Unidos,07/03/2020
+210,NAYARIT,F,48,17/03/2020,confirmado,España,17/03/2020
+211,PUEBLA,M,24,14/03/2020,confirmado,Estados Unidos,07/03/2020
+212,CHIHUAHUA,F,18,15/03/2020,confirmado,Estados Unidos,14/03/2020
+213,BAJA CALIFORNIA,M,39,17/03/2020,confirmado,Contacto,NA
+214,QUERETARO,F,29,10/03/2020,confirmado,Estados Unidos,01/03/2020
+215,JALISCO,M,77,13/03/2020,confirmado,Contacto,NA
+216,TABASCO,M,33,14/03/2020,confirmado,España,18/03/2020
+217,JALISCO,M,20,17/03/2020,confirmado,Contacto,NA
+218,ZACATECAS,M,38,08/03/2020,confirmado,Contacto,NA
+219,QUERETARO,M,29,18/03/2020,confirmado,España,16/03/2020
+220,CIUDAD DE MÉXICO,M,33,11/03/2020,confirmado,Contacto,NA
+221,NUEVO LEÓN,M,32,15/03/2020,confirmado,Estados Unidos,16/03/2020
+222,NUEVO LEÓN,F,27,18/03/2020,confirmado,Estados Unidos,14/03/2020
+223,NUEVO LEÓN,M,35,17/03/2020,confirmado,Estados Unidos,15/03/2020
+224,PUEBLA,F,30,16/03/2020,confirmado,Estados Unidos,15/03/2020
+225,CIUDAD DE MÉXICO,M,27,15/03/2020,confirmado,Francia,15/03/2020
+226,VERACRUZ,M,31,16/03/2020,confirmado,España,13/03/2020
+227,QUERETARO,M,29,16/03/2020,confirmado,Contacto,NA
+228,DURANGO,F,68,18/03/2020,confirmado,Contacto,NA
+229,BAJA CALIFORNIA,F,26,13/03/2020,confirmado,Estados Unidos,16/03/2020
+230,SAN LUIS POTOSÍ,F,20,09/03/2020,confirmado,España,17/03/2020
+231,CIUDAD DE MÉXICO,F,54,15/03/2020,confirmado,Contacto,NA
+232,JALISCO,M,56,17/03/2020,confirmado,Estados Unidos,04/03/2020
+233,VERACRUZ,F,35,14/03/2020,confirmado,Estados Unidos,13/03/2020
+234,JALISCO,M,53,17/03/2020,confirmado,Contacto,NA
+235,VERACRUZ,M,27,17/03/2020,confirmado,Contacto,16/03/2020
+236,QUINTANA ROO,M,51,11/03/2020,confirmado,España,16/03/2020
+237,TAMAULIPAS,F,33,16/03/2020,confirmado,Francia,07/03/2020
+238,SAN LUIS POTOSÍ,M,46,12/03/2020,confirmado,Estados Unidos,12/03/2020
+239,CIUDAD DE MÉXICO,F,35,16/03/2020,confirmado,Estados Unidos,09/03/2020
+240,TABASCO,F,37,10/03/2020,confirmado,Estados Unidos,11/03/2020
+241,JALISCO,M,58,17/03/2020,confirmado,Contacto,NA
+242,BAJA CALIFORNIA SUR,M,48,16/03/2020,confirmado,Estados Unidos,14/03/2020
+243,COAHUILA,F,41,18/03/2020,confirmado,España,14/03/2020
+244,CIUDAD DE MÉXICO,F,48,13/03/2020,confirmado,Contacto,NA
+245,COAHUILA,M,29,17/03/2020,confirmado,Estados Unidos,15/03/2020
+246,CIUDAD DE MÉXICO,M,25,13/03/2020,confirmado,Contacto,NA
+247,CIUDAD DE MÉXICO,M,37,16/03/2020,confirmado,España,16/03/2020
+248,YUCATÁN,F,40,15/03/2020,confirmado,Contacto,NA
+249,CIUDAD DE MÉXICO,M,36,14/03/2020,confirmado,Contacto,NA
+250,JALISCO,F,38,15/03/2020,confirmado,Estados Unidos,16/03/2020
+251,COLIMA,F,34,12/03/2020,confirmado,Estados Unidos,11/03/2020

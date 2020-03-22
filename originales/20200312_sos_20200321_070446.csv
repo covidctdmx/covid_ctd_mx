@@ -1,90 +1,83 @@
-
-# Caso,Estado,Sexo,Fecha de Inicio de sintomas,Edad,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
-,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Identificación de 
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, Fecha de,,,, COVID-19 por,,,,,,,,,,,,, Fecha del 
-,,,,,,,,,N° Caso,,,,,Estado,,,,, Sexo,,,Edad,,,, Inicio de,,,,,, RT-,,,,,,Procedencia,,llegada a México 
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, síntomas,,,PCR/Secuencia 
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,de DNA* 
-,,,,,,,,,,,,,1,Ciudad de México,,,F,,,,,,,, 2,,,29/02/2020,Sospechoso,,,,,,Contacto,,,, NA 
-,,,,,,,,,,,,,2,Colima,,,,,,,,F,,,,,,, 36,,, 04/03/2020,Sospechoso,,,,,,Estados Unidos03/03/2020 
-,,,,,,,,,,,,,3,Baja California,,, M,,,,,,, 35,,, 02/03/2020,Sospechoso,,,,,,Estados Unidos27/02/2020 
-,,,,,,,,,,,, 4,Colima,,,,,,,, F,,,,,,, 25,,, 04/03/2020,Sospechoso,,,,,,España,,,,, 01/03/2020 
-,,,,,,,,,,,,,5,Ciudad de México,,,M,,,,,,, 32,,,,16/02/2020,Sospechoso,,,,, Contacto,,,, NA 
-,,,,,,,,,,,, 6,Ciudad de México,,, F,,,,,,, 36,,, 28/02/2020,Sospechoso,,,,,,España,,,,, 21/02/2020 
-,,,,,,,,,,,, 7,Jalisco,,,,,,,,M,,,,,,, 34,,, 06/03/2020,Sospechoso,,,,,,España,,,,, 04/03/2020 
-,,,,,,,,,,,, 8,Jalisco,,,,,,,,F,,,,,,, 28,,, 06/03/2020,Sospechoso,,,,,,Estados Unidos02/03/2020 
-,,,,,,,,,,,, 9,Ciudad de México,,, F,,,,,,, 29,,, 04/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
-,,,,,,,,,,,, 10,Sinaloa*,,,,,,,F,,,,,,, 29,,, 08/03/2020,Sospechoso,,,,,,Estados Unidos08/03/2020 
-,,,,,,,,,,,, 11,México,,,,,,,,F,,,,,,, 20,,, 26/02/2020,Sospechoso,,,,,,Italia,,,,, 24/02/2020 
-,,,,,,,,,,,, 12,Baja California,,, M,,,,,,, 33,,, 06/03/2020,Sospechoso,,,,,,España,,,,, 08/03/2020 
-,,,,,,,,,,,, 13,Ciudad de México,,,F,,,,,,,,41,,,07/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
-,,,,,,,,,,,, 14,Quintana Roo,,,,,M,,,,,,, 46,,, 09/03/2020,Sospechoso,,,,,,Corea del Sur,,06/03/2020 
-,,,,,,,,,,,, 15,Jalisco,,,,,,, F,,,,,,, 35,,, 09/03/2020,Sospechoso,,,,,,España,,,,, 07/03/2020 
-,,,,,,,,,,,, 16,Ciudad de México,,,M,,,,,,, 48,,, 29/02/2020,Sospechoso,,,,,,Estados Unidos23/02/2020 
-,,,,,,,,,,,, 17,Baja California,,, M,,,,,,, 42,,, 09/03/2020,Sospechoso,,,,,,Estados Unidos25/02/2020 
-,,,,,,,,,,,, 18,Ciudad de México,,,M,,,,,,, 40,,, 03/03/2020,Sospechoso,,,,,,Estados Unidos07/03/2020 
-,,,,,,,,,,,, 19,Ciudad de México,,,M,,,,,,, 45,,, 29/02/2020,Sospechoso,,,,,,Italia,,,,, 04/03/2020 
-,,,,,,,,,,,,20,Baja California,,,,F,,,,,,, 40,,, 02/03/2020,Sospechoso,,,,,,Estados Unidos29/02/2020 
-,,,,,,,,,,,, 21,Sinaloa,,,,,,, F,,,,,,, 47,,, 03/03/2020,Sospechoso,,,,,,España,,,,, 07/03/2020 
-,,,,,,,,,,,,22,Sinaloa,,,,,,,,F,,,,,,,,15,,,03/03/2020,Sospechoso,,,,,,España,,,,, 07/03/2020 
-,,,,,,,,,,,,23,Querétaro,,,,,,,M,,,,,,, 25,,, 26/02/2020,Sospechoso,,,,,,Estados Unidos09/03/2020 
-,,,,,,,,,,,,24,Querétaro,,,,,,,F,,,,,,, 65,,,,10/03/2020,Sospechoso,,,,, Contacto,,,, NA 
-,,,,,,,,,,,,25,Ciudad de México,,, F,,,,,,,,13,,,07/03/2020,Sospechoso,,,,,,España,,,,, 07/03/2020 
-,,,,,,,,,,,,26,Guerrero,,,,,,, F,,,,,,, 68,,,,01/03/2020,Sospechoso,,,,, Estados Unidos03/03/2020 
-,,,,,,,,,,,,27,Ciudad de México,,, M,,,,,,, 52,,, 08/03/2020,Sospechoso,,,,,,España,,,,, 08/03/2020 
-,,,,,,,,,,,,28,Ciudad de México,,, M,,,,,,, 33,,, 09/03/2020,Sospechoso,,,,,,Alemania,,,, 09/03/2020 
-,,,,,,,,,,,,29,Quintana Roo,,,,, F,,,,,,, 52,,, 08/03/2020,Sospechoso,,,,,,España,,,,, 09/03/2020 
-,,,,,,,,,,,,30,Ciudad de México,,, M,,,,,,,,17,,,04/03/2020,Sospechoso,,,,,,Francia,,,,,29/02/2020 
-,,,,,,,,,,,, 31,México,,,,,,,,F,,,,,,, 32,,, 26/02/2020,Sospechoso,,,,,,Alemania,,,, 28/02/2020 
-,,,,,,,,,,,,32,Ciudad de México,,, M,,,,,,, 52,,,,10/03/2020,Sospechoso,,,,, Estados Unidos09/03/2020 
-,,,,,,,,,,,,33,Ciudad de México,,, F,,,,,,, 40,,, 06/03/2020,Sospechoso,,,,,,España,,,,, 08/03/2020 
-,,,,,,,,,,,,34,Ciudad de México,,, F,,,,,,, 50,,,,01/03/2020,Sospechoso,,,,, Estados Unidos08/03/2020 
-,,,,,,,,,,,,35,Quintana Roo,,,,, F,,,,,,, 32,,, 09/03/2020,Sospechoso,,,,,,Estados Unidos05/03/2020 
-,,,,,,,,,,,,36,Nuevo León,,,,,, M,,,,,,,,15,,,09/03/2020,Sospechoso,,,,,,España,,,,, 06/03/2020 
-,,,,,,,,,,,,37,México,,,,,,,, F,,,,,,, 47,,, 06/03/2020,Sospechoso,,,,,,Contacto,,,, NA 
-,,,,,,,,,,,,38,Morelos,,,,,,,,M,,,,,,, 28,,, 27/02/2020,Sospechoso,,,,,,España,,,,, 25/02/2020 
-,,,,,,,,,,,,39,Querétaro,,,,,,,M,,,,,,, 42,,, 05/03/2020,Sospechoso,,,,,,Italia,,,,, 05/03/2020 
-,,,,,,,,,,,,40,Nuevo León,,,,,, M,,,,,,, 42,,, 08/03/2020,Sospechoso,,,,,,Estados Unidos05/03/2020 
-,,,,,,,,,,,, 41,Ciudad de México,,,F,,,,,,, 29,,, 27/02/2020,Sospechoso,,,,,,España,,,,, 14/02/2020 
-,,,,,,,,,,,,42,Tabasco,,,,,,,,F,,,,,,,,31,,,09/03/2020,Sospechoso,,,,,,Francia,,,,,08/03/2020 
-,,,,,,,,,,,,43,Baja California Sur,,M,,,,,,, 20,,,,01/03/2020,Sospechoso,,,,, Francia,,,,,05/03/2020 
-,,,,,,,,,, 44,Ciudad de México,,F,,,,,, 25,,,04/03/2020,Sospechoso,,,,Italia,,,,01/03/2020 
-,,,,,,,,,, 45,Nuevo León,,,,,M,,,,,,,13,, 09/03/2020,Sospechoso,,,,España,,,,09/03/2020 
-,,,,,,,,,, 46,Ciudad de México,,M,,,,,, 26,,,29/02/2020,Sospechoso,,,,Japón,,,, 17/02/2020 
-,,,,,,,,,, 47,Veracruz,,,,,,F,,,,,, 36,,,09/03/2020,Sospechoso,,,,Alemania,,,09/03/2020 
-,,,,,,,,,, 48,Ciudad de México,,F,,,,,, 22,,, 01/03/2020,Sospechoso,,, Contacto,,,NA 
-,,,,,,,,,, 49,Ciudad de México,,F,,,,,,,21,, 04/03/2020,Sospechoso,,,,Alemania,,,03/03/2020 
-,,,,,,,,,, 50,Ciudad de México,,F,,,,,, 23,,,06/03/2020,Sospechoso,,,,Italia,,,,06/03/2020 
-,,,,,,,,,,,51,Ciudad de México, M,,,,,, 27,,,04/03/2020,Sospechoso,,,,Italia,,,,29/02/2020 
-,,,,,,,,,, 52,Ciudad de México,,F,,,,,, 30,,,29/02/2020,Sospechoso,,,,España,,,,27/02/2020 
-,,,,,,,,,,,53,Hidalgo,,,,,,M,,,,,, 46,,, 11/03/2020,Sospechoso,,, Estados Unidos07/03/2020 
-,,,,,,,,,, 54,Ciudad de México,,F,,,,,, 60,,,06/03/2020,Sospechoso,,,,Contacto,,,NA 
-,,,,,,,,,,,55,Guanajuato,,,, M,,,,,,,8,,, 10/03/2020,Sospechoso,,, Contacto,,,NA 
-,,,,,,,,,, 56,Guanajuato,,,,,M,,,,,, 46,,,09/03/2020,Sospechoso,,,,Contacto,,,NA 
-,,,,,,,,,, 57,Aguascalientes,,,M,,,,,, 37,,,06/03/2020,Sospechoso,,,,España,,,,04/03/2020 
-,,,,,,,,,, 58,Tabasco,,,,,, F,,,,,, 42,,, 10/03/2020,Sospechoso,,, Estados Unidos09/03/2020 
-,,,,,,,,,, 59,Veracruz,,,,,,M,,,,,, 25,,, 10/03/2020,Sospechoso,,, Estados Unidos29/02/2020 
-,,,,,,,,,, 60,Jalisco,,,,,, F,,,,,, 33,,,09/03/2020,Sospechoso,,,,Francia,,, 08/03/2020 
-,,,,,,,,,,,61,San Luis Potosí,,F,,,,,,,18,, 07/03/2020,Sospechoso,,,,Estados Unidos08/03/2020 
-,,,,,,,,,, 62,México,,,,,,,M,,,,,, 43,,,02/03/2020,Sospechoso,,,,Estados Unidos26/02/2020 
-,,,,,,,,,, 63,México,,,,,,,F,,,,,, 33,,, 10/03/2020,Sospechoso,,, Italia,,,,29/02/2020 
-,,,,,,,,,, 64,Quintana Roo,,,,F,,,,,, 20,,,07/03/2020,Sospechoso,,,,Contacto,,,05/03/2020 
-,,,,,,,,,, 65,Durango,,,,,, M,,,,,, 26,,, 01/03/2020,Sospechoso,,, Estados Unidos08/03/2020 
-,,,,,,,,,, 66,México,,,,,,,M,,,,,, 44,,, 01/03/2020,Sospechoso,,, España,,,,03/03/2020 
-,,,,,,,,,, 67,México,,,,,,,M,,,,,, 34,,,05/03/2020,Sospechoso,,,,Estados Unidos01/03/2020 
-,,,,,,,,,, 68,México,,,,,,,M,,,,,, 43,,, 10/03/2020,Sospechoso,,, Contacto,,,NA 
-,,,,,,,,,, 69,Durango,,,,,, M,,,,,, 58,,,06/03/2020,Sospechoso,,,,España,,,,28/02/2020 
-,,,,,,,,,, 70,Baja California,, M,,,,,, 36,,, 10/03/2020,Sospechoso,,, Estados Unidos09/03/2020 
-,,,,,,,,,,,71,México,,,,,, F,,,,,, 55,,,09/03/2020,Sospechoso,,,,España,,,,09/03/2020 
-,,,,,,,,,, 72,Ciudad de México,,M,,,,,, 48,,, 10/03/2020,Sospechoso,,, España,,,,09/03/2020 
-,,,,,,,,,, 73,Ciudad de México,,M,,,,,, 38,,, 10/03/2020,Sospechoso,,, España,,,,09/03/2020 
-,,,,,,,,,, 74,Querétaro,,,,, F,,,,,, 43,,, 11/03/2020,Sospechoso,,, Contacto,,,NA 
-,,,,,,,,,, 75,Querétaro,,,,, M,,,,,, 36,,,07/03/2020,Sospechoso,,,,Estados Unidos08/03/2020 
-,,,,,,,,,, 76,Querétaro,,,,, M,,,,,, 70,,, 12/03/2020,Sospechoso,,, Contacto,,,NA 
-,,,,,,,,,, 77,Guanajuato,,,,,F,,,,,, 48,,,08/03/2020,Sospechoso,,,,Italia,,,,29/02/2020 
-,,,,,,,,,, 78,Guanajuato,,,,,F,,,,,, 36,,,07/03/2020,Sospechoso,,,,Contacto,,,NA 
-,,,,,,,,,, 79,Guanajuato,,,,,F,,,,,, 35,,,09/03/2020,Sospechoso,,,,Contacto,,,NA 
-,,,,,,,,,, 80,Querétaro,,,,, M,,,,,, 40,,,09/03/2020,Sospechoso,,,,España,,,,08/03/2020 
-,,,,,,,,,,,81,Querétaro,,,,,F,,,,,, 36,,,05/03/2020,Sospechoso,,,,Francia,,, 07/03/2020 
-,,,,,,,,,, 82,Ciudad de México,,M,,,,,, 53,,,09/03/2020,Sospechoso,,,,España,,,,09/03/2020 
+# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
+1,Ciudad de México,F,2,29/02/2020,Sospechoso,Contacto,NA
+2,Colima,F,36,04/03/2020,Sospechoso,Estados Unidos,03/03/2020
+3,Baja California,M,35,02/03/2020,Sospechoso,Estados Unidos,27/02/2020
+4,Colima,F,25,04/03/2020,Sospechoso,España,01/03/2020
+5,Ciudad de México,M,32,16/02/2020,Sospechoso,Contacto,NA
+6,Ciudad de México,F,36,28/02/2020,Sospechoso,España,21/02/2020
+7,Jalisco,M,34,06/03/2020,Sospechoso,España,04/03/2020
+8,Jalisco,F,28,06/03/2020,Sospechoso,Estados Unidos,02/03/2020
+9,Ciudad de México,F,29,04/03/2020,Sospechoso,Contacto,NA
+10,Sinaloa*,F,29,08/03/2020,Sospechoso,Estados Unidos,08/03/2020
+11,México,F,20,26/02/2020,Sospechoso,Italia,24/02/2020
+12,Baja California,M,33,06/03/2020,Sospechoso,España,08/03/2020
+13,Ciudad de México,F,41,07/03/2020,Sospechoso,Contacto,NA
+14,Quintana Roo,M,46,09/03/2020,Sospechoso,Corea del Sur,06/03/2020
+15,Jalisco,F,35,09/03/2020,Sospechoso,España,07/03/2020
+16,Ciudad de México,M,48,29/02/2020,Sospechoso,Estados Unidos,23/02/2020
+17,Baja California,M,42,09/03/2020,Sospechoso,Estados Unidos,25/02/2020
+18,Ciudad de México,M,40,03/03/2020,Sospechoso,Estados Unidos,07/03/2020
+19,Ciudad de México,M,45,29/02/2020,Sospechoso,Italia,04/03/2020
+20,Baja California,F,40,02/03/2020,Sospechoso,Estados Unidos,29/02/2020
+21,Sinaloa,F,47,03/03/2020,Sospechoso,España,07/03/2020
+22,Sinaloa,F,15,03/03/2020,Sospechoso,España,07/03/2020
+23,Querétaro,M,25,26/02/2020,Sospechoso,Estados Unidos,09/03/2020
+24,Querétaro,F,65,10/03/2020,Sospechoso,Contacto,NA
+25,Ciudad de México,F,13,07/03/2020,Sospechoso,España,07/03/2020
+26,Guerrero,F,68,01/03/2020,Sospechoso,Estados Unidos,03/03/2020
+27,Ciudad de México,M,52,08/03/2020,Sospechoso,España,08/03/2020
+28,Ciudad de México,M,33,09/03/2020,Sospechoso,Alemania,09/03/2020
+29,Quintana Roo,F,52,08/03/2020,Sospechoso,España,09/03/2020
+30,Ciudad de México,M,17,04/03/2020,Sospechoso,Francia,29/02/2020
+31,México,F,32,26/02/2020,Sospechoso,Alemania,28/02/2020
+32,Ciudad de México,M,52,10/03/2020,Sospechoso,Estados Unidos,09/03/2020
+33,Ciudad de México,F,40,06/03/2020,Sospechoso,España,08/03/2020
+34,Ciudad de México,F,50,01/03/2020,Sospechoso,Estados Unidos,08/03/2020
+35,Quintana Roo,F,32,09/03/2020,Sospechoso,Estados Unidos,05/03/2020
+36,Nuevo León,M,15,09/03/2020,Sospechoso,España,06/03/2020
+37,México,F,47,06/03/2020,Sospechoso,Contacto,NA
+38,Morelos,M,28,27/02/2020,Sospechoso,España,25/02/2020
+39,Querétaro,M,42,05/03/2020,Sospechoso,Italia,05/03/2020
+40,Nuevo León,M,42,08/03/2020,Sospechoso,Estados Unidos,05/03/2020
+41,Ciudad de México,F,29,27/02/2020,Sospechoso,España,14/02/2020
+42,Tabasco,F,31,09/03/2020,Sospechoso,Francia,08/03/2020
+43,Baja California Sur,M,20,01/03/2020,Sospechoso,Francia,05/03/2020
+44,Ciudad de México,F,25,04/03/2020,Sospechoso,Italia,01/03/2020
+45,Nuevo León,M,13,09/03/2020,Sospechoso,España,09/03/2020
+46,Ciudad de México,M,26,29/02/2020,Sospechoso,Japón,17/02/2020
+47,Veracruz,F,36,09/03/2020,Sospechoso,Alemania,09/03/2020
+48,Ciudad de México,F,22,01/03/2020,Sospechoso,Contacto,NA
+49,Ciudad de México,F,21,04/03/2020,Sospechoso,Alemania,03/03/2020
+50,Ciudad de México,F,23,06/03/2020,Sospechoso,Italia,06/03/2020
+51,Ciudad de México,M,27,04/03/2020,Sospechoso,Italia,29/02/2020
+52,Ciudad de México,F,30,29/02/2020,Sospechoso,España,27/02/2020
+53,Hidalgo,M,46,11/03/2020,Sospechoso,Estados Unidos,07/03/2020
+54,Ciudad de México,F,60,06/03/2020,Sospechoso,Contacto,NA
+55,Guanajuato,M,8,10/03/2020,Sospechoso,Contacto,NA
+56,Guanajuato,M,46,09/03/2020,Sospechoso,Contacto,NA
+57,Aguascalientes,M,37,06/03/2020,Sospechoso,España,04/03/2020
+58,Tabasco,F,42,10/03/2020,Sospechoso,Estados Unidos,09/03/2020
+59,Veracruz,M,25,10/03/2020,Sospechoso,Estados Unidos,29/02/2020
+60,Jalisco,F,33,09/03/2020,Sospechoso,Francia,08/03/2020
+61,San Luis Potosí,F,18,07/03/2020,Sospechoso,Estados Unidos,08/03/2020
+62,México,M,43,02/03/2020,Sospechoso,Estados Unidos,26/02/2020
+63,México,F,33,10/03/2020,Sospechoso,Italia,29/02/2020
+64,Quintana Roo,F,20,07/03/2020,Sospechoso,Contacto,05/03/2020
+65,Durango,M,26,01/03/2020,Sospechoso,Estados Unidos,08/03/2020
+66,México,M,44,01/03/2020,Sospechoso,España,03/03/2020
+67,México,M,34,05/03/2020,Sospechoso,Estados Unidos,01/03/2020
+68,México,M,43,10/03/2020,Sospechoso,Contacto,NA
+69,Durango,M,58,06/03/2020,Sospechoso,España,28/02/2020
+70,Baja California,M,36,10/03/2020,Sospechoso,Estados Unidos,09/03/2020
+71,México,F,55,09/03/2020,Sospechoso,España,09/03/2020
+72,Ciudad de México,M,48,10/03/2020,Sospechoso,España,09/03/2020
+73,Ciudad de México,M,38,10/03/2020,Sospechoso,España,09/03/2020
+74,Querétaro,F,43,11/03/2020,Sospechoso,Contacto,NA
+75,Querétaro,M,36,07/03/2020,Sospechoso,Estados Unidos,08/03/2020
+76,Querétaro,M,70,12/03/2020,Sospechoso,Contacto,NA
+77,Guanajuato,F,48,08/03/2020,Sospechoso,Italia,29/02/2020
+78,Guanajuato,F,36,07/03/2020,Sospechoso,Contacto,NA
+79,Guanajuato,F,35,09/03/2020,Sospechoso,Contacto,NA
+80,Querétaro,M,40,09/03/2020,Sospechoso,España,08/03/2020
+81,Querétaro,F,36,05/03/2020,Sospechoso,Francia,07/03/2020
+82,Ciudad de México,M,53,09/03/2020,Sospechoso,España,09/03/2020
