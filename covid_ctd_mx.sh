@@ -240,9 +240,9 @@ function convPdftoCsv(){
 
 function invCountNewQury(){
     echo -e "Esperando para hacer una nueva consulta en:"
-    for sec in {900..1}; do
-        printf "\r%03d segundos" ${sec}
-        sleep 1
+    for sec in {15..1}; do
+        echo -e " ${sec} minutos"
+        sleep 60
     done
     echo -e "\n"
 }
