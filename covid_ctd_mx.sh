@@ -172,7 +172,7 @@ function convPdftoCsv(){
 
 	if [[ ! -f "${DOC_PATH}${FILE_NAME}${EXT_CSV}" ]];then
             echo "" > "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
-            echo -e "# Caso,Estado,Sexo,Fecha de Inicio de sintomas,Edad,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+            echo -e "# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             sed -i '/^$/d' "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             PDF_VERSION=$(file "${DOC_PATH}${FILE_NAME}.${EXT_NAME}" | sed -e "s@.*PDF document, version @@g")
 
