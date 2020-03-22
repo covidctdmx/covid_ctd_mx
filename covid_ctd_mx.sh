@@ -164,40 +164,77 @@ function dwnloadFilesFromCTD(){
 }
 
 function convPdftoCsv(){
-    local PDFS_POS_SOS=($(ls ${DOC_PATH} | grep -e "sos\|pos"))
+    local PDFS_POS_SOS=($(ls ${DOC_PATH} | grep -e ".*pos.*.pdf\|.*sos.*.pdf"))
     for PDF_POS_SOS in ${PDFS_POS_SOS[*]};do
         local FILE_NAME="${PDF_POS_SOS%.*}"
         local EXT_NAME="${PDF_POS_SOS##*.}"
         local EXT_CSV=".csv"
 
-        if [[ ! -f "${DOC_PATH}${FILE_NAME}${EXT_CSV}" ]];then
-            pdftops "${DOC_PATH}${FILE_NAME}.${EXT_NAME}"
+	if [[ ! -f "${DOC_PATH}${FILE_NAME}${EXT_CSV}" ]];then
             echo "" > "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             echo -e "# Caso,Estado,Sexo,Fecha de Inicio de sintomas,Edad,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+            sed -i '/^$/d' "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+            PDF_VERSION=$(file "${DOC_PATH}${FILE_NAME}.${EXT_NAME}" | sed -e "s@.*PDF document, version @@g")
+
+	    if [[ "${PDF_VERSION}" = "1.5" ]];then
+	        pdftops "${DOC_PATH}${FILE_NAME}.${EXT_NAME}"
+                TO_ASCII_FILE_EXT="ps"
+            elif [[ "${PDF_VERSION}" = "1.3" ]];then
+                TO_ASCII_FILE_EXT="pdf"
+            else
+		echo -e "La version del PDF es ${PDF_VERSION}, se intenta convertir"
+                pdftops "${DOC_PATH}${FILE_NAME}.${EXT_NAME}"
+                TO_ASCII_FILE_EXT="ps"
+	    fi
 
             if [[ $(echo -e "${FILE_NAME}" | grep -e "pos") ]];then
-                ps2ascii "${DOC_PATH}${FILE_NAME}.ps" |\
-                    sed '/^$/d' |\
-                    sed $"s@[^[:print:]\t]@@g" |\
-                    sed -e "s@'\|~\|,@@g" |\
-                    sed -e "s@  @,@g" |\
-                    grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
-                    sed -n '1 !p' |\
-                    sed -e "s@\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),@\1,\2,\3,\4,\5,\6,\7,\8@g" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+                ps2ascii "${DOC_PATH}${FILE_NAME}.${TO_ASCII_FILE_EXT}" |\
+                sed '/^$/d' |\
+                sed $"s@[^[:print:]\t]@@g" |\
+                sed -e "s@'\|~\|,\|\t@@g" |\
+                sed 's/[[:blank:]]/,/g' |\
+                sed 's/\([,]\{2\}\)/#/g' |\
+                sed -e "s@#,@#@g" |\
+                sed -e "s@#######w@#@g" |\
+                sed -e "s@######@#@g" |\
+                sed -e "s@####@#@g" |\
+                sed -e "s@###@#@g" |\
+                sed -e "s@##@#@g" |\
+                sed -e "s@,\$@@g" |\
+                tr "," " " |\
+                tr "#" "," |\
+                sed -e "s@^,@@g" |\
+                grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
+		sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
                 rm -rf "${DOC_PATH}${FILE_NAME}.ps"
-                echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+		echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             elif [[ $(echo -e "${FILE_NAME}" | grep -e "sos") ]];then
-                ps2ascii "${DOC_PATH}${FILE_NAME}.ps" |\
-                    sed '/^$/d' |\
-                    sed $"s@[^[:print:]\t]@@g" |\
-                    sed -e "s@'\|~\|,@@g" |\
-                    sed -e "s@  @,@g" |\
-                    grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
-                    sed -e "s@\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),\(.*\),@\1,\2,\3,\4,\5,\6,\7,\8@g" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+                ps2ascii "${DOC_PATH}${FILE_NAME}.${TO_ASCII_FILE_EXT}" |\
+                sed '/^$/d' |\
+                sed $"s@[^[:print:]\t]@@g" |\
+                sed -e "s@'\|~\|,\|\t@@g" |\
+                sed 's/[[:blank:]]/,/g' |\
+                sed 's/\([,]\{2\}\)/#/g' |\
+                sed -e "s@#,@#@g" |\
+                sed -e "s@#######w@#@g" |\
+                sed -e "s@######@#@g" |\
+                sed -e "s@####@#@g" |\
+                sed -e "s@###@#@g" |\
+                sed -e "s@##@#@g" |\
+                sed -e "s@,\$@@g" |\
+                tr "," " " |\
+                tr "#" "," |\
+                sed -e "s@^,@@g" |\
+		sed -e "s@,SUR,@,BAJA CALIFORNIA SUR,@g" |\
+                grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
+	        sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
                 rm -rf "${DOC_PATH}${FILE_NAME}.ps"
-                echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+		echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+
             fi
-        fi
+	fi
+#	cat "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+#	read -r
     done
 }
 
