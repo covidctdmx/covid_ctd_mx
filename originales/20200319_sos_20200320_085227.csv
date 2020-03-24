@@ -1,4 +1,4 @@
-# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
+﻿# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
 1,SAN LUIS POTOSÍ,F,22,11/03/2020,Sospechoso,España,06/03/2020
 2,CIUDAD DE MÉXICO,F,26,13/03/2020,Sospechoso,España,13/03/2020
 3,MÉXICO,M,23,03/03/2020,Sospechoso,España,02/03/2020

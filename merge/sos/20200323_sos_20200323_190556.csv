@@ -1,4 +1,4 @@
-Fecha Archivo Inicial,# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
+﻿Fecha Archivo Inicial,﻿# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
 23/03/2020,1,SAN LUIS POTOSÍ,RIO VERDE,F,22,11/03/2020,Sospechoso,España,06/03/2020,137e027d6d
 23/03/2020,2,PUEBLA,PUEBLA,M,49,15/03/2020,Sospechoso,Contacto,NA,e10e5c8a0e
 23/03/2020,3,SAN LUIS POTOSÍ,SAN LUIS POTOSI,M,25,13/03/2020,Sospechoso,Contacto,NA,13fcb60170

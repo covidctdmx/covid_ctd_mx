@@ -1,4 +1,4 @@
-Fecha Archivo Inicial,# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
+﻿Fecha Archivo Inicial,﻿# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
 16/03/2020,1,CIUDAD DE MÉXICO,F,2,29/02/2020,Sospechoso,Contacto,NA,abb6f7b7d5
 16/03/2020,2,CIUDAD DE MÉXICO,M,32,16/02/2020,Sospechoso,Contacto,NA,1ac39f6fef
 16/03/2020,3,MÉXICO,F,20,26/02/2020,Sospechoso,Italia,24/02/2020,7e2fd2aafe

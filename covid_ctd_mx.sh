@@ -206,8 +206,6 @@ function convPdftoCsv(){
                 sed -e "s@^,@@g" |\
                 grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
 		sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
-                rm -rf "${DOC_PATH}${FILE_NAME}.ps"
-		echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             elif [[ $(echo -e "${FILE_NAME}" | grep -e "sos") ]];then
                 ps2ascii "${DOC_PATH}${FILE_NAME}.${TO_ASCII_FILE_EXT}" |\
                 sed '/^$/d' |\
@@ -228,13 +226,12 @@ function convPdftoCsv(){
 		sed -e "s@,SUR,@,BAJA CALIFORNIA SUR,@g" |\
                 grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
 	        sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
-                rm -rf "${DOC_PATH}${FILE_NAME}.ps"
-		echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
 
             fi
+            rm -rf "${DOC_PATH}${FILE_NAME}.ps"
+            sed -i "1 s@^@\xef\xbb\xbf@g" ${DOC_PATH}${FILE_NAME}${EXT_CSV}
+            echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
 	fi
-#	cat "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
-#	read -r
     done
 }
 
@@ -266,6 +263,7 @@ function makeCsvExt(){
                     sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
 		done
                 sed -i "1 s@^\(.*\),\(.*,.*,.*,.*,.*,.*,.*,.*\),\(.*\)\$@Fecha Archivo Inicial,\2,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                sed -i "1 s@^@\xef\xbb\xbf@g" ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}
                 echo -e "Se crea archivo ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
 	    fi
         done
