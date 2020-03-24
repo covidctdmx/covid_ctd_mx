@@ -1,4 +1,4 @@
-Fecha Archivo Inicial,# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
+﻿Fecha Archivo Inicial,﻿# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
 22/03/2020,1,CIUDAD DE MÉXICO,M,35,22/02/2020,confirmado,Italia,22/02/2020,6decc7370d
 22/03/2020,2,SINALOA,M,41,22/02/2020,confirmado,Italia,21/02/2020,21158e85de
 22/03/2020,3,CIUDAD DE MÉXICO,M,59,23/02/2020,confirmado,Italia,22/02/2020,bb7541e110

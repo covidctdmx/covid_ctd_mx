@@ -1,4 +1,4 @@
-Fecha Archivo Inicial,# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
+﻿Fecha Archivo Inicial,﻿# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
 20/03/2020,1,SAN LUIS POTOSÍ,F,22,11/03/2020,Sospechoso,España,06/03/2020,05147bf8cc
 20/03/2020,2,MÉXICO,M,23,03/03/2020,Sospechoso,España,02/03/2020,e612cdd000
 20/03/2020,3,MÉXICO,M,34,16/02/2020,Sospechoso,Italia,29/02/2020,d4a0086f84
