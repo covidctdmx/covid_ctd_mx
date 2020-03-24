@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-clear
 
 set -o errexit
 set -o pipefail
@@ -23,6 +22,7 @@ RES_PATH="recursos/"
 RES_FILE="url_ctd.txt"
 DOC_PATH="originales/"
 HTML_NME="covid.html"
+MERGE_PATH="merge/"
 
 URLS_CTD=()
 DOCS=()
@@ -247,8 +247,34 @@ function invCountNewQury(){
     echo -e "\n"
 }
 
+function makeCsvExt(){
+    checkDirExist "${MERGE_PATH}pos"
+    checkDirExist "${MERGE_PATH}sos"
+    for TYPE_FILE in "pos" "sos";do
+	FILES_CSV=($(ls "${DOC_PATH}" | grep -e ".*${TYPE_FILE}.*.csv"))
+
+        for FILE_CSV in ${FILES_CSV[*]};do
+            FILE_CSV_EXT_EXIST=$(ls "${MERGE_PATH}${TYPE_FILE}/" | grep "${FILE_CSV}" 1>/dev/null; echo $?)
+
+	    if [[ "${FILE_CSV_EXT_EXIST}" = "1" ]];then
+		FILE_CSV_LEN=$(wc -l "${DOC_PATH}${FILE_CSV}" | sed -e "s@\(.*\) ${DOC_PATH}${FILE_CSV}@\1@g")
+                cp "${DOC_PATH}${FILE_CSV}" "${MERGE_PATH}${TYPE_FILE}/"
+		FILE_CSV_DATE=$(echo -e "${FILE_CSV}" | sed -e "s@^\([0-9][0-9][0-9][0-9]\)\([0-9][0-9]\)\([0-9][0-9]\)_.*_.*_.*.csv@\3/\2/\1@g")
+
+		for LINE_CSV in $(seq 1 1 ${FILE_CSV_LEN});do
+                    LINE_CSV_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*,.*,.*,.*\)@\1@" | tr -d " " | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
+                    sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+		done
+                sed -i "1 s@^\(.*\),\(.*,.*,.*,.*,.*,.*,.*,.*\),\(.*\)\$@Fecha Archivo Inicial,\2,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                echo -e "Se crea archivo ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+	    fi
+        done
+    done
+}
+
 
 function main (){
+#clear
 while true;do
 #date +"%Y/%m/%d %H:%M:%S.%4N"
     DAT_QURY="$(date +"%Y%m%d_%H%M%S")"
@@ -256,7 +282,9 @@ while true;do
     validateUrlCTD
     dwnloadFilesFromCTD
     convPdftoCsv
+    makeCsvExt
     invCountNewQury
+    read -r
 done
 }
 

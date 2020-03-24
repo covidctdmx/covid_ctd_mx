@@ -1,83 +1,83 @@
-Fecha archivo inicial,# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
-12/03/2020,1,Ciudad de México,F,2,29/02/2020,Sospechoso,Contacto,NA,c7a738c5
-12/03/2020,2,Colima,F,36,04/03/2020,Sospechoso,Estados Unidos,03/03/2020,e85af20c
-12/03/2020,3,Baja California,M,35,02/03/2020,Sospechoso,Estados Unidos,27/02/2020,c6f8efad
-12/03/2020,4,Colima,F,25,04/03/2020,Sospechoso,España,01/03/2020,2c7fd779
-12/03/2020,5,Ciudad de México,M,32,16/02/2020,Sospechoso,Contacto,NA,10d2ef38
-12/03/2020,6,Ciudad de México,F,36,28/02/2020,Sospechoso,España,21/02/2020,7ea0b0ac
-12/03/2020,7,Jalisco,M,34,06/03/2020,Sospechoso,España,04/03/2020,7cffeae6
-12/03/2020,8,Jalisco,F,28,06/03/2020,Sospechoso,Estados Unidos,02/03/2020,e4849c84
-12/03/2020,9,Ciudad de México,F,29,04/03/2020,Sospechoso,Contacto,NA,f70dc1fa
-12/03/2020,10,Sinaloa*,F,29,08/03/2020,Sospechoso,Estados Unidos,08/03/2020,52a50745
-12/03/2020,11,México,F,20,26/02/2020,Sospechoso,Italia,24/02/2020,70f7895a
-12/03/2020,12,Baja California,M,33,06/03/2020,Sospechoso,España,08/03/2020,2a03e10d
-12/03/2020,13,Ciudad de México,F,41,07/03/2020,Sospechoso,Contacto,NA,0b6d0c95
-12/03/2020,14,Quintana Roo,M,46,09/03/2020,Sospechoso,Corea del Sur,06/03/2020,9628bada
-12/03/2020,15,Jalisco,F,35,09/03/2020,Sospechoso,España,07/03/2020,ecf3ff86
-12/03/2020,16,Ciudad de México,M,48,29/02/2020,Sospechoso,Estados Unidos,23/02/2020,828b5d1b
-12/03/2020,17,Baja California,M,42,09/03/2020,Sospechoso,Estados Unidos,25/02/2020,6ed0265e
-12/03/2020,18,Ciudad de México,M,40,03/03/2020,Sospechoso,Estados Unidos,07/03/2020,3b32f706
-12/03/2020,19,Ciudad de México,M,45,29/02/2020,Sospechoso,Italia,04/03/2020,ed5a925e
-12/03/2020,20,Baja California,F,40,02/03/2020,Sospechoso,Estados Unidos,29/02/2020,faef234d
-12/03/2020,21,Sinaloa,F,47,03/03/2020,Sospechoso,España,07/03/2020,49abf836
-12/03/2020,22,Sinaloa,F,15,03/03/2020,Sospechoso,España,07/03/2020,078bcee5
-12/03/2020,23,Querétaro,M,25,26/02/2020,Sospechoso,Estados Unidos,09/03/2020,36639047
-12/03/2020,24,Querétaro,F,65,10/03/2020,Sospechoso,Contacto,NA,02f3e87e
-12/03/2020,25,Ciudad de México,F,13,07/03/2020,Sospechoso,España,07/03/2020,3df50818
-12/03/2020,26,Guerrero,F,68,01/03/2020,Sospechoso,Estados Unidos,03/03/2020,a3a64189
-12/03/2020,27,Ciudad de México,M,52,08/03/2020,Sospechoso,España,08/03/2020,cd708f13
-12/03/2020,28,Ciudad de México,M,33,09/03/2020,Sospechoso,Alemania,09/03/2020,6114e2e1
-12/03/2020,29,Quintana Roo,F,52,08/03/2020,Sospechoso,España,09/03/2020,7751aa65
-12/03/2020,30,Ciudad de México,M,17,04/03/2020,Sospechoso,Francia,29/02/2020,0e526259
-12/03/2020,31,México,F,32,26/02/2020,Sospechoso,Alemania,28/02/2020,9530a9da
-12/03/2020,32,Ciudad de México,M,52,10/03/2020,Sospechoso,Estados Unidos,09/03/2020,e9b5ca11
-12/03/2020,33,Ciudad de México,F,40,06/03/2020,Sospechoso,España,08/03/2020,b83cf11f
-12/03/2020,34,Ciudad de México,F,50,01/03/2020,Sospechoso,Estados Unidos,08/03/2020,86f6b26c
-12/03/2020,35,Quintana Roo,F,32,09/03/2020,Sospechoso,Estados Unidos,05/03/2020,be18163b
-12/03/2020,36,Nuevo León,M,15,09/03/2020,Sospechoso,España,06/03/2020,f2ec1eb0
-12/03/2020,37,México,F,47,06/03/2020,Sospechoso,Contacto,NA,5efadc7f
-12/03/2020,38,Morelos,M,28,27/02/2020,Sospechoso,España,25/02/2020,da912158
-12/03/2020,39,Querétaro,M,42,05/03/2020,Sospechoso,Italia,05/03/2020,25f80058
-12/03/2020,40,Nuevo León,M,42,08/03/2020,Sospechoso,Estados Unidos,05/03/2020,77c31f80
-12/03/2020,41,Ciudad de México,F,29,27/02/2020,Sospechoso,España,14/02/2020,46c5ea0d
-12/03/2020,42,Tabasco,F,31,09/03/2020,Sospechoso,Francia,08/03/2020,0df7d8ea
-12/03/2020,43,Baja California Sur,M,20,01/03/2020,Sospechoso,Francia,05/03/2020,536484ca
-12/03/2020,44,Ciudad de México,F,25,04/03/2020,Sospechoso,Italia,01/03/2020,50f770c2
-12/03/2020,45,Nuevo León,M,13,09/03/2020,Sospechoso,España,09/03/2020,e28ca25d
-12/03/2020,46,Ciudad de México,M,26,29/02/2020,Sospechoso,Japón,17/02/2020,64bc416c
-12/03/2020,47,Veracruz,F,36,09/03/2020,Sospechoso,Alemania,09/03/2020,8caccac0
-12/03/2020,48,Ciudad de México,F,22,01/03/2020,Sospechoso,Contacto,NA,bcf140d6
-12/03/2020,49,Ciudad de México,F,21,04/03/2020,Sospechoso,Alemania,03/03/2020,3c75207a
-12/03/2020,50,Ciudad de México,F,23,06/03/2020,Sospechoso,Italia,06/03/2020,761b9805
-12/03/2020,51,Ciudad de México,M,27,04/03/2020,Sospechoso,Italia,29/02/2020,f4ea2573
-12/03/2020,52,Ciudad de México,F,30,29/02/2020,Sospechoso,España,27/02/2020,102f7506
-12/03/2020,53,Hidalgo,M,46,11/03/2020,Sospechoso,Estados Unidos,07/03/2020,89fce78d
-12/03/2020,54,Ciudad de México,F,60,06/03/2020,Sospechoso,Contacto,NA,74e3bf8b
-12/03/2020,55,Guanajuato,M,8,10/03/2020,Sospechoso,Contacto,NA,63b1b674
-12/03/2020,56,Guanajuato,M,46,09/03/2020,Sospechoso,Contacto,NA,2d452c7f
-12/03/2020,57,Aguascalientes,M,37,06/03/2020,Sospechoso,España,04/03/2020,d75209c6
-12/03/2020,58,Tabasco,F,42,10/03/2020,Sospechoso,Estados Unidos,09/03/2020,a75634e0
-12/03/2020,59,Veracruz,M,25,10/03/2020,Sospechoso,Estados Unidos,29/02/2020,007468bb
-12/03/2020,60,Jalisco,F,33,09/03/2020,Sospechoso,Francia,08/03/2020,2a72a7ef
-12/03/2020,61,San Luis Potosí,F,18,07/03/2020,Sospechoso,Estados Unidos,08/03/2020,de4b92b8
-12/03/2020,62,México,M,43,02/03/2020,Sospechoso,Estados Unidos,26/02/2020,a6a67c47
-12/03/2020,63,México,F,33,10/03/2020,Sospechoso,Italia,29/02/2020,755c6f5a
-12/03/2020,64,Quintana Roo,F,20,07/03/2020,Sospechoso,Contacto,05/03/2020,5702698d
-12/03/2020,65,Durango,M,26,01/03/2020,Sospechoso,Estados Unidos,08/03/2020,5f95a106
-12/03/2020,66,México,M,44,01/03/2020,Sospechoso,España,03/03/2020,9ff6f8b1
-12/03/2020,67,México,M,34,05/03/2020,Sospechoso,Estados Unidos,01/03/2020,95ff4cf9
-12/03/2020,68,México,M,43,10/03/2020,Sospechoso,Contacto,NA,5cc8dadc
-12/03/2020,69,Durango,M,58,06/03/2020,Sospechoso,España,28/02/2020,75fcbf57
-12/03/2020,70,Baja California,M,36,10/03/2020,Sospechoso,Estados Unidos,09/03/2020,c4211087
-12/03/2020,71,México,F,55,09/03/2020,Sospechoso,España,09/03/2020,2e466d5c
-12/03/2020,72,Ciudad de México,M,48,10/03/2020,Sospechoso,España,09/03/2020,b3fd575a
-12/03/2020,73,Ciudad de México,M,38,10/03/2020,Sospechoso,España,09/03/2020,41cb31df
-12/03/2020,74,Querétaro,F,43,11/03/2020,Sospechoso,Contacto,NA,28bbe585
-12/03/2020,75,Querétaro,M,36,07/03/2020,Sospechoso,Estados Unidos,08/03/2020,7765c451
-12/03/2020,76,Querétaro,M,70,12/03/2020,Sospechoso,Contacto,NA,e707ab91
-12/03/2020,77,Guanajuato,F,48,08/03/2020,Sospechoso,Italia,29/02/2020,35ce90cb
-12/03/2020,78,Guanajuato,F,36,07/03/2020,Sospechoso,Contacto,NA,233f5206
-12/03/2020,79,Guanajuato,F,35,09/03/2020,Sospechoso,Contacto,NA,9653d3b8
-12/03/2020,80,Querétaro,M,40,09/03/2020,Sospechoso,España,08/03/2020,eaa36d2c
-12/03/2020,81,Querétaro,F,36,05/03/2020,Sospechoso,Francia,07/03/2020,bea9ae39
-12/03/2020,82,Ciudad de México,M,53,09/03/2020,Sospechoso,España,09/03/2020,0327c04d
+Fecha Archivo Inicial,# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,HASH (10 ultimos)
+12/03/2020,1,Ciudad de México,F,2,29/02/2020,Sospechoso,Contacto,NA,2f4e76518e
+12/03/2020,2,Colima,F,36,04/03/2020,Sospechoso,Estados Unidos,03/03/2020,15d712e7d0
+12/03/2020,3,Baja California,M,35,02/03/2020,Sospechoso,Estados Unidos,27/02/2020,ce7d18f3cf
+12/03/2020,4,Colima,F,25,04/03/2020,Sospechoso,España,01/03/2020,842c7fd779
+12/03/2020,5,Ciudad de México,M,32,16/02/2020,Sospechoso,Contacto,NA,4284524cdb
+12/03/2020,6,Ciudad de México,F,36,28/02/2020,Sospechoso,España,21/02/2020,bb31387ba9
+12/03/2020,7,Jalisco,M,34,06/03/2020,Sospechoso,España,04/03/2020,ed7cffeae6
+12/03/2020,8,Jalisco,F,28,06/03/2020,Sospechoso,Estados Unidos,02/03/2020,42aeee2dd1
+12/03/2020,9,Ciudad de México,F,29,04/03/2020,Sospechoso,Contacto,NA,3353310fec
+12/03/2020,10,Sinaloa*,F,29,08/03/2020,Sospechoso,Estados Unidos,08/03/2020,5ba658941f
+12/03/2020,11,México,F,20,26/02/2020,Sospechoso,Italia,24/02/2020,8670f7895a
+12/03/2020,12,Baja California,M,33,06/03/2020,Sospechoso,España,08/03/2020,51a6e035e4
+12/03/2020,13,Ciudad de México,F,41,07/03/2020,Sospechoso,Contacto,NA,cecbeabc48
+12/03/2020,14,Quintana Roo,M,46,09/03/2020,Sospechoso,Corea del Sur,06/03/2020,286c5b2292
+12/03/2020,15,Jalisco,F,35,09/03/2020,Sospechoso,España,07/03/2020,acecf3ff86
+12/03/2020,16,Ciudad de México,M,48,29/02/2020,Sospechoso,Estados Unidos,23/02/2020,8572e3e904
+12/03/2020,17,Baja California,M,42,09/03/2020,Sospechoso,Estados Unidos,25/02/2020,f32ee07d85
+12/03/2020,18,Ciudad de México,M,40,03/03/2020,Sospechoso,Estados Unidos,07/03/2020,4d6b2f0208
+12/03/2020,19,Ciudad de México,M,45,29/02/2020,Sospechoso,Italia,04/03/2020,29c95a7c55
+12/03/2020,20,Baja California,F,40,02/03/2020,Sospechoso,Estados Unidos,29/02/2020,d07573aadb
+12/03/2020,21,Sinaloa,F,47,03/03/2020,Sospechoso,España,07/03/2020,d849abf836
+12/03/2020,22,Sinaloa,F,15,03/03/2020,Sospechoso,España,07/03/2020,a5078bcee5
+12/03/2020,23,Querétaro,M,25,26/02/2020,Sospechoso,Estados Unidos,09/03/2020,f900ea320c
+12/03/2020,24,Querétaro,F,65,10/03/2020,Sospechoso,Contacto,NA,0a02f3e87e
+12/03/2020,25,Ciudad de México,F,13,07/03/2020,Sospechoso,España,07/03/2020,75988f0f96
+12/03/2020,26,Guerrero,F,68,01/03/2020,Sospechoso,Estados Unidos,03/03/2020,926e4c2dcf
+12/03/2020,27,Ciudad de México,M,52,08/03/2020,Sospechoso,España,08/03/2020,908b18188a
+12/03/2020,28,Ciudad de México,M,33,09/03/2020,Sospechoso,Alemania,09/03/2020,2230f3544b
+12/03/2020,29,Quintana Roo,F,52,08/03/2020,Sospechoso,España,09/03/2020,547e81d6cf
+12/03/2020,30,Ciudad de México,M,17,04/03/2020,Sospechoso,Francia,29/02/2020,da6eb4751d
+12/03/2020,31,México,F,32,26/02/2020,Sospechoso,Alemania,28/02/2020,0e9530a9da
+12/03/2020,32,Ciudad de México,M,52,10/03/2020,Sospechoso,Estados Unidos,09/03/2020,4a55bf8154
+12/03/2020,33,Ciudad de México,F,40,06/03/2020,Sospechoso,España,08/03/2020,4dd3648e82
+12/03/2020,34,Ciudad de México,F,50,01/03/2020,Sospechoso,Estados Unidos,08/03/2020,e0248b09f1
+12/03/2020,35,Quintana Roo,F,32,09/03/2020,Sospechoso,Estados Unidos,05/03/2020,bf90d19600
+12/03/2020,36,Nuevo León,M,15,09/03/2020,Sospechoso,España,06/03/2020,e1ae262de1
+12/03/2020,37,México,F,47,06/03/2020,Sospechoso,Contacto,NA,865efadc7f
+12/03/2020,38,Morelos,M,28,27/02/2020,Sospechoso,España,25/02/2020,ecda912158
+12/03/2020,39,Querétaro,M,42,05/03/2020,Sospechoso,Italia,05/03/2020,4e25f80058
+12/03/2020,40,Nuevo León,M,42,08/03/2020,Sospechoso,Estados Unidos,05/03/2020,68046f906d
+12/03/2020,41,Ciudad de México,F,29,27/02/2020,Sospechoso,España,14/02/2020,48c4751307
+12/03/2020,42,Tabasco,F,31,09/03/2020,Sospechoso,Francia,08/03/2020,fa0df7d8ea
+12/03/2020,43,Baja California Sur,M,20,01/03/2020,Sospechoso,Francia,05/03/2020,935f666c8c
+12/03/2020,44,Ciudad de México,F,25,04/03/2020,Sospechoso,Italia,01/03/2020,306bdc05d5
+12/03/2020,45,Nuevo León,M,13,09/03/2020,Sospechoso,España,09/03/2020,0cfa68fc62
+12/03/2020,46,Ciudad de México,M,26,29/02/2020,Sospechoso,Japón,17/02/2020,a060b880d1
+12/03/2020,47,Veracruz,F,36,09/03/2020,Sospechoso,Alemania,09/03/2020,738caccac0
+12/03/2020,48,Ciudad de México,F,22,01/03/2020,Sospechoso,Contacto,NA,0810c33d13
+12/03/2020,49,Ciudad de México,F,21,04/03/2020,Sospechoso,Alemania,03/03/2020,db224d3659
+12/03/2020,50,Ciudad de México,F,23,06/03/2020,Sospechoso,Italia,06/03/2020,56338bc4e3
+12/03/2020,51,Ciudad de México,M,27,04/03/2020,Sospechoso,Italia,29/02/2020,bdeb7fa8e7
+12/03/2020,52,Ciudad de México,F,30,29/02/2020,Sospechoso,España,27/02/2020,642dd720e9
+12/03/2020,53,Hidalgo,M,46,11/03/2020,Sospechoso,Estados Unidos,07/03/2020,d535e4ae65
+12/03/2020,54,Ciudad de México,F,60,06/03/2020,Sospechoso,Contacto,NA,4870106a42
+12/03/2020,55,Guanajuato,M,8,10/03/2020,Sospechoso,Contacto,NA,3463b1b674
+12/03/2020,56,Guanajuato,M,46,09/03/2020,Sospechoso,Contacto,NA,d72d452c7f
+12/03/2020,57,Aguascalientes,M,37,06/03/2020,Sospechoso,España,04/03/2020,0bd75209c6
+12/03/2020,58,Tabasco,F,42,10/03/2020,Sospechoso,Estados Unidos,09/03/2020,9558819a17
+12/03/2020,59,Veracruz,M,25,10/03/2020,Sospechoso,Estados Unidos,29/02/2020,4dec89db40
+12/03/2020,60,Jalisco,F,33,09/03/2020,Sospechoso,Francia,08/03/2020,e52a72a7ef
+12/03/2020,61,San Luis Potosí,F,18,07/03/2020,Sospechoso,Estados Unidos,08/03/2020,6dbd9e9272
+12/03/2020,62,México,M,43,02/03/2020,Sospechoso,Estados Unidos,26/02/2020,d4cdc1039f
+12/03/2020,63,México,F,33,10/03/2020,Sospechoso,Italia,29/02/2020,88755c6f5a
+12/03/2020,64,Quintana Roo,F,20,07/03/2020,Sospechoso,Contacto,05/03/2020,ee39e77dc0
+12/03/2020,65,Durango,M,26,01/03/2020,Sospechoso,Estados Unidos,08/03/2020,0c15e02545
+12/03/2020,66,México,M,44,01/03/2020,Sospechoso,España,03/03/2020,4f9ff6f8b1
+12/03/2020,67,México,M,34,05/03/2020,Sospechoso,Estados Unidos,01/03/2020,a5b913a68a
+12/03/2020,68,México,M,43,10/03/2020,Sospechoso,Contacto,NA,be5cc8dadc
+12/03/2020,69,Durango,M,58,06/03/2020,Sospechoso,España,28/02/2020,c475fcbf57
+12/03/2020,70,Baja California,M,36,10/03/2020,Sospechoso,Estados Unidos,09/03/2020,d1f209a056
+12/03/2020,71,México,F,55,09/03/2020,Sospechoso,España,09/03/2020,912e466d5c
+12/03/2020,72,Ciudad de México,M,48,10/03/2020,Sospechoso,España,09/03/2020,8fd38fa298
+12/03/2020,73,Ciudad de México,M,38,10/03/2020,Sospechoso,España,09/03/2020,09a1c6c7f1
+12/03/2020,74,Querétaro,F,43,11/03/2020,Sospechoso,Contacto,NA,7e28bbe585
+12/03/2020,75,Querétaro,M,36,07/03/2020,Sospechoso,Estados Unidos,08/03/2020,5bc115d81b
+12/03/2020,76,Querétaro,M,70,12/03/2020,Sospechoso,Contacto,NA,f6e707ab91
+12/03/2020,77,Guanajuato,F,48,08/03/2020,Sospechoso,Italia,29/02/2020,7235ce90cb
+12/03/2020,78,Guanajuato,F,36,07/03/2020,Sospechoso,Contacto,NA,ff233f5206
+12/03/2020,79,Guanajuato,F,35,09/03/2020,Sospechoso,Contacto,NA,d69653d3b8
+12/03/2020,80,Querétaro,M,40,09/03/2020,Sospechoso,España,08/03/2020,28eaa36d2c
+12/03/2020,81,Querétaro,F,36,05/03/2020,Sospechoso,Francia,07/03/2020,a8bea9ae39
+12/03/2020,82,Ciudad de México,M,53,09/03/2020,Sospechoso,España,09/03/2020,1a9f64c164
