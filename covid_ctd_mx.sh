@@ -284,7 +284,6 @@ while true;do
     convPdftoCsv
     makeCsvExt
     invCountNewQury
-    read -r
 done
 }
 
