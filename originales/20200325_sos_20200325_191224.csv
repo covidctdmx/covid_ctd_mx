@@ -1,4 +1,4 @@
-﻿# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
+﻿# Caso,Estado,Localidad,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico
 1,PUEBLA,PUEBLA,M,49,15/03/2020,Sospechoso,Contacto,NA
 2,GUERRERO,ZONA NORTE,M,29,15/03/2020,Sospechoso,Contacto,NA
 3,BAJA CALIFORNIA,TIJUANA,F,34,14/03/2020,Sospechoso,Estados Unidos,08/03/2020
