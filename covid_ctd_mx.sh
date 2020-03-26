@@ -172,7 +172,6 @@ function convPdftoCsv(){
 
 	if [[ ! -f "${DOC_PATH}${FILE_NAME}${EXT_CSV}" ]];then
             echo "" > "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
-            echo -e "# Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico" >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             sed -i '/^$/d' "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
             PDF_VERSION=$(file "${DOC_PATH}${FILE_NAME}.${EXT_NAME}" | sed -e "s@.*PDF document, version @@g")
 
@@ -228,7 +227,15 @@ function convPdftoCsv(){
 	        sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
 
             fi
-            rm -rf "${DOC_PATH}${FILE_NAME}.ps"
+            COMMA_COUNT=$(sed -n "1 p" ${DOC_PATH}${FILE_NAME}${EXT_CSV} | grep -o "," | wc -l)
+
+            if [[ "${COMMA_COUNT}" = "8" ]];then
+                sed -i "1i # Caso,Estado,Localidad,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico" "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+            else
+                sed -i "1i # Caso,Estado,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico"  "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+            fi
+
+	    rm -rf "${DOC_PATH}${FILE_NAME}.ps"
             sed -i "1 s@^@\xef\xbb\xbf@g" ${DOC_PATH}${FILE_NAME}${EXT_CSV}
             echo -e "Se creo archivo ${DOC_PATH}${FILE_NAME}${EXT_CSV}"
 	fi
@@ -247,6 +254,7 @@ function invCountNewQury(){
 function makeCsvExt(){
     checkDirExist "${MERGE_PATH}pos"
     checkDirExist "${MERGE_PATH}sos"
+
     for TYPE_FILE in "pos" "sos";do
 	FILES_CSV=($(ls "${DOC_PATH}" | grep -e ".*${TYPE_FILE}.*.csv"))
 
@@ -257,12 +265,25 @@ function makeCsvExt(){
 		FILE_CSV_LEN=$(wc -l "${DOC_PATH}${FILE_CSV}" | sed -e "s@\(.*\) ${DOC_PATH}${FILE_CSV}@\1@g")
                 cp "${DOC_PATH}${FILE_CSV}" "${MERGE_PATH}${TYPE_FILE}/"
 		FILE_CSV_DATE=$(echo -e "${FILE_CSV}" | sed -e "s@^\([0-9][0-9][0-9][0-9]\)\([0-9][0-9]\)\([0-9][0-9]\)_.*_.*_.*.csv@\3/\2/\1@g")
+                COMMA_COUNT=$(sed -n "1 p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | grep -o "," | wc -l)
 
-		for LINE_CSV in $(seq 1 1 ${FILE_CSV_LEN});do
-                    LINE_CSV_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*,.*,.*,.*\)@\1@" | tr -d " " | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
-                    sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+		for LINE_CSV in $(seq 2 1 ${FILE_CSV_LEN});do
+                    if [[ "${COMMA_COUNT}" = "7" ]];then
+                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*,.*,.*,.*\)@\1@" | sed -e "s@ \|\/\|,@@g")
+			LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
+	     		sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" 
+		    else
+		        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*\),.*,\(.*,.*,.*,.*,.*,.*\)@\1\2@" | sed -e "s@ \|\/\|,@@g")
+                        LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
+                        sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"                 
+		    fi
 		done
-                sed -i "1 s@^\(.*\),\(.*,.*,.*,.*,.*,.*,.*,.*\),\(.*\)\$@Fecha Archivo Inicial,\2,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+
+                if [[ "${COMMA_COUNT}" = "7" ]];then
+                    sed -i "1 s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@Fecha Archivo Inicial,\1,Cadena,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                else
+                    sed -i "1 s@^\(.*,.*,.*,.*,.*,.*,.*,.*,.*\)\$@Fecha Archivo Inicial,\1,Cadena,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+	        fi
                 sed -i "1 s@^@\xef\xbb\xbf@g" ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}
                 echo -e "Se crea archivo ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
 	    fi
