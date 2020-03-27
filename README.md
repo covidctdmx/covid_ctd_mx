@@ -8,3 +8,6 @@ Por hacer:
 
 
 Los archivos PDF anteriores al 19 de marzo fueron tomados del enlace http://bit.ly/covid19mexico mantenido por @elzr
+
+;D covidctdmx
+covid_ctd_mx@protonmail.com
