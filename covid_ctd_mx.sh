@@ -244,7 +244,7 @@ function convPdftoCsv(){
 
 function invCountNewQury(){
     echo -e "Esperando para hacer una nueva consulta en:"
-    for sec in {15..1}; do
+    for sec in {5..1}; do
         echo -e " ${sec} minutos"
         sleep 60
     done
@@ -291,6 +291,34 @@ function makeCsvExt(){
     done
 }
 
+function copyCsv(){
+    checkDirExist "csv/"
+    FILES_CSV=($(find ${DOC_PATH} -name "*.csv" | sort))
+
+    for FILE_CSV in ${FILES_CSV[*]};do 
+        COUNT=0
+        FILE_NEW_NAME=$(echo -e "${FILE_CSV}" | sed -e "s@originales\/\(.*\)_\(.*\)_.*_.*.csv@\1_\2@g")
+        FILE_CSV_HASH=$(md5sum ${FILE_CSV} | sed -e "s@\(.*\) .*\$@\1@g")
+        FILES_NEW_CSV=($(ls "csv/.*" | grep -e "${FILE_NEW_NAME}.*.csv"))
+        echo -e "XXX${#FILES_NEW_CSV[*]}"
+	echo -e "YYY${FILES_NEW_CSV[*]}" | tr " " "\n"
+	if [[ "${#FILES_NEW_CSV[*]}" = "0" ]];then
+            cp -v ${FILE_CSV} "csv/${FILE_NEW_NAME}.csv"
+        else	
+	    for FILE_NEW_CSV in ${FILES_NEW_CSV[*]};do
+                FILE_NEW_NAME_COUNT=$(find csv -name "${FILE_NEW_NAME}_*.csv" | wc -l)
+		FILE_NEW_NAME_HASH=$(md5sum "csv/${FILE_NEW_CSV}" | sed -e "s@\(.*\) .*\$@\1@g")
+                echo -e "${FILE_CSV} csv/${FILE_NEW_CSV} ${FILE_CSV_HASH}-${FILE_NEW_NAME_HASH}"
+                md5sum "${FILE_CSV}" "csv/${FILE_NEW_CSV}"
+		if [[ "${FILE_CSV_HASH}" != "${FILE_NEW_NAME_HASH}" ]];then
+		    COUNT=$(( ${FILE_NEW_NAME_COUNT} + 1 ))
+                    cp -v ${FILE_CSV} "csv/${FILE_NEW_NAME}_${COUNT}.csv"
+                fi
+            read -r
+            done
+        fi
+    done
+}
 
 function main (){
 #clear
@@ -302,7 +330,9 @@ while true;do
     dwnloadFilesFromCTD
     convPdftoCsv
     makeCsvExt
+#    copyCsv
     invCountNewQury
+#    read -r
 done
 }
 
