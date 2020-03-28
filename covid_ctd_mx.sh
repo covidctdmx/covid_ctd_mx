@@ -194,7 +194,7 @@ function convPdftoCsv(){
                 sed 's/[[:blank:]]/,/g' |\
                 sed 's/\([,]\{2\}\)/#/g' |\
                 sed -e "s@#,@#@g" |\
-                sed -e "s@#######w@#@g" |\
+                sed -e "s@#######@#@g" |\
                 sed -e "s@######@#@g" |\
                 sed -e "s@####@#@g" |\
                 sed -e "s@###@#@g" |\
@@ -203,8 +203,9 @@ function convPdftoCsv(){
                 tr "," " " |\
                 tr "#" "," |\
                 sed -e "s@^,@@g" |\
-                grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
-		sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+                grep -e "^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|Estados" |\
+                grep -v "^Estados$\|^,Estados$" |\
+		sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}.tmp"
             elif [[ $(echo -e "${FILE_NAME}" | grep -e "sos") ]];then
                 ps2ascii "${DOC_PATH}${FILE_NAME}.${TO_ASCII_FILE_EXT}" |\
                 sed '/^$/d' |\
@@ -213,7 +214,7 @@ function convPdftoCsv(){
                 sed 's/[[:blank:]]/,/g' |\
                 sed 's/\([,]\{2\}\)/#/g' |\
                 sed -e "s@#,@#@g" |\
-                sed -e "s@#######w@#@g" |\
+                sed -e "s@#######@#@g" |\
                 sed -e "s@######@#@g" |\
                 sed -e "s@####@#@g" |\
                 sed -e "s@###@#@g" |\
@@ -222,11 +223,33 @@ function convPdftoCsv(){
                 tr "," " " |\
                 tr "#" "," |\
                 sed -e "s@^,@@g" |\
-		sed -e "s@,SUR,@,BAJA CALIFORNIA SUR,@g" |\
-                grep -e ".*,.*,.*,.*,.*,.*,.*,.*" |\
-	        sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+                grep -e "^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*\)$\|Estados" |\
+                grep -v "^Estados$\|^,Estados$" |\
+	        sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}.tmp"
 
             fi
+
+            COUNT_LINES=1
+	    COUNT=0
+            LINE=""
+	    cp "${DOC_PATH}${FILE_NAME}.tmp" "${DOC_PATH}${FILE_NAME}.tmp1"
+            while read LINE;do
+                if [[ $(echo -e "${LINE}" | grep -e "^.*,Estados$") ]];then
+                    STATE=$(echo -e "${LINE}" | sed -e "s@^\(.*\),Estados\$@\1@g")
+                    COUNT2=$(( ${COUNT_LINES} + 1 ))
+                    sed  -i "${COUNT2} s@\(.*\),\(.*,.*,.*,.*,.*,.*\)@\1,${STATE},\2@" "${DOC_PATH}${FILE_NAME}.tmp1"
+                fi
+                COUNT_LINES=$(( ${COUNT_LINES} + 1 ))
+            done < "${DOC_PATH}${FILE_NAME}.tmp"
+
+            cat "${DOC_PATH}${FILE_NAME}.tmp1" |\
+            grep -v ".*,Estados$" |\
+            sed -e "s@,SUR,\(.*\)BAJA CALIFORNIA,@,BAJA CALIFORNIA SUR,\1@g" |\
+            sed -e "s@,SUR,@,BAJA CALIFORNIA SUR,@g" |\
+            sed -e "s@,Unidos,@,Estados Unidos,@g" > "${DOC_PATH}${FILE_NAME}${EXT_CSV}"
+
+            rm -rf "${DOC_PATH}${FILE_NAME}.tmp" "${DOC_PATH}${FILE_NAME}.tmp1"
+
             COMMA_COUNT=$(sed -n "1 p" ${DOC_PATH}${FILE_NAME}${EXT_CSV} | grep -o "," | wc -l)
 
             if [[ "${COMMA_COUNT}" = "8" ]];then
