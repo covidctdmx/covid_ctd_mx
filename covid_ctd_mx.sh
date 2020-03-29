@@ -292,11 +292,11 @@ function makeCsvExt(){
 
 		for LINE_CSV in $(seq 2 1 ${FILE_CSV_LEN});do
                     if [[ "${COMMA_COUNT}" = "7" ]];then
-                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*,.*,.*,.*\)@\1@" | sed -e "s@ \|\/\|,@@g")
+                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*\),.*,\(.*,.*\)@\1\2@" | sed -e "s@ \|\/\|,@@g")
 			LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
 	     		sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" 
 		    else
-		        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*\),.*,\(.*,.*,.*,.*,.*,.*\)@\1\2@" | sed -e "s@ \|\/\|,@@g")
+                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*\),.*,\(.*,.*,.*\),.*,\(.*,.*\)@\1\2\3@" | sed -e "s@ \|\/\|,@@g")
                         LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
                         sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"                 
 		    fi

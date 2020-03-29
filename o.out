@@ -11786,3 +11786,1507 @@ Esperando para hacer una nueva consulta en:
  8 minutos
  7 minutos
  6 minutos
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;45r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[45;1H"covid_ctd_mx.sh" 352L, 13907C[1;5HcheckDirExist [38;5;130m"[m[35m${MERGE_PATH}[m[31msos[m[38;5;130m"[3;5Hfor[m TYPE_FILE [38;5;130min[m [38;5;130m"[m[31mpos[m[38;5;130m"[m [38;5;130m"[m[31msos[m[38;5;130m";do[m[4;9H[36mFILES_CSV[m=[35m([m$[35m([m[38;5;130mls[m [38;5;130m"[m[35m${DOC_PATH}[m[38;5;130m"[m [38;5;130m|[m [38;5;130mgrep[m [35m-e[m [38;5;130m"[m[31m.*[m[35m${TYPE_FILE}[m[31m.*.csv[m[38;5;130m"[m[35m))[m[6;9H[38;5;130mfor[m FILE_CSV [38;5;130min[m [35m${FILES_CSV[[m*[35m]}[m[38;5;130m;do[m[7;13H[36mFILE_CSV_EXT_EXIST[m=[35m$([m[38;5;130mls[m[35m [m[38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130mgrep[m[35m [m[38;5;130m"[m[35m${FILE_CSV}[m[38;5;130m"[m[35m [m[31m1[m[38;5;130m>[m[35m/dev/null[m[38;5;130m;[m[35m [m[38;5;130mecho[m[31m [m[35m$?)[m[9;13H[38;5;130mif [m[35m[[[m [38;5;130m"[m[35m${FILE_CSV_EXT_EXIST}[m[38;5;130m"[m [38;5;130m=[m [31m"1"[m [35m]][m[38;5;130m;then[m[10;17H[36mFILE_CSV_LEN[m=[35m$([m[35mwc -l [m[38;5;130m"[m[35m${DOC_PATH}${FILE_CSV}[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@[m[35m\([m[31m.*[m[35m\)[m[31m [m[35m${DOC_PATH}${FILE_CSV}[m[31m@[m[35m\1[m[31m@g[m[38;5;130m"[m[35m)[m[11;17Hcp [38;5;130m"[m[35m${DOC_PATH}${FILE_CSV}[m[38;5;130m"[m [38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[38;5;130m"[m[12;17H[36mFILE_CSV_DATE[m=[35m$([m[38;5;130mecho[m[31m -e [m[38;5;130m"[m[35m${FILE_CSV}[m[38;5;130m"[m[31m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@^[m[35m\([m[31m[0-9][0-9][0-9][0-9][m[35m\)\([m[31m[0-9][0-9][m[35m\)\([m[31m[0-9][0-9][m[35m\)[m[31m_.*_.*_.*.csv@[m[35m\3[m[31m/[m[35m\2[m[31m/[m[35m\1[m[31m@g[m[38;5;130m"[m[35m)[m[13;17H[36mCOMMA_COUNT[m=[35m$([m[38;5;130msed[m[35m -n [m[38;5;130m"[m[31m1 p[m[38;5;130m"[m[35m [m[38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130mgrep[m[35m -o [m[38;5;130m"[m[31m,[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m wc -l[m[35m)[m[15;17H[38;5;130mfor[m LINE_CSV [38;5;130min[m [35m$([m[35mseq [m[31m2[m[35m [m[31m1[m[35m [m[35m${FILE_CSV_LEN})[m[38;5;130m;do[16;21Hif [m[35m[[[m [38;5;130m"[m[35m${COMMA_COUNT}[m[38;5;130m"[m [38;5;130m=[m [31m"7"[m [35m]][m[38;5;130m;then[m[17;25H[36mLINE_TO_HASH[m=[35m$([m[38;5;130msed[m[35m -n [m[38;5;130m"[m[35m${LINE_CSV}[m[31m p[m[38;5;130m"[m[35m [m[38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@^.*,[m[35m\([m[31m.*,.*,.*,.*[m[35m\)[m[31m,.*,[m[35m\([m[31m.*,.*[m[35m\)[m[31m@[m[35m\1\2[m[31m@[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@ [m[35m\|\/\||[m[18;1H[31m,@@g[m[38;5;130m"[m[35m)[m[19;25H[36mLINE_CSV_HASH[m=[35m$([m[38;5;130mecho[m[31m -e [m[38;5;130m"[m[35m${LINE_TO_HASH}[m[38;5;130m"[m[31m [m[38;5;130m|[m[35m md5sum [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@.*[m[35m\([m[31m[0-9a-z][m[35m\{[m[31m10[m[35m\}\)[m[31m  -.*[m[35m\$[m[31m@[m[35m\1[m[31m@g[m[38;5;130m"[m[35m)[m[20;25H[38;5;130msed[m [38;5;130m-i[m [38;5;130m"[m[35m${LINE_CSV}[m[31m s@^[m[35m\([m[31m.*,.*,.*,.*,.*,.*,.*,.*[m[35m\)\$[m[31m@[m[35m${FILE_CSV_DATE}[m[31m,[m[35m\1[m[31m,[m[35m${LINE_TO_HASH}[m[31m,[m[35m${LINE_CSV_HASH}[m[31m@g[m[38;5;130m"[m [38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[21;21Helse[m[22;25H[36mLINE_TO_HASH[m=[35m$([m[38;5;130msed[m[35m -n [m[38;5;130m"[m[35m${LINE_CSV}[m[31m p[m[38;5;130m"[m[35m [m[38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@^.*,[m[35m\([m[31m.*[m[35m\)[m[31m,.*,[m[35m\([m[31m.*,.*,.*[m[35m\)[m[31m,.*,[m[35m\([m[31m.*,.*[m[35m\)[m[31m@[m[35m\1\2\3[m[31m@[m[38;5;130m"[m[35m [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m""[m[23;1H[31ms@ [m[35m\|\/\|[m[31m,@@g[m[38;5;130m"[m[35m)[m[24;25H[36mLINE_CSV_HASH[m=[35m$([m[38;5;130mecho[m[31m -e [m[38;5;130m"[m[35m${LINE_TO_HASH}[m[38;5;130m"[m[31m [m[38;5;130m|[m[35m md5sum [m[38;5;130m|[m[35m [m[38;5;130msed[m[35m -e [m[38;5;130m"[m[31ms@.*[m[35m\([m[31m[0-9a-z][m[35m\{[m[31m10[m[35m\}\)[m[31m  -.*[m[35m\$[m[31m@[m[35m\1[m[31m@g[m[38;5;130m"[m[35m)[m[25;25H[38;5;130msed[m [38;5;130m-i[m [38;5;130m"[m[35m${LINE_CSV}[m[31m s@^[m[35m\([m[31m.*,.*,.*,.*,.*,.*,.*,.*,.*[m[35m\)\$[m[31m@[m[35m${FILE_CSV_DATE}[m[31m,[m[35m\1[m[31m,[m[35m${LINE_TO_HASH}[m[31m,[m[35m${LINE_CSV_HASH}[m[31m@g[m[38;5;130m"[m [38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSVV[26;1H}[m[38;5;130m"[27;21Hfi[28;17Hdone[30;17Hif [m[35m[[[m [38;5;130m"[m[35m${COMMA_COUNT}[m[38;5;130m"[m [38;5;130m=[m [31m"7"[m [35m]][m[38;5;130m;then[31;21Hsed[m [38;5;130m-i[m [38;5;130m"[m[31m1 s@^[m[35m\([m[31m.*,.*,.*,.*,.*,.*,.*,.*[m[35m\)\$[m[31m@Fecha Archivo Inicial,[m[35m\1[m[31m,Cadena,HASH (10 ultimos)@g[m[38;5;130m"[m [38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[32;17Helse[33;21Hsed[m [38;5;130m-i[m [38;5;130m"[m[31m1 s@^[m[35m\([m[31m.*,.*,.*,.*,.*,.*,.*,.*,.*[m[35m\)\$[m[31m@Fecha Archivo Inicial,[m[35m\1[m[31m,Cadena,HASH (10 ultimos)@g[m[38;5;130m"[m [38;5;130m"[m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[34;17Hfi[35;17Hsed[m [38;5;130m-i[m [38;5;130m"[m[31m1 s@^@[m[35m\xef\xbb\xbf[m[31m@g[m[38;5;130m"[m [35m${MERGE_PATH}${TYPE_FILE}[m/[35m${FILE_CSV}[m[36;17H[38;5;130mecho[m[31m -e [m[38;5;130m"[m[31mSe crea archivo [m[35m${MERGE_PATH}${TYPE_FILE}[m[31m/[m[35m${FILE_CSV}[m[38;5;130m"[37;13Hfi[38;9Hdone
+[m    [38;5;130mdone[m
+[36m}
+
+function[m [36mcopyCsv(){[m
+    checkDirExist [38;5;130m"[m[31mcsv/[m[38;5;130m"[m
+    [36mFILES_CSV[m=[35m([m$[35m([m[38;5;130mfind[m [35m${DOC_PATH}[m [35m-name[m [38;5;130m"[m[31m*.csv[m[38;5;130m"[m [38;5;130m|[m [38;5;130msort[m[35m))[m[45;156H299,25[8C89%[22;25H[?25h[?25l[45;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[45;156H[K[45;156H299,25[8C89%[22;25H[?25h[?25l[45;146H:[22;25H[45;1H[K[45;1H:[?2004h[?25hq[?25l[?25h![?25l[?25h[?25l[?2004l[45;1H[K[45;1H[?2004l[?1l>[?25h[?1049l[23;0;0tInicio de consulta: 20200328_052209
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_052209.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_052209.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_052209.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+Inicio de consulta: 20200328_055803
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_055803.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_055803.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_055803.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_060807
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_060807.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_060807.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_060807.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_061812
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_061812.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_061812.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_061812.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_062816
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_062816.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_062816.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_062816.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_063821
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_063821.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_063821.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_063821.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_064825
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_064825.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_064825.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_064825.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_065828
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_065828.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_065828.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_065828.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_070836
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_070836.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_070836.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_070836.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_071846
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_071846.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_071846.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_071846.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_072857
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_072857.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_072857.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_072857.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_073908
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_073908.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_073908.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_073908.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_074918
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_074918.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_074918.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_074918.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_075928
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_075928.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_075928.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_075928.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_080940
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_080940.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_080940.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_080940.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_081950
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_081950.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_081950.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_081950.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_083001
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_083001.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_083001.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_083001.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_084010
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_084010.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_084010.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_084010.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_085018
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_085018.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_085018.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_085018.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_090026
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_090026.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_090026.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_090026.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_091032
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_091032.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_091032.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_091032.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_092038
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_092038.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_092038.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_092038.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_093045
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_093045.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_093045.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_093045.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_094054
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_094054.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_094054.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_094054.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_095100
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_095100.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_095100.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_095100.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_100107
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_100107.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_100107.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_100107.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_101115
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_101115.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_101115.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_101115.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_102123
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_102123.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_102123.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_102123.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_103130
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_103130.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_103130.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_103130.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_104138
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_104138.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_104138.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_104138.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_105144
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_105144.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_105144.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_105144.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_110150
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_110150.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_110150.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_110150.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_111157
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_111157.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_111157.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_111157.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_112203
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_112203.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_112203.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_112203.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_113212
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_113212.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_113212.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_113212.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_114218
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_114218.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_114218.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_114218.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_115225
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_115225.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_115225.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_115225.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_120238
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_120238.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_120238.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_120238.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_121245
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_121245.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_121245.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_121245.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_122351
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_122351.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_122351.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_122351.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_123357
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_123357.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_123357.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_123357.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_124403
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_124403.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_124403.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_124403.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_125409
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_125409.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_125409.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_125409.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_130415
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_130415.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_130415.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_130415.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_131422
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_131422.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_131422.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_131422.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_132431
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_132431.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_132431.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_132431.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_133438
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_133438.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_133438.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_133438.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_134445
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_134445.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_134445.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_134445.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_135451
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_135451.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_135451.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_135451.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_140457
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_140457.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_140457.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_140457.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_141503
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_141503.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_141503.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_141503.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_142509
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_142509.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_142509.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_142509.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_143516
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_143516.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_143516.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_143516.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_144523
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_144523.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_144523.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_144523.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_145528
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_145528.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_145528.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_145528.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_150535
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_150535.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_150535.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_150535.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_151542
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_151542.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_151542.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_151542.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_152547
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_152547.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_152547.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_152547.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_153551
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_153551.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_153551.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_153551.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_154559
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_154559.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_154559.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_154559.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_155602
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_155602.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_155602.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_155602.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_160606
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_160606.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_160606.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_160606.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_161610
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_161610.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_161610.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_161610.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_162614
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_162614.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_162614.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_162614.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_163619
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_163619.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_163619.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_163619.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_164623
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_164623.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_164623.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_164623.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_165626
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_165626.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_165626.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_165626.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_170630
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_170630.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_170630.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_170630.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_171633
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_171633.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_171633.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_171633.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_172638
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_172638.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_172638.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_172638.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_173642
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_173642.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_173642.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_173642.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_174646
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_174646.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_174646.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_174646.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_175651
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_175651.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_175651.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_175651.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_180656
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_180656.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_180656.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_180656.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_181704
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_181704.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_181704.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_181704.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_182708
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_182708.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_182708.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_182708.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_183712
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_183712.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_183712.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_183712.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_184717
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_184717.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_184717.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_184717.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200328_185723
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200327_tec_20200328_185723.pdf el archivo ya existe
+No se descarga originales/20200327_sos_20200328_185723.pdf el archivo ya existe
+No se descarga originales/20200327_pos_20200328_185723.pdf el archivo ya existe
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+Inicio de consulta: 20200328_190052
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+3Se descargo archivo originales/20200328_tec_20200328_190052.pdf
+3Se descargo archivo originales/20200328_sos_20200328_190052.pdf
+3Se descargo archivo originales/20200328_pos_20200328_190052.pdf
+Se creo archivo originales/20200328_pos_20200328_190052.csv
+Se creo archivo originales/20200328_sos_20200328_190052.csv
+Se crea archivo merge/pos/20200328_pos_20200328_190052.csv
+Se crea archivo merge/sos/20200328_sos_20200328_190052.csv
+'originales/20200328_pos_20200328_190052.csv' -> 'csv/20200328_pos.csv'
+'originales/20200328_sos_20200328_190052.csv' -> 'csv/20200328_sos.csv'
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
