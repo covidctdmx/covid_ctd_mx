@@ -290,26 +290,49 @@ function makeCsvExt(){
 		FILE_CSV_DATE=$(echo -e "${FILE_CSV}" | sed -e "s@^\([0-9][0-9][0-9][0-9]\)\([0-9][0-9]\)\([0-9][0-9]\)_.*_.*_.*.csv@\3/\2/\1@g")
                 COMMA_COUNT=$(sed -n "1 p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | grep -o "," | wc -l)
 
-		for LINE_CSV in $(seq 2 1 ${FILE_CSV_LEN});do
+		time for LINE_CSV in $(seq 2 1 ${FILE_CSV_LEN});do
                     if [[ "${COMMA_COUNT}" = "7" ]];then
-                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*\),.*,\(.*,.*\)@\1\2@" | sed -e "s@ \|\/\|,@@g")
-			LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
-	     		sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" 
+                        LINE=$(sed -n "${LINE_CSV} p" "${DOC_PATH}${FILE_CSV}")
+                        LINE_COL_STATE=$(echo -e "${LINE}" | sed -e "s@^.*,\(.*\),.*,.*,.*,.*,.*,.*\$@\1@g")
+                        LINE_COL_DATE_SYMP=$(echo -e "${LINE}" | sed -e "s@^.*,.*,.*,.*,\(.*\),.*,.*,.*\$@\1@g")
+                        if [[ $(echo -e "${LINE_COL_STATE}" | grep -e "a\|e\|i\|o\|u") ]];then
+                            STATE_UPPER=$(echo -e "${LINE_COL_STATE}" | tr "[:lower:]" "[:upper:]" | sed -e "s@á@Á@g" -e "s@é@É@g" -e "s@í@Í@g" -e "s@ó@Ó@g" -e "s@ú@Ú@g")
+                            sed -i "${LINE_CSV} s@^\(.*,\)\(.*\)\(,.*,.*,.*,.*,.*,.*\)\$@\1${STATE_UPPER}\3@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                        fi
+                        if [[ $(echo -e "${LINE_COL_DATE_SYMP}" | grep -e "[0-9][0-9][0-9][0-9][0-9]") ]];then
+                            DATE_UNIX_FORMAT=$(date -d @$(( $(( ${LINE_COL_DATE_SYMP} - 25568 )) * 86400 )) +"%d/%m/%Y")
+                            sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,\)\(.*\)\(,.*,.*,.*\)\$@\1${DATE_UNIX_FORMAT}\3@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                        fi
+                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*,.*,.*,.*\),.*,\(.*,.*\)@\1\2@" | sed -e "s@ \|\/\|,\|*@@g")
+			LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@c-\1@g")
+                        sed -i "${LINE_CSV} s@^\(.*,.*\),\(.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,,\2,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" 
 		    else
-                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*\),.*,\(.*,.*,.*\),.*,\(.*,.*\)@\1\2\3@" | sed -e "s@ \|\/\|,@@g")
-                        LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@\1@g")
+                        LINE=$(sed -n "${LINE_CSV} p" "${DOC_PATH}${FILE_CSV}")
+                        LINE_COL_STATE=$(echo -e "${LINE}" | sed -e "s@^.*,\(.*\),.*,.*,.*,.*,.*,.*,.*\$@\1@g")
+                        LINE_COL_DATE_SYMP=$(echo -e "${LINE}" | sed -e "s@^.*,.*,.*,.*,.*,\(.*\),.*,.*,.*\$@\1@g")
+                        if [[ $(echo -e "${LINE_COL_STATE}" | grep -e "a\|e\|i\|o\|u") ]];then
+                            STATE_UPPER=$(echo -e "${LINE_COL_STATE}" | tr "[:lower:]" "[:upper:]" | sed -e "s@á@Á@g" -e "s@é@É@g" -e "s@í@Í@g" -e "s@ó@Ó@g" -e "s@ú@Ú@g")
+                            sed -i "${LINE_CSV} s@^\(.*,\)\(.*\)\(,.*,.*,.*,.*,.*,.*,.*\)\$@\1${STATE_UPPER}\3@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                        fi
+                        if [[ $(echo -e "${LINE_COL_DATE_SYMP}" | grep -e "[0-9][0-9][0-9][0-9][0-9]") ]];then
+                            DATE_UNIX_FORMAT=$(date -d @$(( $(( ${LINE_COL_DATE_SYMP} - 25568 )) * 86400 )) +"%d/%m/%Y")
+                            sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,\)\(.*\)\(,.*,.*,.*\)\$@\1${DATE_UNIX_FORMAT}\3@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                        fi
+
+                        LINE_TO_HASH=$(sed -n "${LINE_CSV} p" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}" | sed -e "s@^.*,\(.*\),.*,\(.*,.*,.*\),.*,\(.*,.*\)@\1\2\3@" | sed -e "s@ \|\/\|,\|*@@g")
+                        LINE_CSV_HASH=$(echo -e "${LINE_TO_HASH}" | md5sum | sed -e "s@.*\([0-9a-z]\{10\}\)  -.*\$@c-\1@g")
                         sed -i "${LINE_CSV} s@^\(.*,.*,.*,.*,.*,.*,.*,.*,.*\)\$@${FILE_CSV_DATE},\1,${LINE_TO_HASH},${LINE_CSV_HASH}@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"                 
 		    fi
 		done
 
                 if [[ "${COMMA_COUNT}" = "7" ]];then
-                    sed -i "1 s@^\(.*,.*,.*,.*,.*,.*,.*,.*\)\$@Fecha Archivo Inicial,\1,Cadena,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
+                    sed -i "1 s@^\(.*,.*\),\(.*,.*,.*,.*,.*,.*\)\$@Fecha Archivo Inicial,\1,Localidad,\2,Cadena,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
                 else
                     sed -i "1 s@^\(.*,.*,.*,.*,.*,.*,.*,.*,.*\)\$@Fecha Archivo Inicial,\1,Cadena,HASH (10 ultimos)@g" "${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
 	        fi
                 sed -i "1 s@^@\xef\xbb\xbf@g" ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}
                 echo -e "Se crea archivo ${MERGE_PATH}${TYPE_FILE}/${FILE_CSV}"
-	    fi
+            fi
         done
     done
 }
@@ -334,9 +357,63 @@ function copyCsv(){
      done
 }
 
+function mergeCsv(){
+    MERGE_FILE_NAME="supermerge.csv"
+    checkUrlFile "${MERGE_PATH}" "${MERGE_FILE_NAME}"
+    FILES_CSV=($(find ${MERGE_PATH} -name "*.csv" | grep -v "${MERGE_FILE_NAME}" | sed -e "s@merge/.*os/\(.*\)@\1@g" | sort | sed -e "s@\(.*\)_\(.*\)_\(.*_.*.csv\)@merge\/\2\/\1_\2_\3@g"))
+    HEADER="Fecha Archivo Inicial,# Caso,Estado,Localidad,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,Cadena,HASH (10 ultimos)"
+    MERGE_HEADER=$(sed -n "1 p" ${MERGE_PATH}${MERGE_FILE_NAME} | sed -e "s@^\xef\xbb\xbf@@g")
+    if [[ "${HEADER}" != "${MERGE_HEADER}" ]];then
+        sed -i "1i ${HEADER}" "${MERGE_PATH}${MERGE_FILE_NAME}"
+        sed -i "1 s@^@\xef\xbb\xbf@g" "${MERGE_PATH}${MERGE_FILE_NAME}"
+        sed -i "/^$/d" "${MERGE_PATH}${MERGE_FILE_NAME}"
+    fi
+    for FILE_CSV in ${FILES_CSV[*]};do
+        HEADER_CSV=$(sed -n "1 p" ${FILE_CSV})
+        HEADER_CSV_LEN=$(echo -e "${HEADER_CSV}" | grep -o "," | wc -l)
+        if [[ "${HEADER_CSV_LEN}" = "10" ]];then
+            FILE_CSV_TENLAST_LINES=$(tail -n 10 ${FILE_CSV} | sed -e "s@\(.*,.*,.*,\)\(.*,.*,.*,.*,.*,.*,.*,.*\)@\1,\2@g")
+            FILE_CSV_EXIST_IN_MERGE=$(grep -e "${FILE_CSV_TENLAST_LINES}" ${MERGE_PATH}${MERGE_FILE_NAME} 1>\dev\null; echo $?)
+            if [[ "${FILE_CSV_EXIST_IN_MERGE}" != "0" ]];then
+                sed -n "2,$ p" "${FILE_CSV}" | sed -e "s@\(.*,.*,.*,\)\(.*,.*,.*,.*,.*,.*,.*,.*\)@\1,\2@g" >> "${MERGE_PATH}${MERGE_FILE_NAME}"
+                echo -e "Se agrega ${FILE_CSV} a merge/supermerge.csv"
+            fi
+        elif [[ "${HEADER_CSV_LEN}" = "11" ]];then
+            FILE_CSV_TENLAST_LINES=$(tail -n 10 ${FILE_CSV})
+            FILE_CSV_EXIST_IN_MERGE=$(grep -e "${FILE_CSV_TENLAST_LINES}" ${MERGE_PATH}${MERGE_FILE_NAME} 1>\dev\null; echo $?)
+            if [[ "${FILE_CSV_EXIST_IN_MERGE}" != "0" ]];then
+                sed -n "2,$ p" "${FILE_CSV}" >> "${MERGE_PATH}${MERGE_FILE_NAME}"
+                echo -e "Se agrega ${FILE_CSV} a merge/supermerge.csv"
+            fi
+        fi
+    done
+}
+
+function csvToStandar(){
+    FILE=$1
+    FILE_LEN=$(wc -l ${FILE} | sed -e "s@^\(.*\) .*@\1@g")
+
+    for FILE_LINE in $(seq 2 1 ${FILE_LEN});do
+        LINE=$(sed -n "${FILE_LINE} p" "${FILE}")
+        LINE_COL_STATE=$(echo -e "${LINE}" | sed -e "s@^.*,.*,\(.*\),.*,.*,.*,.*,.*,.*,.*,.*,.*\$@\1@g")
+        LINE_COL_DATE_SYMP=$(echo -e "${LINE}" | sed -e "s@^.*,.*,.*,.*,.*,.*,\(.*\),.*,.*,.*,.*,.*\$@\1@g")
+        STATE_UPPER="${LINE_COL_STATE}"
+        DATE_UNIX_FORMAT="${LINE_COL_DATE_SYMP}"
+        if [[ $(echo -e "${LINE_COL_STATE}" | grep -e "a\|e\|i\|o\|u") ]];then
+            STATE_UPPER=$(echo -e "${LINE_COL_STATE}" | tr "[:lower:]" "[:upper:]" | sed -e "s@á@Á@g" -e "s@é@É@g" -e "s@í@Í@g" -e "s@ó@Ó@g" -e "s@ú@Ú@g")
+            sed -i "${FILE_LINE} s@^\(.*,.*,\)\(.*\)\(,.*,.*,.*,.*,.*,.*,.*,.*,.*\)\$@\1${STATE_UPPER}\3@g" ${FILE}
+        fi
+        if [[ $(echo -e "${LINE_COL_DATE_SYMP}" | grep -e "[0-9][0-9][0-9][0-9][0-9]") ]];then
+            DATE_UNIX_FORMAT=$(date -d @$(( $(( ${LINE_COL_DATE_SYMP} - 25568 )) * 86400 )) +"%d/%m/%Y")
+            sed -i "${FILE_LINE} s@^\(.*,.*,.*,.*,.*,.*,\)\(.*\)\(,.*,.*,.*,.*,.*\)\$@\1${DATE_UNIX_FORMAT}\3@g" ${FILE}
+        fi
+    done
+    echo -e "Se termina estandarizacion de archivo ${FILE}"
+}
+
 function main (){
 #clear
-while true;do
+#while true;do
 #date +"%Y/%m/%d %H:%M:%S.%4N"
     DAT_QURY="$(date +"%Y%m%d_%H%M%S")"
     echo -e "Inicio de consulta: ${DAT_QURY}"
@@ -345,8 +422,10 @@ while true;do
     convPdftoCsv
     makeCsvExt
     copyCsv
+     mergeCsv
+    echo -e "Fin de consulta: $(date +"%Y%m%d_%H%M%S")"
     invCountNewQury
-done
+#done
 }
 
 main $@
