@@ -267,7 +267,7 @@ function convPdftoCsv(){
 
 function invCountNewQury(){
     echo -e "Esperando para hacer una nueva consulta en:"
-    for sec in {10..1}; do
+    for sec in {1..1}; do
         echo -e " ${sec} minutos"
         sleep 60
     done
@@ -373,14 +373,14 @@ function mergeCsv(){
         HEADER_CSV_LEN=$(echo -e "${HEADER_CSV}" | grep -o "," | wc -l)
         if [[ "${HEADER_CSV_LEN}" = "10" ]];then
             FILE_CSV_TENLAST_LINES=$(tail -n 10 ${FILE_CSV} | sed -e "s@\(.*,.*,.*,\)\(.*,.*,.*,.*,.*,.*,.*,.*\)@\1,\2@g")
-            FILE_CSV_EXIST_IN_MERGE=$(grep -e "${FILE_CSV_TENLAST_LINES}" ${MERGE_PATH}${MERGE_FILE_NAME} 1>\dev\null; echo $?)
+            FILE_CSV_EXIST_IN_MERGE=$(grep -e "${FILE_CSV_TENLAST_LINES}" ${MERGE_PATH}${MERGE_FILE_NAME} 1>/dev/null; echo $?)
             if [[ "${FILE_CSV_EXIST_IN_MERGE}" != "0" ]];then
                 sed -n "2,$ p" "${FILE_CSV}" | sed -e "s@\(.*,.*,.*,\)\(.*,.*,.*,.*,.*,.*,.*,.*\)@\1,\2@g" >> "${MERGE_PATH}${MERGE_FILE_NAME}"
                 echo -e "Se agrega ${FILE_CSV} a merge/supermerge.csv"
             fi
         elif [[ "${HEADER_CSV_LEN}" = "11" ]];then
             FILE_CSV_TENLAST_LINES=$(tail -n 10 ${FILE_CSV})
-            FILE_CSV_EXIST_IN_MERGE=$(grep -e "${FILE_CSV_TENLAST_LINES}" ${MERGE_PATH}${MERGE_FILE_NAME} 1>\dev\null; echo $?)
+            FILE_CSV_EXIST_IN_MERGE=$(grep -e "${FILE_CSV_TENLAST_LINES}" ${MERGE_PATH}${MERGE_FILE_NAME} 1>/dev/null; echo $?)
             if [[ "${FILE_CSV_EXIST_IN_MERGE}" != "0" ]];then
                 sed -n "2,$ p" "${FILE_CSV}" >> "${MERGE_PATH}${MERGE_FILE_NAME}"
                 echo -e "Se agrega ${FILE_CSV} a merge/supermerge.csv"
@@ -413,7 +413,7 @@ function csvToStandar(){
 
 function main (){
 #clear
-#while true;do
+while true;do
 #date +"%Y/%m/%d %H:%M:%S.%4N"
     DAT_QURY="$(date +"%Y%m%d_%H%M%S")"
     echo -e "Inicio de consulta: ${DAT_QURY}"
@@ -425,7 +425,7 @@ function main (){
      mergeCsv
     echo -e "Fin de consulta: $(date +"%Y%m%d_%H%M%S")"
     invCountNewQury
-#done
+done
 }
 
 main $@
