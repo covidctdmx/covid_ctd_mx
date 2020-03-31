@@ -14311,3 +14311,138 @@ No se descarga originales/20200329_pos_20200329_191545.pdf el archivo ya existe
 Fin de consulta: 20200329_191550
 Esperando para hacer una nueva consulta en:
  1 minutos
+Inicio de consulta: 20200330_175703
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200329_tec_20200330_175703.pdf el archivo ya existe
+No se descarga originales/20200329_sos_20200330_175703.pdf el archivo ya existe
+No se descarga originales/20200329_pos_20200330_175703.pdf el archivo ya existe
+Fin de consulta: 20200330_175710
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200330_180710
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200329_tec_20200330_180710.pdf el archivo ya existe
+No se descarga originales/20200329_sos_20200330_180710.pdf el archivo ya existe
+No se descarga originales/20200329_pos_20200330_180710.pdf el archivo ya existe
+Fin de consulta: 20200330_180719
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200330_181719
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200329_tec_20200330_181719.pdf el archivo ya existe
+No se descarga originales/20200329_sos_20200330_181719.pdf el archivo ya existe
+No se descarga originales/20200329_pos_20200330_181719.pdf el archivo ya existe
+Fin de consulta: 20200330_181728
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200330_182728
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200329_tec_20200330_182728.pdf el archivo ya existe
+No se descarga originales/20200329_sos_20200330_182728.pdf el archivo ya existe
+No se descarga originales/20200329_pos_20200330_182728.pdf el archivo ya existe
+Fin de consulta: 20200330_182735
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200330_183735
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200329_tec_20200330_183735.pdf el archivo ya existe
+No se descarga originales/20200329_sos_20200330_183735.pdf el archivo ya existe
+No se descarga originales/20200329_pos_20200330_183735.pdf el archivo ya existe
+Fin de consulta: 20200330_183742
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+
+
+Inicio de consulta: 20200330_184742
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+No se descarga originales/20200329_tec_20200330_184742.pdf el archivo ya existe
+No se descarga originales/20200329_sos_20200330_184742.pdf el archivo ya existe
+No se descarga originales/20200329_pos_20200330_184742.pdf el archivo ya existe
+Fin de consulta: 20200330_184750
+Esperando para hacer una nueva consulta en:
+ 10 minutos
+ 9 minutos
+ 8 minutos
+ 7 minutos
+ 6 minutos
+ 5 minutos
+ 4 minutos
+ 3 minutos
+ 2 minutos
+ 1 minutos
+Inicio de consulta: 20200330_185706
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+3Se descargo archivo originales/20200330_tec_20200330_185706.pdf
+3Se descargo archivo originales/20200330_sos_20200330_185706.pdf
+3Se descargo archivo originales/20200330_pos_20200330_185706.pdf
+Se creo archivo originales/20200330_pos_20200330_185706.csv
+Se creo archivo originales/20200330_sos_20200330_185706.csv
+Se crea archivo merge/pos/20200330_pos_20200330_185706.csv
+Se crea archivo merge/sos/20200330_sos_20200330_185706.csv
+'originales/20200330_pos_20200330_185706.csv' -> 'csv/20200330_pos.csv'
+'originales/20200330_sos_20200330_185706.csv' -> 'csv/20200330_sos.csv'
+Se agrega merge/pos/20200330_pos_20200330_185706.csv a merge/supermerge.csv
+Se agrega merge/sos/20200330_sos_20200330_185706.csv a merge/supermerge.csv
+Fin de consulta: 20200330_185922
+Esperando para hacer una nueva consulta en:
+ 1 minutos
