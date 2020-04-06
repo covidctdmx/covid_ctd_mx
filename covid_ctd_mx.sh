@@ -267,7 +267,7 @@ function convPdftoCsv(){
 
 function invCountNewQury(){
     echo -e "Esperando para hacer una nueva consulta en:"
-    for sec in {10..1}; do
+    for sec in {1..1}; do
         echo -e " ${sec} minutos"
         sleep 60
     done

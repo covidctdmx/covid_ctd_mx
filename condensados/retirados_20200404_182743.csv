@@ -1,0 +1,5 @@
+﻿﻿Fecha Archivo Inicial,# Caso,Estado,Localidad,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,Cadena,HASH (10 ultimos)
+03/04/2020,1194,COAHUILA,,F,0,28/03/2020,Confirmado,Contacto,NA,COAHUILAF028032020ContactoNA,c-9232a263a5
+03/04/2020,634,MÉXICO,,F,22,16/03/2020,Confirmado,Contacto,15/03/2020,MÉXICOF2216032020Contacto15032020,c-06ff445e56
+03/04/2020,633,MÉXICO,,F,22,24/03/2020,Confirmado,Contacto,NA,MÉXICOF2224032020ContactoNA,c-d0356c1dc9
+03/04/2020,638,MÉXICO,,M,37,21/03/2020,Confirmado,Contacto,NA,MÉXICOM3721032020ContactoNA,c-0d417a8c03
