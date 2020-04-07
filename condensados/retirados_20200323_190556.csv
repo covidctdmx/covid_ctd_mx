@@ -1,0 +1,5 @@
+﻿﻿Fecha Archivo Inicial,# Caso,Estado,Localidad,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,Cadena,HASH (10 ultimos)
+22/03/2020,304,JALISCO,,M,24,17/03/2020,confirmado,Contacto,15/03/2020,JALISCOM2417032020Contacto15032020,c-7e716b05bf
+22/03/2020,166,QUINTANA ROO,,M,35,15/03/2020,confirmado,Contacto,14/03/2020,QUINTANAROOM3515032020Contacto14032020,c-3cbcc29063
+22/03/2020,142,QUINTANA ROO,,M,45,15/03/2020,confirmado,Contacto,15/03/2020,QUINTANAROOM4515032020Contacto15032020,c-5ad6e205e4
+22/03/2020,284,YUCATÁN,,M,0,17/03/2020,confirmado,Contacto,NA,YUCATÁNM017032020ContactoNA,c-25433a1193

@@ -1,0 +1,5 @@
+﻿﻿Fecha Archivo Inicial,# Caso,Estado,Localidad,Sexo,Edad,Fecha de Inicio de sintomas,Identificacion de COVID-19 por RT-PCR en tiempo real,Procedencia,Fecha del llegada a Mexico,Cadena,HASH (10 ultimos)
+31/03/2020,1184,JALISCO,,M,46,17/03/2020,confirmado,Contacto,NA,JALISCOM4617032020ContactoNA,c-5dcbbd9fd5
+31/03/2020,653,MÉXICO,,F,31,19/03/2020,confirmado,Contacto,NA,MÉXICOF3119032020ContactoNA,c-86c8785f5e
+31/03/2020,642,MÉXICO,,F,48,16/03/2020,confirmado,Contacto,NA,MÉXICOF4816032020ContactoNA,c-a2b0a65115
+31/03/2020,643,MÉXICO,,M,60,20/03/2020,confirmado,Contacto,NA,MÉXICOM6020032020ContactoNA,c-b5506159f4
