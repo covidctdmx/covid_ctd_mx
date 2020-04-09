@@ -22839,3 +22839,72 @@ Se inicia conteo de casos
 SALEN: 481
 PERMANECEN: 1958
 INGRESAN: 827
+Inicio de consulta: 20200408_194547
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+3Se descargo archivo originales/20200408_tec_20200408_194547.pdf
+3Se descargo archivo originales/20200408_sos_20200408_194547.pdf
+3Se descargo archivo originales/20200408_pos_20200408_194547.pdf
+Inicio de consulta: 20200408_202138
+Inicio de consulta: 20200408_202236
+Inicio de consulta: 20200409_035035
+Inicio de consulta: 20200409_035327
+Inicio de consulta: 20200409_035519
+Inicio de consulta: 20200409_040610
+Inicio de consulta: 20200409_040741
+Inicio de consulta: 20200409_041211
+Se creo archivo originales/20200408_pos_20200408_194547.csv
+Inicio de consulta: 20200409_041339
+Se creo archivo originales/20200408_pos_20200408_194547.csv
+Se creo archivo originales/20200408_sos_20200408_194547.csv
+Fin de consulta: 20200409_041437
+Inicio de consulta: 20200409_042412
+Se creo archivo originales/20200408_pos_20200408_194547.csv
+Se creo archivo originales/20200408_sos_20200408_194547.csv
+Fin de consulta: 20200409_042449
+Inicio de consulta: 20200409_052852
+Se crea archivo merge/pos/20200408_pos_20200408_194547.csv
+Se crea archivo merge/sos/20200408_sos_20200408_194547.csv
+'originales/20200408_pos_20200408_194547.csv' -> 'csv/20200408_pos.csv'
+'originales/20200408_sos_20200408_194547.csv' -> 'csv/20200408_sos.csv'
+Se agrega merge/pos/20200408_pos_20200408_194547.csv a merge/supermerge.csv
+Se agrega merge/sos/20200408_sos_20200408_194547.csv a merge/supermerge.csv
+Fin de consulta: 20200409_053734
+
+Se inicia condensado
+Se crea condensados/condensado_20200408_194547.csv
+300 registros revisados
+600 registros revisados
+900 registros revisados
+1200 registros revisados
+1500 registros revisados
+1800 registros revisados
+2100 registros revisados
+2400 registros revisados
+2700 registros revisados
+3000 registros revisados
+3181 registros revisados
+
+Se inicia conteo de casos
+300 registros revisados
+600 registros revisados
+900 registros revisados
+1200 registros revisados
+1500 registros revisados
+1800 registros revisados
+2100 registros revisados
+2400 registros revisados
+2700 registros revisados
+3000 registros revisados
+3300 registros revisados
+3600 registros revisados
+3900 registros revisados
+4200 registros revisados
+4500 registros revisados
+4800 registros revisados
+5100 registros revisados
+5400 registros revisados
+5659 registros revisados
+SALEN: 2785
+PERMANECEN: 0
+INGRESAN: 3181
