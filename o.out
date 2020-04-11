@@ -22908,3 +22908,28 @@ Se inicia conteo de casos
 SALEN: 2785
 PERMANECEN: 0
 INGRESAN: 3181
+Inicio de consulta: 20200410_194422
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+3Se descargo archivo originales/20200410_tec_20200410_194422.pdf
+3Se descargo archivo originales/20200410_sos_20200410_194422.pdf
+3Se descargo archivo originales/20200410_pos_20200410_194422.pdf
+Se creo archivo originales/20200410_pos_20200410_194422.csv
+Se creo archivo originales/20200410_sos_20200410_194422.csv
+Fin de consulta: 20200410_194549
+Inicio de consulta: 20200410_212522
+Fin de consulta: 20200410_212522
+Inicio de consulta: 20200410_212554
+Se crea archivo merge/pos/20200409_pos_20200409_235959.csv
+Se crea archivo merge/pos/20200410_pos_20200410_194422.csv
+Se crea archivo merge/sos/20200409_sos_20200409_235959.csv
+Se crea archivo merge/sos/20200410_sos_20200410_194422.csv
+'originales/20200409_pos_20200409_235959.csv' -> 'csv/20200409_pos.csv'
+'originales/20200409_sos_20200409_235959.csv' -> 'csv/20200409_sos.csv'
+'originales/20200410_pos_20200410_194422.csv' -> 'csv/20200410_pos.csv'
+'originales/20200410_sos_20200410_194422.csv' -> 'csv/20200410_sos.csv'
+Se agrega merge/pos/20200409_pos_20200409_235959.csv a merge/supermerge.csv
+Se agrega merge/sos/20200409_sos_20200409_235959.csv a merge/supermerge.csv
+Se agrega merge/pos/20200410_pos_20200410_194422.csv a merge/supermerge.csv
+Se agrega merge/sos/20200410_sos_20200410_194422.csv a merge/supermerge.csv
+Fin de consulta: 20200410_214427

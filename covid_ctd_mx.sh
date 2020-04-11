@@ -185,7 +185,7 @@ function convPdftoCsv(){
                 pdftops "${DOC_PATH}${FILE_NAME}.${EXT_NAME}"
                 TO_ASCII_FILE_EXT="ps"
 	    fi
-
+#read -r
             if [[ $(echo -e "${FILE_NAME}" | grep -e "pos") ]];then
                 ps2ascii "${DOC_PATH}${FILE_NAME}.${TO_ASCII_FILE_EXT}" |\
                 sed '/^$/d' |\
@@ -203,7 +203,8 @@ function convPdftoCsv(){
                 tr "," " " |\
                 tr "#" "," |\
                 sed -e "s@^,@@g" |\
-                grep -e "^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|Estados" |\
+                grep -e "^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*\)$\|Estados" |\
+#                grep -e "^\(.*,.*,.*,.*,.*,.*\)$" |\
                 grep -v "^Estados$\|^,Estados$" |\
 		sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}.tmp"
             elif [[ $(echo -e "${FILE_NAME}" | grep -e "sos") ]];then
@@ -223,7 +224,8 @@ function convPdftoCsv(){
                 tr "," " " |\
                 tr "#" "," |\
                 sed -e "s@^,@@g" |\
-                grep -e "^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*\)$\|Estados" |\
+                grep -e "^\(.*,.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*,.*\)$\|^\(.*,.*,.*,.*,.*,.*\)$\|Estados" |\
+#                grep -e "^\(.*,.*,.*,.*,.*,.*\)$" |\
                 grep -v "^Estados$\|^,Estados$" |\
 	        sed -n '1 !p' >> "${DOC_PATH}${FILE_NAME}.tmp"
 
@@ -413,19 +415,19 @@ function csvToStandar(){
 
 function main (){
 #clear
-while true;do
+#while true;do
 #date +"%Y/%m/%d %H:%M:%S.%4N"
     DAT_QURY="$(date +"%Y%m%d_%H%M%S")"
     echo -e "Inicio de consulta: ${DAT_QURY}"
-    validateUrlCTD
-    dwnloadFilesFromCTD
-    convPdftoCsv
+#    validateUrlCTD
+#    dwnloadFilesFromCTD
+#    convPdftoCsv
     makeCsvExt
     copyCsv
-     mergeCsv
+    mergeCsv
     echo -e "Fin de consulta: $(date +"%Y%m%d_%H%M%S")"
-    invCountNewQury
-done
+#    invCountNewQury
+#done
 }
 
 main $@
