@@ -22933,3 +22933,57 @@ Se agrega merge/sos/20200409_sos_20200409_235959.csv a merge/supermerge.csv
 Se agrega merge/pos/20200410_pos_20200410_194422.csv a merge/supermerge.csv
 Se agrega merge/sos/20200410_sos_20200410_194422.csv a merge/supermerge.csv
 Fin de consulta: 20200410_214427
+Inicio de consulta: 20200411_191101
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+3Se descargo archivo originales/20200411_tec_20200411_191101.pdf
+3Se descargo archivo originales/20200411_sos_20200411_191101.pdf
+3Se descargo archivo originales/20200411_pos_20200411_191101.pdf
+Se creo archivo originales/20200411_pos_20200411_191101.csv
+Se creo archivo originales/20200411_sos_20200411_191101.csv
+Fin de consulta: 20200411_191147
+Inicio de consulta: 20200411_192535
+Se crea archivo merge/pos/20200411_pos_20200411_191101.csv
+Se crea archivo merge/sos/20200411_sos_20200411_191101.csv
+'originales/20200411_pos_20200411_191101.csv' -> 'csv/20200411_pos.csv'
+'originales/20200411_sos_20200411_191101.csv' -> 'csv/20200411_sos.csv'
+Se agrega merge/pos/20200411_pos_20200411_191101.csv a merge/supermerge.csv
+Se agrega merge/sos/20200411_sos_20200411_191101.csv a merge/supermerge.csv
+Fin de consulta: 20200411_193232
+
+Se inicia condensado
+Se crea condensados/condensado_20200411_191101.csv
+300 registros revisados
+600 registros revisados
+900 registros revisados
+1200 registros revisados
+1500 registros revisados
+1800 registros revisados
+2100 registros revisados
+2400 registros revisados
+2700 registros revisados
+3000 registros revisados
+3300 registros revisados
+3600 registros revisados
+3900 registros revisados
+4200 registros revisados
+4219 registros revisados
+
+Se inicia conteo de casos
+300 registros revisados
+600 registros revisados
+900 registros revisados
+1200 registros revisados
+1500 registros revisados
+1800 registros revisados
+2100 registros revisados
+2400 registros revisados
+2700 registros revisados
+3000 registros revisados
+3300 registros revisados
+3600 registros revisados
+3900 registros revisados
+3915 registros revisados
+SALEN: 3
+PERMANECEN: 3841
+INGRESAN: 378
