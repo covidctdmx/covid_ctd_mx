@@ -22987,3 +22987,59 @@ Se inicia conteo de casos
 SALEN: 3
 PERMANECEN: 3841
 INGRESAN: 378
+Inicio de consulta: 20200412_190913
+Se buscan archivos en la URL:
+https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+3Se descargo archivo originales/20200412_tec_20200412_190913.pdf
+3Se descargo archivo originales/20200412_sos_20200412_190913.pdf
+3Se descargo archivo originales/20200412_pos_20200412_190913.pdf
+Se creo archivo originales/20200412_pos_20200412_190913.csv
+Se creo archivo originales/20200412_sos_20200412_190913.csv
+Fin de consulta: 20200412_190954
+Inicio de consulta: 20200412_192435
+Se crea archivo merge/pos/20200412_pos_20200412_190913.csv
+Se crea archivo merge/sos/20200412_sos_20200412_190913.csv
+'originales/20200412_pos_20200412_190913.csv' -> 'csv/20200412_pos.csv'
+'originales/20200412_sos_20200412_190913.csv' -> 'csv/20200412_sos.csv'
+Se agrega merge/pos/20200412_pos_20200412_190913.csv a merge/supermerge.csv
+Se agrega merge/sos/20200412_sos_20200412_190913.csv a merge/supermerge.csv
+Fin de consulta: 20200412_193248
+
+Se inicia condensado
+Se crea condensados/condensado_20200412_190913.csv
+300 registros revisados
+600 registros revisados
+900 registros revisados
+1200 registros revisados
+1500 registros revisados
+1800 registros revisados
+2100 registros revisados
+2400 registros revisados
+2700 registros revisados
+3000 registros revisados
+3300 registros revisados
+3600 registros revisados
+3900 registros revisados
+4200 registros revisados
+4500 registros revisados
+4661 registros revisados
+
+Se inicia conteo de casos
+300 registros revisados
+600 registros revisados
+900 registros revisados
+1200 registros revisados
+1500 registros revisados
+1800 registros revisados
+2100 registros revisados
+2400 registros revisados
+2700 registros revisados
+3000 registros revisados
+3300 registros revisados
+3600 registros revisados
+3900 registros revisados
+4200 registros revisados
+4281 registros revisados
+SALEN: 5
+PERMANECEN: 4214
+INGRESAN: 447
